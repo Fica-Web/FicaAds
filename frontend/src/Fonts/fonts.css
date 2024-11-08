@@ -1,0 +1,23 @@
+@font-face {
+    
+    font-family: 'Switzer-Light';
+    src: url('../Fonts/Switzer-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    
+    font-family: 'Switzer-Medium';
+    src: url('../Fonts/Switzer-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    
+    font-family: 'Switzer-Regular';
+    src: url('../Fonts/Switzer-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
