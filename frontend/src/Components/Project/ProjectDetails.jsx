@@ -22,7 +22,7 @@ const ProjectDetails = () => {
                         <h2 className="text-sm font-bold  xl:text-2xl font-Switzer-Light">{selectedProject.title}</h2>
                         <h1 className="text-2xl font-bold  xl:text-6xl font-Switzer-Regular uppercase">{selectedProject.name}</h1>
                     </div>
-                    <div className='h-96 sm:h-112 md:h-144 xl:h-176'>
+                    <div className='h-96 sm:h-112 md:h-144 xl:h-192'>
                         <img src={selectedProject.image} alt={selectedProject.name} className='w-full h-full object-cover rounded-xl' />
                     </div>
                 </div>
@@ -31,19 +31,19 @@ const ProjectDetails = () => {
                 <div className='pt-32
                   space-y-8 lg:space-y-0 lg:flex lg:space-x-20 xl:space-x-52'>
                     <div className='lg:w-1/2 xl:w-1/3  space-y-4'>
-                        <p className='font-Switzer-Medium text-sm sm:text-base lg:text-sm xl:text-sm'>{selectedProject.description}</p>
-                        <p className='font-Switzer-Medium text-sm sm:text-base lg:text-sm xl:text-sm'>{selectedProject.description}</p>
+                        <p className='font-Switzer-Medium text-sm sm:text-base  xl:text-base'>{selectedProject.description}</p>
+                        <p className='font-Switzer-Medium text-sm sm:text-base  xl:text-base'>{selectedProject.description}</p>
                     </div>
                     <div className='lg:w-1/2  xl:w-1/3 '>
                         <p className='font-Switzer-Medium text-gray text-sm lg:text-base'>Industry</p>
-                        <button className='border-2 border-black px-2 py-1  rounded-xl text-base lg:text-sm'>{selectedProject.name}</button>
+                        <button className='border-2 border-black px-2 py-1  rounded-lg text-base lg:text-sm'>{selectedProject.name}</button>
                         <p className='font-Switzer-Medium text-gray mt-4 text-sm lg:text-base'>Year</p>
                         <p className='font-Switzer-Light text-base lg:text-sm'>{selectedProject.year}</p>
                     </div>
                 </div>
 
                 <div className='pt-32 '>
-                    <div className='w-full h-119 lg:h-160'>
+                    <div className='w-full h-119 lg:h-176'>
                         <img src={selectedProject.image} alt='' className='w-full h-full object-cover rounded-xl' />
                     </div>
                     <div className='mt-6 w-full h-119 lg:h-160'>
@@ -60,7 +60,7 @@ const ProjectDetails = () => {
                 </div>
 
 
-                <div className='pt-20 space-y-6  md:mt-0 md:w-2/3 lg:w-1/2 xl:w-1/3 '>
+                <div className='pt-20 pb-20 space-y-6  md:mt-0 md:w-2/3 lg:w-1/2 xl:w-1/3 '>
                     <p className='font-Switzer-Medium text-sm xl:text-base'>{selectedProject.feedback}</p>
                     <p className='font-Switzer-Medium text-lg xl:text-base'>{selectedProject.founder}<br></br><span className='text-gray text-sm xl:text-base'>Founder</span></p>
                 </div>

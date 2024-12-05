@@ -8,6 +8,7 @@ import NewsPage from './Pages/NewsPage'
 import BlogDetails from './Components/News/BlogDetails'
 import PrivacyPolicy from './Pages/PrivacyPolicy'
 import ContactPage from './Pages/ContactPage'
+import CareersPage from './Pages/CareersPage'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Route path='/project/:id' element={<ProjectDetails />}/>
       <Route path='/news' element={<NewsPage />}/>
       <Route path='/news/:id' element={<BlogDetails />} />
+      <Route path='/careers' element={<CareersPage />} />
       <Route path='/privacypolicy' element={<PrivacyPolicy />} />
       <Route path='/contact' element={<ContactPage />} />
     </Routes>

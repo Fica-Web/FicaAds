@@ -1,9 +1,9 @@
 import React from 'react'
 import img1 from "../../assets/Images/about5.jpg"
 
-const AboutHiring = () => {
-    return (
-        <div className='mt-40'>
+const CreerConnect = () => {
+  return (
+    <div className='mt-40'>
             <div className='space-y-4 md:space-y-0 md:space-x-4'>
                 <div className='h-130 md:h-119 lg:h-160 xl:h-full relative'>
                     <div className="absolute inset-0 flex flex-col justify-center items-center text-white p-4 rounded-xl space-y-2">
@@ -16,8 +16,7 @@ const AboutHiring = () => {
                 </div>
             </div>
         </div>
-
-    )
+  )
 }
 
-export default AboutHiring
+export default CreerConnect

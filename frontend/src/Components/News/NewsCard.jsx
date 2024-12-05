@@ -89,6 +89,7 @@ const NewsCard = () => {
               src={blog.imageUrl}
               alt={blog.title}
               className="w-full h-96 object-cover"
+              
             />
             <div className="p-4">
               <h2 className="text-lg  font-Switzer-Medium text-gray1">{blog.title}</h2>

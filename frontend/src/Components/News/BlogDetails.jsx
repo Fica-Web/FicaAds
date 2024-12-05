@@ -1,10 +1,14 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import NewsCard from './NewsCard';
 
 const BlogDetails = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0); // Resets scroll to the top of the page
+  }, []);
 
   // Retrieve the blog data from location.state
   const { blog } = location.state || {};

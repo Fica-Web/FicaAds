@@ -16,25 +16,27 @@ const Footer = () => {
               placeholder='hello@ficaads.com'
               className='bg-transparent rounded-l-2xl py-2 px-4 flex-grow outline-none text-white placeholder-gray-400'
             />
-            <button className='bg-gray1 px-4 py-2 rounded-r-2xl font-Switzer-Medium text-sm '>
+            <button className='bg-gray1 mr-0.5 px-4 py-2 rounded-2xl font-Switzer-Medium text-sm '>
               Submit
             </button>
+            
           </div>
         </div>
 
         <div className='md:w-1/2  space-y-8 pt-4 md:flex md:space-y-0'>
           <div className='w-11/12 mx-auto '>
             <h5 className='font-Switzer-Medium text-xs text-gray3 xl:text-sm'>Sitemap</h5>
-            <h3 className='uppercase mt-2 font-Switzer-Medium text-sm xl:text-base'>Home</h3>
+            <h3 className='uppercase mt-6 font-Switzer-Medium text-sm xl:text-base'>Home</h3>
             <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'>About</h3>
             <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'>Projects</h3>
             <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'>News</h3>
             <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'>Careers</h3>
             <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'>Contact</h3>
+            <h2 className='font-Switzer-Medium text-sm text-gray3 lg:mt-44 xl:mt-36'><a href="/privacypolicy">Privacy & Policy</a></h2>
           </div>
           <div className='w-11/12 mx-auto'>
             <h5 className='font-Switzer-Medium text-xs  text-gray3 xl:text-sm'>Socials</h5>
-            <h4 className='mt-2'><a
+            <h4 className='mt-6'><a
               href="https://m.facebook.com/benchcaferestaurant/"
               target="_blank"
               rel="noopener noreferrer"
@@ -67,16 +69,8 @@ const Footer = () => {
             >
               x.com
             </a></h4>
+            <h2 className='font-Switzer-Medium text-sm text-gray3 lg:mt-48 xl:mt-48'>Made by Fica</h2>
           </div>
-        </div>
-      </div>
-      <div className='w-11/12 mx-auto  sm:pt-32 sm:flex'>
-        <div className=' sm:w-1/2 pt-4 md:pl-10'>
-          <h2>Fica</h2>
-        </div>
-        <div className=' sm:w-1/2 pt-4 md:pl-10 sm:flex sm:space-x-10'>
-          <h2 className='font-Switzer-Medium text-sm text-gray3'><a href="/privacypolicy">Privacy & Policy</a></h2>
-          <h2 className='font-Switzer-Medium text-sm text-gray3'>Made by Fica</h2>
         </div>
       </div>
     </div>

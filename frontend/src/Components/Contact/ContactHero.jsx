@@ -15,19 +15,19 @@ const ContactHero = () => {
                 </div>
                 <div className='w-11/12 mt-10 sm:h-64 sm:pt-10 mx-auto   space-y-10 sm:space-y-0 sm:flex sm:space-x-10'>
                     <div className=' sm:w-1/3'>
-                        <h1 className='font-Switzer-Regular text-3xl text-white lg:text-4xl xl:text-4xl'>Dubai</h1>
+                        <h1 className='font-Switzer-Medium text-3xl text-white lg:text-4xl xl:text-4xl'>Dubai</h1>
                         <h2 className='mt-4 font-Switzer-Regular text-white lg:text-lg xl:text-xl'>050 7878658</h2>
                         <h2 className='font-Switzer-Regular text-white lg:text-lg xl:text-xl'>hello@ficaads.com</h2>
                         <h3 className='mt-2 font-Switzer-Regular text-gray lg:text-lg xl:text-xl'>Al Naha Dubai-UAE</h3>
                     </div>
                     <div className='sm:w-1/3'>
-                        <h1 className='font-Switzer-Regular text-3xl text-white lg:text-4xl xl:text-4xl'>Calicut</h1>
+                        <h1 className='font-Switzer-Medium text-3xl text-white lg:text-4xl xl:text-4xl'>Calicut</h1>
                         <h2 className='mt-4 font-Switzer-Regular text-white lg:text-lg xl:text-xl'>+91 8086555918</h2>
                         <h2 className='font-Switzer-Regular text-white lg:text-lg xl:text-xl'>hello@ficaads.com</h2>
                         <h3 className='mt-2 font-Switzer-Regular text-gray lg:text-lg xl:text-xl'>UA Building,Kattukulagara - Pottamal , Calicut</h3>
                     </div>
                     <div className=' sm:w-1/3 lg:pl-20'>
-                        <h1 className='font-Switzer-Regular text-white text-3xl lg:text-4xl xl:text-4xl'>Turkiye</h1>
+                        <h1 className='font-Switzer-Medium text-white text-3xl lg:text-4xl xl:text-4xl'>Turkiye</h1>
                         <h2 className='mt-4 font-Switzer-Regular text-white lg:text-lg xl:text-xl'>hello@ficaads.com</h2>
                         <h3 className='md:mt-8 font-Switzer-Regular text-gray lg:text-lg xl:text-xl'>Mecidiyekoy - Sisli , Istanbul , Turkiye</h3>
                     </div>
@@ -53,7 +53,7 @@ const ContactHero = () => {
                 <Behaind />
                 </div>
 
-                <hr className="border-t-4 border-golden my-4" />
+            
 
                
             </div>

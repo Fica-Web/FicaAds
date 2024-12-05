@@ -40,18 +40,21 @@ const AboutBanner = () => {
         <div className='mt-16'>
             <div className='w-11/12 mx-auto '>
                 <div className=''>
-                    <div className='w-full h-96  lg:h-124'>
-                        <img
-                            src={img1}
-                            alt='About Banner'
-                            className='w-full h-full rounded-xl object-cover'
-                        />
+                    <div className=''>
+                        <div className='w-full h-96 lg:h-124 animate-fade-up duration-1000'>
+                            <img
+                                src={img1}
+                                alt='About Banner'
+                                className='w-full h-full rounded-xl object-cover'
+                            />
+                        </div>
+                        <div className='mt-6 lg:w-9/12 xl:w-8/12 animate-fade-up duration-1000'>
+                            <h1 className='font-Switzer-Medium uppercase text-black text-4xl md:text-4xl lg:text-5xl xl:text-6xl'>
+                                A Dynamic Team of Passionate Designers
+                            </h1>
+                        </div>
                     </div>
-                    <div className=' mt-6 lg:w-9/12 xl:w-8/12'>
-                        <h1 className='font-Switzer-Medium uppercase text-black text-4xl md:text-4xl lg:text-5xl xl:text-6xl'>
-                            A Dynamic Team of Passionate Designers
-                        </h1>
-                    </div>
+
                 </div>
 
                 <div className='mt-40  space-y-6 md:space-y-0 md:flex'>
