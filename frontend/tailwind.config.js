@@ -43,6 +43,7 @@ export default {
         '160': '40rem', // equivalent to 640px
         '176': '44rem', // equivalent to 704px
         '192': '48rem', // equivalent to 768px
+        '200': '50rem',
         'full-screen': '100vh', // full viewport height
       },
       

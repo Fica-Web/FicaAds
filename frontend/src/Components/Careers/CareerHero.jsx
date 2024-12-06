@@ -1,21 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import hero1 from "../../assets/Images/hero1.jpg";
 import NavBar from '../NavBar/NavBar';
 
 const CareerHero = () => {
-    return (
-        <div className='relative  sm:w-full sm:h-96 md:h-fit '>
-            <div className='relative w-full h-96 sm:h-96 lg:h-96 xl:h-96'>
-                <img className='w-full h-full object-cover' src={hero1}
-                    alt='product' />
-                <div className="absolute top-0 left-0 w-full z-20">
-                    <NavBar />
-                </div>
+  // State to track when the component has mounted
+  const [hovered, setHovered] = useState(false);
 
+  useEffect(() => {
+    // Set hovered to true after the component mounts
+    setHovered(true);
+  }, []);
 
-            </div>
+  return (
+    <div className='relative sm:w-full'>
+      <div className='relative w-full h-96 sm:h-96 lg:h-160 2xl:h-200'>
+        <img
+          className={`w-full h-full object-cover transition-transform duration-500 ${hovered ? 'scale-105' : ''}`}
+          src={hero1}
+          alt='product'
+        />
+        <div className="absolute top-0 left-0 w-full z-20">
+          <NavBar />
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
-export default CareerHero
+export default CareerHero;

@@ -11,7 +11,7 @@ const AboutHiring = () => {
                         <h2 className="text-2xl font-bold xl:text-4xl font-Switzer-Medium uppercase ">Join Our Team</h2>
                         <button className='bg-gray1 font-Switzer-Medium text-xs mt-4 rounded-xl h-8 md:h-10 p-2 px-4'>Open Positions</button>
                     </div>
-                    <img src={img1} alt='about' className='w-full h-full object-cover rounded-xl' />
+                    <img src={img1} alt='about' className='w-full h-full object-cover ' />
                     
                 </div>
             </div>

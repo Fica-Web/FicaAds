@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import NewsCard from '../Components/News/NewsCard'
 import NewsHero from '../Components/News/NewsHero'
 import NavBar from '../Components/NavBar/NavBar'
+import ExtraNews from '../Components/News/ExtraNews';
 
 const NewsPage = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const NewsPage = () => {
       <NavBar/>
         <NewsCard />
         <NewsHero />
+        <ExtraNews/>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='mt-10 md:h-96 bg-black text-white'>
+    <div className=' md:h-96 bg-black text-white'>
       <div className='space-y-6 md:space-y-0 md:flex '>
         <div className='w-11/12 mx-auto md:w-1/2 pt-4 md:pl-10 text-white'>
           <h2>Fica</h2>
@@ -10,13 +10,13 @@ const Footer = () => {
             Subscribe to our newsletter<br />and stay in touch with us
           </p>
 
-          <div className='flex items-center mt-4 bg-gray3 rounded-2xl w-full md:w-11/12 xl:w-1/2'>
+          <div className='flex items-center mt-4 bg-gray3 rounded-lg w-full md:w-11/12 xl:w-1/2'>
             <input
               type='text'
               placeholder='hello@ficaads.com'
-              className='bg-transparent rounded-l-2xl py-2 px-4 flex-grow outline-none text-white placeholder-gray-400'
+              className='bg-transparent rounded-sm py-2 px-4 flex-grow outline-none text-white placeholder-gray-400'
             />
-            <button className='bg-gray1 mr-0.5 px-4 py-2 rounded-2xl font-Switzer-Medium text-sm '>
+            <button className='bg-gray1 mr-0.5 px-4 py-2 rounded-lg font-Switzer-Medium text-sm '>
               Submit
             </button>
             

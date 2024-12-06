@@ -13,10 +13,10 @@ const HomeProject = () => {
   ];
 
   return (
-    <div className='mt-20 sm:mt-52 md:mt-20'>
+    <div className='mt-20 sm:mt-52 md:mt-16'>
       <div className='w-11/12 mx-auto'>
         {/* Responsive grid for lg and xl screens */}
-        <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-6 grid grid-cols-1 gap-2 lg:grid-cols-2 xl:grid-cols-3">
           {fetchedProjects.map((project) => (
             <div key={project.id} className='relative group bg-primary overflow-hidden rounded-xl shadow-md'>
               {/* Image container */}

@@ -16,7 +16,7 @@ const AboutHero = () => {
                 {products.map((product) => (
                     <div key={product.id} className='h-119 xl:h-160 lg:w-1/3 xl:w-1/2 relative'>
                         <div className="absolute top-32 space-y-2 lg:top-20 xl:top-56 left-0 w-full h-full  text-white flex flex-col justify-center  p-4 rounded-xl">
-                            <h2 className="text-2xl font-bold  xl:text-4xl font-Switzer-Medium">{product.title}</h2>
+                            <h2 className="text-2xl   xl:text-3xl font-Switzer-Medium">{product.title}</h2>
                             <p className="text-sm xl:text-lg font-Switzer-Light text-gray">{product.details}</p>
                         </div>
                         <img src={product.image} alt={product.title} className='w-full h-full object-cover rounded-xl' />

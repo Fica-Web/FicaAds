@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import img1 from '../../assets/Images/about1.jpg';
+import React from 'react'
+import { useState } from 'react';
 
 
-const AboutBanner = () => {
+const ExtraNews = () => {
     const [activeService, setActiveService] = useState(null);
 
     const services = [
@@ -37,27 +37,9 @@ const AboutBanner = () => {
     };
 
     return (
-        <div className='mt-'>
+        <div className='mb-20'>
             <div className='w-11/12 mx-auto '>
-                <div className=''>
-                    <div className=''>
-                        <div className='w-full h-96 lg:h-screen animate-fade-up duration-1000'>
-                            <img
-                                src={img1}
-                                alt='About Banner'
-                                className='w-full h-full rounded-xl object-cover'
-                            />
-                        </div>
-                        <div className='mt-6 lg:w-9/12 xl:w-8/12 animate-fade-up duration-1000'>
-                            <h1 className='font-Switzer-Medium uppercase text-black text-4xl md:text-4xl lg:text-5xl xl:text-6xl'>
-                                A Dynamic Team of Passionate Designers
-                            </h1>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className='mt-40  space-y-6 md:space-y-0 md:flex'>
+                <div className='mt-20  space-y-6 md:space-y-0 md:flex'>
                     <div className='md:w-1/2'>
                         <h2 className='font-Switzer-Light text-sm  text-gray xl:text-xl'>Our Services</h2>
                     </div>
@@ -87,4 +69,4 @@ const AboutBanner = () => {
     );
 };
 
-export default AboutBanner;
+export default ExtraNews

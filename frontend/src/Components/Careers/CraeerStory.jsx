@@ -2,7 +2,7 @@ import React from 'react'
 
 const CraeerStory = () => {
   return (
-    <div className='mt-20'>
+    <div className='mt-20 animate-fade-up duration-1000'>
             <div className='w-11/12  mx-auto sm:flex'>
                 <div className='md:w-1/3'>
                     <h1 className='font-Switzer-Medium uppercase text-2xl lg:text-4xl'>CAREERS</h1>

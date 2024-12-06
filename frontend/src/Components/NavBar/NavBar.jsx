@@ -16,17 +16,17 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full top-0 left-0 z-10">
-      <div className="md:flex items-center justify-between py-4 md:px-10 px-7 relative">
+    <div className="w-11/12 mx-auto top-0 left-0 z-10">
+      <div className="md:flex items-center justify-between py-4  relative">
         {/* Logo Section */}
-        <div className="w-20 lg:w-20 flex-shrink-0">
+        <div className="w-20  lg:w-20 flex-shrink-0">
           <img src={logo} alt="Fica Logo" />
         </div>
 
         {/* Mobile Menu Toggle */}
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute  right-8 top-6 cursor-pointer lg:hidden"
+          className="text-3xl absolute right-2 top-6 cursor-pointer lg:hidden"
         >
           {open ? <FaTimes className="text-black" /> : <FaBars className="text-black" />}
         </div>
@@ -37,18 +37,30 @@ const NavBar = () => {
             lg:z-auto z-20 left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in-out
             ${open ? "top-16 opacity-100" : "top-[-490px]"} lg:opacity-100 opacity-0`}
         >
-          {Links.map((item) => (
+          {Links.map((item, index) => (
             <li
               key={item.name}
-              className="lg:ml-8 lg:text-sm xl:text-sm font-Switzer-Medium uppercase lg:my-0 my-7"
+              className={`lg:ml-8 lg:text-sm xl:text-sm font-Switzer-Medium uppercase lg:my-0 my-7 ${
+                item.name === "Contact" ? "lg:ml-10" : ""
+              }`}
             >
-              <Link
-                to={item.link}
-                className="text-black hover:text-gray-400 duration-500"
-                onClick={() => setOpen(false)} // Close menu after clicking a link
-              >
-                {item.name}
-              </Link>
+              {item.name === "Contact" ? (
+                <Link
+                  to={item.link}
+                  className="bg-black text-white py-2 px-4 rounded-md hover:bg-blue-600 duration-300"
+                  onClick={() => setOpen(false)} // Close menu after clicking the button
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <Link
+                  to={item.link}
+                  className="text-black hover:text-gray-400 duration-500"
+                  onClick={() => setOpen(false)} // Close menu after clicking a link
+                >
+                  {item.name}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -58,3 +70,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+

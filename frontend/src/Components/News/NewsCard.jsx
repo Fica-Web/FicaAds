@@ -44,19 +44,7 @@ const blogs = [
     heading3: "Sustainable and Eco-Conscious Design Choices",
     description3: "As awareness of environmental issues grows, more brands are adopting sustainable design practices to align with eco-conscious values. This trend is evident in design choices like using natural color palettes, organic shapes, and eco-friendly materials. Brands are moving away from high-energy graphics and focusing on designs that consume less data and power, reducing their digital footprint. For eco-conscious consumers, these sustainable designs reflect a brand’s commitment to the environment, adding another layer of value and connection."
   },
-  {
-    id: 4,
-    title: 'Unlocking the Power of Content Marketing in 2024',
-    date: "07 November / 9 min read",
-    imageUrl: img,
-    content: 'Content marketing has evolved beyond blog posts and social media updates—it’s now a strategic approach that integrates storytelling, data-driven insights, and multimedia to captivate audiences. In 2024, content marketing remains a vital tool for businesses to build brand authority, engage audiences, and drive conversions. This blog explores the latest strategies that make content marketing impactful in today’s fast-paced digital world.',
-    heading1: "The Shift Toward Value-Driven Content",
-    description1: "Audiences today seek more than just product information; they want content that educates, entertains, or solves a problem. Value-driven content focuses on meeting these needs, offering information that users genuinely find beneficial. Brands that produce valuable, educational content build credibility and trust with their audience, positioning themselves as industry experts. For businesses, this means focusing less on self-promotion and more on delivering high-quality, relevant content that resonates with their audience's interests and concerns. This approach not only attracts users but also keeps them coming back, deepening their connection with the brand.",
-    heading2: "Incorporating Visual and Interactive Content",
-    description2: "With attention spans shrinking, visual and interactive content has become essential in capturing audience interest. Interactive elements like quizzes, polls, and infographics engage users directly, making them active participants rather than passive viewers. Video content, in particular, is more popular than ever and offers a dynamic way to present information that can’t be easily conveyed through text alone. By incorporating these visual and interactive elements, brands can make their content more engaging and memorable, creating a lasting impression on the audience.",
-    heading3: "Leveraging User-Generated Content for Authenticity ",
-    description3: "User-generated content (UGC) is a powerful way to build authenticity and foster community. When customers share their experiences with a brand’s products or services, it creates genuine, relatable content that potential customers find trustworthy. Encouraging users to create and share content, whether through social media posts, reviews, or testimonials, adds credibility to the brand and shows that it values its community. UGC not only strengthens brand image but also serves as social proof, encouraging others to engage with and trust the brand."
-  },
+ 
   // Add more blogs as necessary
 ];
 
@@ -73,11 +61,11 @@ const NewsCard = () => {
 
 
   return (
-    <div className='mt-40'>
+    <div className='mt-20 animate-fade-up duration-1000'>
       <div className='w-11/12 mx-auto'>
         <h1 className='text-2xl uppercase font-Switzer-Medium md:text-4xl lg:text-5xl'>From the journal</h1>
       </div>
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 w-11/12 mx-auto">
 
         {blogs.map((blog) => (
           <div
