@@ -23,7 +23,7 @@ const ProjectDetails = () => {
                         <h1 className="text-2xl font-bold  xl:text-6xl font-Switzer-Regular uppercase">{selectedProject.name}</h1>
                     </div>
                     <div className='h-96 sm:h-112 md:h-144 xl:h-192'>
-                        <img src={selectedProject.image} alt={selectedProject.name} className='w-full h-full object-cover rounded-xl' />
+                        <img src={selectedProject.image} alt={selectedProject.name} className='w-full h-full object-cover ' />
                     </div>
                 </div>
             </div>

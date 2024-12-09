@@ -1,8 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import img from "../../assets/Images/product1.jpeg";
-import news1 from "../../assets/Images/new1.jpeg";
-import news2 from "../../assets/Images/news2.jpeg"
-
+import news2 from "../../assets/Images/News2.webp"
+import news1 from "../../assets/Images/News.webp"
+import news3 from "../../assets/Images/News3.webp"
 
 const blogs = [
   {
@@ -35,7 +34,7 @@ const blogs = [
     id: 3,
     title: 'Top Digital Design Trends Shaping 2024',
     date: "07 October / 9 min read",
-    imageUrl: img,
+    imageUrl: news3,
     content: 'Digital design is constantly evolving, with new trends emerging each year to keep up with advancements in technology and shifts in user preferences. In 2024, digital design continues to prioritize user experience and accessibility, creating visually engaging spaces that encourage interaction. Understanding these trends can help brands stay relevant, connect with their audience, and deliver memorable digital experiences',
     heading1: "Immersive 3D Design and Animation",
     description1: "The use of 3D elements in digital design has grown significantly, transforming simple interfaces into immersive experiences. These design elements give depth and realism to websites and apps, engaging users and encouraging exploration. By incorporating subtle animations, brands create a sense of interactivity that draws users deeper into their content. When used effectively, 3D designs don’t just enhance aesthetics; they offer users a richer experience, making the digital journey feel more lifelike and engaging.",

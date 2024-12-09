@@ -59,7 +59,7 @@ const AboutBanner = () => {
 
                 <div className='mt-40  space-y-6 md:space-y-0 md:flex'>
                     <div className='md:w-1/2'>
-                        <h2 className='font-Switzer-Light text-sm  text-gray xl:text-xl'>Our Services</h2>
+                        <h2 className='font-Switzer-Medium text-sm  text-gray3 xl:text-xl'>Our Services</h2>
                     </div>
                     <div className='md:w-1/2'>
                         <div className=''>

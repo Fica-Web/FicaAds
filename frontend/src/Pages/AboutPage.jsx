@@ -6,6 +6,7 @@ import Story from '../Components/About/Story'
 import Podcast from '../Components/About/Podcast'
 import AboutHiring from '../Components/About/AboutHiring'
 import NavBar from '../Components/NavBar/NavBar'
+import { Team } from '../Components/About/Team';
 
 const AboutPage = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const AboutPage = () => {
       <AboutBanner/>
       <AboutHero/>
       <Story />
+      <Team />
       <Podcast />
       <AboutHiring />
     </div>

@@ -47,7 +47,7 @@ const NavBar = () => {
               {item.name === "Contact" ? (
                 <Link
                   to={item.link}
-                  className="bg-black text-white py-2 px-4 rounded-md hover:bg-blue-600 duration-300"
+                  className="bg-black text-white py-2 px-4 rounded-md hover:bg-gray3 duration-300"
                   onClick={() => setOpen(false)} // Close menu after clicking the button
                 >
                   {item.name}
