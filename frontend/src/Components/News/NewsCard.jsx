@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import news2 from "../../assets/Images/News2.webp"
 import news1 from "../../assets/Images/News.webp"
-import news3 from "../../assets/Images/News3.webp"
+import news3 from "../../assets/Images/food.webp"
 
 const blogs = [
   {

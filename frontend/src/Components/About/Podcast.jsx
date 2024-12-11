@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from '../../assets/Images/podcast.jpg'
+import img1 from '../../assets/Images/Podcast.webp'
 
 const Podcast = () => {
   return (

@@ -1,5 +1,6 @@
 import React from 'react'
-import employee from "../../assets/Images/employee.jpg"
+import employee from "../../assets/Images/event3.webp"
+import { Link } from 'react-router-dom'
 
 const Internship = () => {
   return (
@@ -14,7 +15,7 @@ const Internship = () => {
                         <h1 className='font-Switzer-Medium uppercase  text-2xl md:text-3xl '>Student Opportunities</h1>
                         <h3 className='font-Switzer-Light text-gray3 mt-4 text-sm xl:text-lg'>"Join our internship program to gain hands-on experience, work on real projects, and build a strong foundation for your career."</h3>
                         <button className='font-Switzer-Medium bg-gray mt-4 rounded-lg h-8 px-4 text-sm '>
-                                <a href="/about">Apply Now</a>
+                                <Link to="/contact">Apply Now</Link>
                             </button>
                     </div>
                 </div>

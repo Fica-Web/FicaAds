@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { selectedProject, setProjects } from "../../Reducer/projectSlice";
 
-import img3 from "../../assets/Images/product1.jpeg";
+
 import project1 from "../../assets/Images/project1.jpeg";
 import project2 from "../../assets/Images/project2.jpeg";
 
@@ -19,10 +19,10 @@ const Projects = () => {
       {
         id: 1,
         image: project1,
-        image2: img3,
-        image3: img3,
-        image4: img3,
-        image5: img3,
+        image2:  project1,
+        image3:  project1,
+        image4:  project1,
+        image5:  project1,
         year: "2024",
         category: "Identity",
         title: "Product",
@@ -36,10 +36,10 @@ const Projects = () => {
       {
         id: 2,
         image: project2,
-        image2: img3,
-        image3: img3,
-        image4: img3,
-        image5: img3,
+        image2:  project1,
+        image3:  project1,
+        image4:  project1,
+        image5:  project1,
         year: "2024",
         category: "Campaign",
         title: "Ice cream branding",

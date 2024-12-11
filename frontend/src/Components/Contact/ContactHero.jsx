@@ -10,7 +10,7 @@ const ContactHero = () => {
                     <p className='font-Switzer-Light text-gray'>Get In Touch</p>
                     <h1 className='font-Switzer-Medium uppercase text-white text-3xl md:text-4xl lg:text-5xl'>Lets start the<br></br> conversation.</h1>
                 </div>
-                <div className='h-96'>
+                <div className='h-96 lg:h-160'>
                     <img src={conn} alt='' className='w-full h-full' />
                 </div>
                 <div className='w-11/12 mt-10 sm:h-64 sm:pt-10 mx-auto   space-y-10 sm:space-y-0 sm:flex sm:space-x-10'>

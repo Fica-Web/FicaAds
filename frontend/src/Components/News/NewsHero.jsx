@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import news1 from "../../assets/Images/new1.jpeg";
+import news1 from "../../assets/Images/model.webp";
 
 const NewsHero = () => {
   return (

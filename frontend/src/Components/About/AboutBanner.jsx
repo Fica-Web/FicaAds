@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import img1 from '../../assets/Images/about1.jpg';
+import img1 from '../../assets/Images/Car2 .webp';
 
 
 const AboutBanner = () => {
@@ -41,7 +41,7 @@ const AboutBanner = () => {
             <div className='w-11/12 mx-auto '>
                 <div className=''>
                     <div className=''>
-                        <div className='w-full h-96 lg:h-screen animate-fade-up duration-1000'>
+                        <div className='w-full h-96 lg:h-128 animate-fade-up duration-1000'>
                             <img
                                 src={img1}
                                 alt='About Banner'

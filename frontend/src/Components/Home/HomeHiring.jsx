@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from "../../assets/Images/Blue.webp"
+import img1 from "../../assets/Images/home5.jpg"
 
 
 const HomeHiring = () => {
