@@ -9,7 +9,7 @@ import JobListings from '../Components/Careers/JobListings'
 
 const CareersPage = () => {
     useEffect(() => {
-        window.scrollTo(0, 0); // Resets scroll to the top of the page
+        window.scrollTo(0, 0);
       }, []);
   return (
     <div>

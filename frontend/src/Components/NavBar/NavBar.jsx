@@ -17,9 +17,9 @@ const NavBar = () => {
 
   return (
     <div className="w-11/12 mx-auto top-0 left-0 z-10">
-      <div className="md:flex items-center justify-between py-4  relative">
+      <div className="md:flex items-center justify-between py-4 relative">
         {/* Logo Section */}
-        <div className="w-20  lg:w-20 flex-shrink-0">
+        <div className="w-20 lg:w-20 flex-shrink-0">
           <img src={logo} alt="Fica Logo" />
         </div>
 
@@ -37,7 +37,7 @@ const NavBar = () => {
             lg:z-auto z-20 left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in-out
             ${open ? "top-16 opacity-100" : "top-[-490px]"} lg:opacity-100 opacity-0`}
         >
-          {Links.map((item, index) => (
+          {Links.map((item) => (
             <li
               key={item.name}
               className={`lg:ml-8 lg:text-sm xl:text-sm font-Switzer-Medium uppercase lg:my-0 my-7 ${
@@ -47,7 +47,7 @@ const NavBar = () => {
               {item.name === "Contact" ? (
                 <Link
                   to={item.link}
-                  className="bg-black text-white py-2 px-4 rounded-md hover:bg-gray3 duration-300"
+                  className="bg-black text-white py-2 px-4 rounded-md hover:bg-gray-300 duration-300"
                   onClick={() => setOpen(false)} // Close menu after clicking the button
                 >
                   {item.name}
@@ -55,10 +55,14 @@ const NavBar = () => {
               ) : (
                 <Link
                   to={item.link}
-                  className="text-black hover:text-gray-400 duration-500"
+                  className="relative text-black hover:text-gray-400 duration-500 group"
                   onClick={() => setOpen(false)} // Close menu after clicking a link
                 >
                   {item.name}
+                  {/* Animated underline */}
+                  <span
+                    className="absolute left-0 bottom-[-2px] w-0 h-0.5 bg-black transition-all duration-500 group-hover:w-full"
+                  ></span>
                 </Link>
               )}
             </li>
@@ -70,4 +74,5 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
 
