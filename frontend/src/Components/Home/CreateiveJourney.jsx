@@ -15,7 +15,7 @@ const CreateiveJourney = () => {
                         <p className='font-Switzer-Light text-gray3 text-sm lg:text-base'>Who we Are</p>
                         <h1 className='font-Switzer-Medium uppercase  text-2xl md:text-3xl '>A Creative journey</h1>
                         <h3 className='font-Switzer-Light text-gray3 mt-4 text-sm xl:text-lg'>A dynamic space where imagination knows no bounds and experimentation is celebrated</h3>
-                        <button className='font-Switzer-Medium backdrop-blur-md bg-black/40 mt-4 rounded-lg h-8 px-4 text-sm '>
+                        <button className='font-Switzer-Medium  bg-gray3 mt-4 rounded-lg h-8 px-4 text-sm '>
                                 <Link to='/about'>About Us</Link>
                             </button>
                     </div>

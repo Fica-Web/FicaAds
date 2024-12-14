@@ -10,7 +10,7 @@ const ProjectPage = () => {
   return (
     <div>
       <NavBar/>
-        <Projects />
+      <Projects showFullContent={true} /> 
     </div>
   )
 }

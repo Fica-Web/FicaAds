@@ -11,7 +11,7 @@ const Footer = () => {
             Subscribe to our newsletter<br />and stay in touch with us
           </p>
 
-          <div className='flex items-center mt-4 bg-gray3 rounded-lg w-full md:w-11/12 xl:w-1/2'>
+          <div className='flex items-center mt-4 bg-gray4 rounded-lg w-full md:w-11/12 xl:w-1/2'>
             <input
               type='text'
               placeholder='hello@ficaads.com'

@@ -19,12 +19,12 @@ const ProjectDetails = () => {
              <NavBar/>
             <div className="mt-6">
                 <div className='bg-primary relative'>
-                    <div className="absolute top-32 space-y-2 md:top-56 lg:top-56 xl:top-56 left-0 w-full h-full  text-white flex flex-col justify-center  p-4 rounded-xl">
+                    <div className="absolute top-32 space-y-2 md:top-56 lg:top-56 xl:top-62 left-0 w-full h-full  text-white flex flex-col justify-center  p-4 rounded-xl">
 
                         <h2 className="text-sm font-bold  xl:text-2xl font-Switzer-Light">{selectedProject.title}</h2>
                         <h1 className="text-2xl font-bold  xl:text-6xl font-Switzer-Regular uppercase">{selectedProject.name}</h1>
                     </div>
-                    <div className='h-96 sm:h-112 md:h-144 xl:h-192'>
+                    <div className='h-96 sm:h-112 md:h-144 xl:h-176'>
                         <img src={selectedProject.image} alt={selectedProject.name} className='w-full h-full object-cover ' />
                     </div>
                 </div>
