@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { selectedProject, setProjects } from "../../Reducer/projectSlice";
+import { Link } from "react-router-dom";
 
 
 import pro11 from "../../assets/Images/P01.jpg"
@@ -57,8 +58,24 @@ import pro66 from "../../assets/Images/Project66.jpg"
 import pro67 from "../../assets/Images/Project67.jpg"
 import pro68 from "../../assets/Images/Project68.jpg"
 
+import pro71 from "../../assets/Images/Project71.jpg"
+import pro72 from "../../assets/Images/Project72.jpg"
+import pro73 from "../../assets/Images/Project73.jpg"
+import pro74 from "../../assets/Images/Project74.jpg"
+import pro75 from "../../assets/Images/Project75.jpg"
+import pro76 from "../../assets/Images/Project76.jpg"
+import pro77 from "../../assets/Images/Project77.jpg"
+import pro78 from "../../assets/Images/Project78.jpg"
 
-const Projects = ({ showFullContent = true, limit = null  }) => {
+import pro81 from "../../assets/Images/Project81.jpg"
+import pro82 from "../../assets/Images/Project82.jpg"
+import pro83 from "../../assets/Images/Project83.jpg"
+import pro84 from "../../assets/Images/Project84.jpg"
+import pro85 from "../../assets/Images/Project85.jpg"
+import pro86 from "../../assets/Images/Project86.jpg"
+
+
+const Projects = ({ showFullContent = true, limit = null, showbutton = true }) => {
   const projects = useSelector((state) => state.projects.projects);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -70,10 +87,10 @@ const Projects = ({ showFullContent = true, limit = null  }) => {
       {
         id: 1,
         image: pro41,
-        image2:  pro42,
-        image3:  pro45,
-        image4:  pro43,
-        image5:  pro44,
+        image2: pro42,
+        image3: pro45,
+        image4: pro43,
+        image5: pro44,
         image6: pro46,
         image7: pro47,
         image8: pro48,
@@ -92,10 +109,10 @@ const Projects = ({ showFullContent = true, limit = null  }) => {
       {
         id: 2,
         image: pro11,
-        image2:  pro12,
-        image3:  pro13,
-        image4:  pro14,
-        image5:  pro15,
+        image2: pro12,
+        image3: pro13,
+        image4: pro14,
+        image5: pro15,
         image6: pro16,
         image7: pro17,
         image8: pro18,
@@ -111,19 +128,19 @@ const Projects = ({ showFullContent = true, limit = null  }) => {
           "At the heart of our construction projects is a commitment to building more than structures—we build trust, innovation, and lasting value. Every blueprint is inspired by our clients' vision, brought to life with precision and expertise.",
         founder: "Urban Hive",
       },
-      
+
       {
         id: 3,
         image: pro36,
-        image2:  pro31,
-        image3:  pro32,
-        image4:  pro34,
-        image5:  pro35,
+        image2: pro31,
+        image3: pro32,
+        image4: pro34,
+        image5: pro35,
         image6: pro33,
         image7: pro37,
         image8: pro38,
         year: "2024",
-        category: "Identity",
+        category: "Digital",
         title: "Mobile",
         name: "Iphone 14",
         description:
@@ -137,15 +154,15 @@ const Projects = ({ showFullContent = true, limit = null  }) => {
       {
         id: 4,
         image: pro21,
-        image2:  pro22,
-        image3:  pro25,
-        image4:  pro23,
-        image5:  pro24,
-        image6: pro26,
+        image2: pro25,
+        image3: pro22,
+        image4: pro23,
+        image5: pro24,
+        image6: pro28,
         image7: pro27,
-        image8: pro28,
+        image8: pro26,
         year: "2024",
-        category: "Campaign",
+        category: "Identity",
         title: "Sports wear, Clothing",
         name: "Run X",
         description:
@@ -160,10 +177,10 @@ const Projects = ({ showFullContent = true, limit = null  }) => {
       {
         id: 5,
         image: pro51,
-        image2:  pro52,
-        image3:  pro53,
-        image4:  pro54,
-        image5:  pro56,
+        image2: pro52,
+        image3: pro53,
+        image4: pro54,
+        image5: pro56,
         image6: pro55,
         image7: pro57,
         image8: pro51,
@@ -183,15 +200,15 @@ const Projects = ({ showFullContent = true, limit = null  }) => {
       {
         id: 6,
         image: pro61,
-        image2:  pro62,
-        image3:  pro67,
-        image4:  pro64,
-        image5:  pro65,
+        image2: pro62,
+        image3: pro67,
+        image4: pro64,
+        image5: pro65,
         image6: pro68,
         image7: pro63,
         image8: pro66,
         year: "2023",
-        category: "Campaign",
+        category: "Digital",
         title: "Car",
         name: "Bentley",
         description:
@@ -202,8 +219,50 @@ const Projects = ({ showFullContent = true, limit = null  }) => {
           "Each car is engineered with precision using the latest technologies and materials to ensure superior performance, comfort, and durability. We focus on creating vehicles that offer an unparalleled driving experience, with attention to every detail. Constantly innovating, we strive to redefine automotive excellence, meeting the needs of those who demand the best in luxury and performance.",
         founder: "Bentley",
       },
-      
-      
+      {
+        id: 7,
+        image: pro71,
+        image2: pro72,
+        image3: pro73,
+        image4: pro74,
+        image5: pro75,
+        image6: pro76,
+        image7: pro77,
+        image8: pro78,
+        year: "2023",
+        category: "Identity",
+        title: "Restaurant",
+        name: "Flavaro",
+        description:
+          "Flavaro is a distinguished premium restaurant and cafe, positioning itself as a haven for those who seek refined and exceptional dining experiences. Combining culinary artistry, innovative flavors, and impeccable service, we offers an exquisite gastronomic journey that tantalizes the senses and captivates the soul At Flavaro, we promise an enchanting experience where delectable flavors dance on the palate, each dish is a canvas of creativity, and moments of joy are created and cherished.",
+        description2:
+          "Our commitment to excellence, innovation, and warm hospitality ensures that every visit to Flavaro is a celebration of indulgence and sophistication.",
+        feedback:
+          "The branding work exceeded our expectations! It perfectly reflects our restaurant's essence, creating a strong and memorable identity that our customers love.",
+        founder: "Flavaro",
+      },
+
+      {
+        id: 8,
+        image: pro81,
+        image2: pro82,
+        image3: pro83,
+        image4: pro84,
+        image5: pro85,
+        image6: pro86,
+        
+        year: "2023",
+        category: "Identity",
+        title: "Restaurant",
+        name: "Flavaro",
+        description:
+          "Flavaro is a distinguished premium restaurant and cafe, positioning itself as a haven for those who seek refined and exceptional dining experiences. Combining culinary artistry, innovative flavors, and impeccable service, we offers an exquisite gastronomic journey that tantalizes the senses and captivates the soul At Flavaro, we promise an enchanting experience where delectable flavors dance on the palate, each dish is a canvas of creativity, and moments of joy are created and cherished.",
+        description2:
+          "Our commitment to excellence, innovation, and warm hospitality ensures that every visit to Flavaro is a celebration of indulgence and sophistication.",
+        feedback:
+          "The branding work exceeded our expectations! It perfectly reflects our restaurant's essence, creating a strong and memorable identity that our customers love.",
+        founder: "Flavaro",
+      },
     ];
     dispatch(setProjects(fetchedProjects));
   }, [dispatch]);
@@ -224,79 +283,94 @@ const Projects = ({ showFullContent = true, limit = null  }) => {
 
   const displayedProjects = limit ? filteredProjects.slice(0, limit) : filteredProjects;
 
-  
+
 
   return (
     <div className="mt-20 mb-10">
-    <div className="w-11/12 mx-auto">
-      {showFullContent && (
-        <>
-          <div className="space-y-2">
-            <h1 className="uppercase font-Switzer-Medium text-4xl">
-              Case Studies
-            </h1>
-            <div className="space-x-2 space-y-2">
-              {["All", "Identity", "Strategy", "Campaign", "Digital"].map(
-                (category) => (
-                  <button
-                    key={category}
-                    className={`rounded-xl p-2 px-4 font-Switzer-Light ${
-                      selectedCategory === category
-                        ? "bg-black text-white"
-                        : "bg-gray text-black"
-                    }`}
-                    onClick={() => handleCategoryChange(category)}
-                  >
-                    {category}
-                  </button>
-                )
-              )}
-            </div>
-          </div>
-        </>
-      )}
-
-      <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 animate-fade-up duration-1000">
-        {displayedProjects.map((project) => (
-          <div
-            key={project.id}
-            className="relative group bg-primary rounded-xl overflow-hidden"
-          >
-            {/* Image */}
-            <img
-              src={project.image}
-              alt={project.name}
-              className="w-full h-120 lg:h-160 object-cover rounded-xl transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
-            />
-
-            {/* Content Container */}
-            <div className="absolute bottom-2 left-4 space-y-2 opacity-100 group-hover:translate-y-[-10px] group-hover:opacity-100 transition-all duration-300">
-              {/* Title and Name */}
-              <div>
-                <h2 className="text-sm text-gray3 font-Switzer-Light">
-                  {project.title}
-                </h2>
-                <h1 className="text-white text-2xl font-Switzer-Regular">
-                  {project.name}
-                </h1>
+      <div className="w-11/12 mx-auto">
+        {showFullContent && (
+          <>
+            <div className="space-y-2">
+              <h1 className="uppercase font-Switzer-Medium text-4xl">
+                Case Studies
+              </h1>
+              <div className="space-x-2 space-y-2 flex flex-wrap">
+                {["All", "Identity", "Strategy", "Campaign", "Digital"].map(
+                  (category) => (
+                    <button
+                      key={category}
+                      className={`rounded-xl p-2 px-2 lg:px-4 font-Switzer-Light text-xs ${
+                        selectedCategory === category
+                          ? "bg-black text-white"
+                          : "bg-gray5 text-black"
+                      }`}
+                      onClick={() => handleCategoryChange(category)}
+                    >
+                      {category}
+                    </button>
+                  )
+                )}
               </div>
-              {/* Button */}
-              
-                <button
-                  className="backdrop-blur-md  bg-gray3/20 text-white font-Switzer-Medium rounded-xl h-10 p-2 px-4 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  onClick={() => handleViewProject(project.id)}
-                >
-                  View Project
-                </button>
-            
             </div>
+          </>
+        )}
+
+        <div className="mt-6 lg:mt-10 grid grid-cols-1 gap-2 md:grid-cols-2 xl:grid-cols-3 animate-fade-up duration-1000">
+          {displayedProjects.map((project) => {
+            // Conditional size class for specific projects
+            let sizeClass = '';
+            if (project.id === 4 || project.id === 9 || project.id === 12) {
+              sizeClass = 'xl:col-span-2'; // Makes the 4th, 8th, and 12th projects larger
+            }
+
+            return (
+              <div
+                key={project.id}
+                className={`relative group bg-primary rounded-xl overflow-hidden ${sizeClass}`}
+              >
+                {/* Image */}
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full h-120 lg:h-160 object-cover rounded-xl transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
+                />
+
+                {/* Content Container */}
+                <div className="absolute bottom-[-2px] left-4 space-y-2 opacity-100 group-hover:translate-y-[-10px] group-hover:opacity-100 transition-all duration-300">
+                  {/* Title and Name */}
+                  <div>
+                    <h2 className="text-sm text-gray3 font-Switzer-Light">
+                      {project.title}
+                    </h2>
+                    <h1 className="text-white text-2xl font-Switzer-Regular">
+                      {project.name}
+                    </h1>
+                  </div>
+                  {/* Button */}
+                  <button
+                    className="backdrop-blur-md bg-gray3/20 text-white font-Switzer-Medium rounded-xl h-10 p-2 px-4 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    onClick={() => handleViewProject(project.id)}
+                  >
+                    View Project
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {showbutton && (
+          <div className="mt-4 lg:mt-8 flex justify-end">
+            <Link to={'/project'}>
+              <button className="backdrop-blur-md bg-black/20 font-Switzer-Medium mt-4 rounded-lg h-8 px-6 text-sm">
+                View Project
+              </button>
+            </Link>
           </div>
-        ))}
+        )}
       </div>
     </div>
-  </div>
-);
+  );
 };
-
 
 export default Projects;

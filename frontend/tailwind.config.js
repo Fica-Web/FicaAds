@@ -27,6 +27,7 @@ export default {
         gray2: "#b0b3b8",
         gray3:"#a7a9ac",
         gray4: "#929496",
+        gray5: "#ebebeb",
         lightgray:"#656661",
         offwhite: "#f0edea",
         primary: "#FFF0CC",

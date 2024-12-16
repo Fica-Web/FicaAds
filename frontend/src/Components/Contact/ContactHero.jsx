@@ -6,21 +6,21 @@ const ContactHero = () => {
     return (
         <div className='mt-4 animate-fade-up duration-1000'>
             <div className='bg-black'>
-                <div className=' w-11/12 mx-auto  h-56 pt-24 space-y-2 lg:h-64 xl:h-72 xl:pt-28'>
+                <div className=' w-11/12 mx-auto  h-56 pt-24 space-y-2 lg:h-64 xl:h-96 xl:pt-48'>
                     <p className='font-Switzer-Light text-gray'>Get In Touch</p>
                     <h1 className='font-Switzer-Medium uppercase text-white text-3xl md:text-4xl lg:text-5xl'>Lets start the<br></br> conversation.</h1>
                 </div>
                 <div className='h-96 lg:h-160'>
                     <img src={conn} alt='' className='w-full h-full' />
                 </div>
-                <div className='w-11/12 mt-10 sm:h-64 sm:pt-10 mx-auto   space-y-10 sm:space-y-0 sm:flex sm:space-x-10'>
+                <div className=' w-11/12 mt-10 sm:h-64 sm:pt-10 mx-auto   space-y-10 sm:space-y-0 sm:flex sm:space-x-10'>
                     <div className=' sm:w-1/3'>
                         <h1 className='font-Switzer-Medium text-3xl text-white lg:text-4xl xl:text-2xl'>Dubai</h1>
                         <h2 className='mt-4 font-Switzer-Regular text-white lg:text-lg xl:text-lg'>050 7878658</h2>
                         <h2 className='font-Switzer-Regular text-white lg:text-lg xl:text-lg'>hello@ficaads.com</h2>
                         <h3 className='mt-2 font-Switzer-Regular text-gray lg:text-lg xl:text-lg'>Al Naha Dubai-<br></br>United Arab Emirate</h3>
                     </div>
-                    <div className='sm:w-1/3'>
+                    <div className='sm:w-1/3 lg:pl-14'>
                         <h1 className='font-Switzer-Medium text-3xl text-white lg:text-4xl xl:text-2xl'>Calicut</h1>
                         <h2 className='mt-4 font-Switzer-Regular text-white lg:text-lg xl:text-lg'>+91 8086555918</h2>
                         <h2 className='font-Switzer-Regular text-white lg:text-lg xl:text-lg'>hello@ficaads.com</h2>

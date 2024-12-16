@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const CreateiveJourney = () => {
     return (
-        <div className='mt-10'>
+        <div className='mt-26 lg:mt-32'>
             <div className=' w-11/12  mx-auto space-y-4 md:space-y-0 md:flex md:space-x-4 lg:space-x-20'>
                 <div className='h-119 xl:h-160 lg:w-1/2'>
                     <img src={creative} alt='' className='w-full h-full object-cover rounded-xl' />

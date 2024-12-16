@@ -12,7 +12,7 @@ const HomePage = () => {
     <div>
       <NavBar />
       <Hero />
-      <Projects showFullContent={false} limit={3} />
+      <Projects showFullContent={false} limit={3} showbutton={true}/>
        <CreateiveJourney />
 
        <HomeNews />

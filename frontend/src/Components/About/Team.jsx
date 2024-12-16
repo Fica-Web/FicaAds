@@ -18,7 +18,7 @@ const teams = [
 
 export const Team = () => {
   return (
-    <div className='mt-20 animate-fade-up duration-1000'>
+    <div className='mt-28 lg:mt-40 animate-fade-up duration-1000'>
       <div className='w-11/12 mx-auto'>
         <h1 className='text-2xl uppercase font-Switzer-Medium md:text-4xl lg:text-5xl'>Meet the team</h1>
       </div>

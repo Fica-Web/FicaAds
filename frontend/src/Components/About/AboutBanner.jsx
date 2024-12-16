@@ -41,7 +41,7 @@ const AboutBanner = () => {
             <div className='w-11/12 mx-auto '>
                 <div className=''>
                     <div className=''>
-                        <div className='w-full h-96 lg:h-screen animate-fade-up duration-1000'>
+                        <div className='w-full h-96 lg:h-124 animate-fade-up duration-1000'>
                             <img
                                 src={img1}
                                 alt='About Banner'
@@ -57,7 +57,7 @@ const AboutBanner = () => {
 
                 </div>
 
-                <div className='mt-40  space-y-6 md:space-y-0 md:flex'>
+                <div className='mt-28 lg:mt-40   space-y-6 md:space-y-0 md:flex'>
                     <div className='md:w-1/2'>
                         <h2 className='font-Switzer-Medium text-sm  text-gray3 xl:text-xl'>Our Services</h2>
                     </div>

@@ -16,10 +16,10 @@ const ProjectDetails = () => {
 
     return (
         <div className=''>
-             <NavBar/>
+            <NavBar />
             <div className="mt-6">
                 <div className='bg-primary relative'>
-                    <div className="absolute top-32 space-y-2 md:top-56 lg:top-56 xl:top-62 left-0 w-full h-full  text-white flex flex-col justify-center  p-4 rounded-xl">
+                    <div className=" absolute top-32 space-y-2 md:top-56 lg:top-56 xl:top-62 left-0 md:left-6 xl:left-12 w-10/12 h-full   text-white flex flex-col justify-center  p-4 rounded-xl">
 
                         <h2 className="text-sm font-bold  xl:text-2xl font-Switzer-Light">{selectedProject.title}</h2>
                         <h1 className="text-2xl font-bold  xl:text-6xl font-Switzer-Regular uppercase">{selectedProject.name}</h1>
@@ -37,7 +37,7 @@ const ProjectDetails = () => {
                     </div>
                     <div className='lg:w-1/2  xl:w-1/3 '>
                         <p className='font-Switzer-Medium text-gray text-sm lg:text-base'>Industry</p>
-                        <button className='border-2 border-black px-2 py-1  rounded-lg text-base lg:text-sm'>{selectedProject.title}</button>
+                        <button className='mt-2 border-2 border-black px-2 py-1  rounded-lg text-base lg:text-sm'>{selectedProject.title}</button>
                         <p className='font-Switzer-Medium text-gray mt-4 text-sm lg:text-base'>Year</p>
                         <p className='font-Switzer-Light text-base lg:text-sm'>{selectedProject.year}</p>
                     </div>
@@ -70,9 +70,13 @@ const ProjectDetails = () => {
                 </div>
 
 
-                <div className='pt-16 pb-20 space-y-6  md:mt-0 md:w-2/3 lg:w-1/2 xl:w-1/3 '>
+                <div className='pt-16 pb-20 space-y-6 md:mt-0 md:w-2/3 lg:w-1/2 xl:w-1/3 ml-auto'>
                     <p className='font-Switzer-Medium text-sm xl:text-base'>{selectedProject.feedback}</p>
-                    <p className='font-Switzer-Medium text-lg xl:text-base'>{selectedProject.founder}<br></br><span className='text-gray text-sm xl:text-base'>Founder</span></p>
+                    <p className='font-Switzer-Medium text-lg xl:text-base'>
+                        {selectedProject.founder}
+                        <br />
+                        <span className='text-gray text-sm xl:text-base'>Founder</span>
+                    </p>
                 </div>
 
             </div>

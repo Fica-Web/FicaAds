@@ -2,7 +2,7 @@ import React from 'react'
 
 const Story = () => {
     return (
-        <div className='mt-40'>
+        <div className='mt-28 lg:mt-40'>
             <div className='w-11/12  mx-auto sm:flex'>
                 <div className='md:w-1/3'>
                     <h1 className='font-Switzer-Medium uppercase text-2xl lg:text-4xl'>Our story</h1>
