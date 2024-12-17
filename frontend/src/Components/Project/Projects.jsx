@@ -28,9 +28,10 @@ import pro32 from "../../assets/Images/Project32.jpg"
 import pro33 from "../../assets/Images/Project33.jpg"
 import pro34 from "../../assets/Images/Project34.jpg"
 import pro35 from "../../assets/Images/Project35.jpg"
-import pro36 from "../../assets/Images/Project36.jpg"
+import pro36 from "../../assets/Images/PURPLE ANIMATION.mp4"
 import pro37 from "../../assets/Images/Project37.jpg"
 import pro38 from "../../assets/Images/Project38.jpg"
+
 
 import pro41 from "../../assets/Images/Project41.jpg"
 import pro42 from "../../assets/Images/Project42.jpg"
@@ -74,6 +75,14 @@ import pro84 from "../../assets/Images/Project84.jpg"
 import pro85 from "../../assets/Images/Project85.jpg"
 import pro86 from "../../assets/Images/Project86.jpg"
 
+import pro91 from "../../assets/Images/Project91.jpg"
+import pro92 from "../../assets/Images/Project92.jpg"
+import pro93 from "../../assets/Images/Project93.jpg"
+import pro94 from "../../assets/Images/Project94.jpg"
+import pro95 from "../../assets/Images/Project95.jpg"
+import pro96 from "../../assets/Images/Project96.png"
+import pro97 from "../../assets/Images/Project97.png"
+
 
 const Projects = ({ showFullContent = true, limit = null, showbutton = true }) => {
   const projects = useSelector((state) => state.projects.projects);
@@ -86,6 +95,7 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
     const fetchedProjects = [
       {
         id: 1,
+        type: "image",
         image: pro41,
         image2: pro42,
         image3: pro45,
@@ -108,6 +118,30 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
       },
       {
         id: 2,
+        type: "video",
+        image: pro36,
+        image2: pro31,
+        image3: pro32,
+        image4: pro34,
+        image5: pro35,
+        image6: pro33,
+        image7: pro37,
+        image8: pro38,
+        year: "2024",
+        category: "Digital",
+        title: "Mobile",
+        name: "Iphone 14",
+        description:
+          "Experience the iPhone 14 Pro in 3D .Explore a meticulously crafted 3D visualization of the iPhone 14 Pro, highlighting its elegant design, refined details, and innovative features. ",
+        description2:
+          "This professional-grade model showcases the device with precision, making it ideal for marketing, product presentations, and high-quality creative projects.",
+        feedback:
+          "With the iPhone 14, our 3D visualization brings every detail to life—from its sleek design to its cutting-edge features. It's more than just a phone; it's a masterpiece of innovation and craftsmanship, showcased like never before.",
+        founder: "Visualization Team",
+      },
+      {
+        id: 3,
+        type: "image",
         image: pro11,
         image2: pro12,
         image3: pro13,
@@ -130,29 +164,8 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
       },
 
       {
-        id: 3,
-        image: pro36,
-        image2: pro31,
-        image3: pro32,
-        image4: pro34,
-        image5: pro35,
-        image6: pro33,
-        image7: pro37,
-        image8: pro38,
-        year: "2024",
-        category: "Digital",
-        title: "Mobile",
-        name: "Iphone 14",
-        description:
-          "Experience the iPhone 14 Pro in 3D .Explore a meticulously crafted 3D visualization of the iPhone 14 Pro, highlighting its elegant design, refined details, and innovative features. ",
-        description2:
-          "This professional-grade model showcases the device with precision, making it ideal for marketing, product presentations, and high-quality creative projects.",
-        feedback:
-          "With the iPhone 14, our 3D visualization brings every detail to life—from its sleek design to its cutting-edge features. It's more than just a phone; it's a masterpiece of innovation and craftsmanship, showcased like never before.",
-        founder: "Visualization Team",
-      },
-      {
         id: 4,
+        type: "image",
         image: pro21,
         image2: pro25,
         image3: pro22,
@@ -176,6 +189,7 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
 
       {
         id: 5,
+        type: "image",
         image: pro51,
         image2: pro52,
         image3: pro53,
@@ -199,6 +213,7 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
 
       {
         id: 6,
+        type: "image",
         image: pro61,
         image2: pro62,
         image3: pro67,
@@ -221,6 +236,7 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
       },
       {
         id: 7,
+        type: "image",
         image: pro71,
         image2: pro72,
         image3: pro73,
@@ -241,9 +257,9 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
           "The branding work exceeded our expectations! It perfectly reflects our restaurant's essence, creating a strong and memorable identity that our customers love.",
         founder: "Flavaro",
       },
-
       {
         id: 8,
+        type: "image",
         image: pro81,
         image2: pro82,
         image3: pro83,
@@ -252,16 +268,40 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
         image6: pro86,
         
         year: "2023",
-        category: "Identity",
-        title: "Restaurant",
-        name: "Flavaro",
+        category: "Campaign",
+        title: "Campaign",
+        name: "Environment Day",
         description:
-          "Flavaro is a distinguished premium restaurant and cafe, positioning itself as a haven for those who seek refined and exceptional dining experiences. Combining culinary artistry, innovative flavors, and impeccable service, we offers an exquisite gastronomic journey that tantalizes the senses and captivates the soul At Flavaro, we promise an enchanting experience where delectable flavors dance on the palate, each dish is a canvas of creativity, and moments of joy are created and cherished.",
+          "Environment Day highlights the urgent need to protect and preserve our planet through sustainable actions. It serves as a reminder of the importance of reducing waste, conserving resources, and fostering a greener, healthier environment for future generations.",
         description2:
-          "Our commitment to excellence, innovation, and warm hospitality ensures that every visit to Flavaro is a celebration of indulgence and sophistication.",
+          "This campaign emphasizes collective responsibility and the power of meaningful actions to create lasting positive change.",
         feedback:
-          "The branding work exceeded our expectations! It perfectly reflects our restaurant's essence, creating a strong and memorable identity that our customers love.",
-        founder: "Flavaro",
+          "We organized a successful Environment Day Campaign focused on raising awareness about sustainability and environmental conservation. The campaign featured educational activities, interactive workshops, and a tree-planting drive to inspire collective action. Through creative initiatives and community engagement, we emphasized the importance of preserving natural resources, reducing waste, and building a greener future for the generations to come. Together, we took a small but impactful step toward a healthier planet.",
+        founder: "Fica",
+      },
+
+      {
+        id: 9,
+        type: "image",
+        image: pro91,
+        image2: pro94,
+        image3: pro96,
+        image4: pro92,
+        image5: pro93,
+        image6: pro97,
+        image7: pro95,
+        
+        year: "2024",
+        category: "Campaign",
+        title: "Campaign",
+        name: "Tobacco Day",
+        description:
+          "Tobacco use remains one of the leading causes of preventable deaths worldwide, impacting not only individual health but also our environment. It's time for us to come together as a global community to combat this threat by spreading awareness, encouraging cessation, and promoting healthier choices. Every step towards a tobacco-free world is a step towards saving lives and protecting future generations.",
+        description2:
+          "Let this be a call to action: Say no to tobacco, yes to life. Together, we can create a healthier, cleaner, and brighter future for everyone.",
+        feedback:
+          "On World No Tobacco Day, we conducted an impactful campaign to raise awareness about the harmful effects of tobacco on health and the environment. Through informative sessions, community discussions, and awareness drives, we encouraged individuals to quit tobacco and adopt healthier lifestyles. The initiative highlighted the dangers of smoking and the importance of protecting future generations from its devastating effects, promoting a tobacco-free world for better health and well-being",
+        founder: "Fica",
       },
     ];
     dispatch(setProjects(fetchedProjects));
@@ -328,12 +368,20 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
                 key={project.id}
                 className={`relative group bg-primary rounded-xl overflow-hidden ${sizeClass}`}
               >
-                {/* Image */}
+                {project.type === "image" ? (
                 <img
                   src={project.image}
                   alt={project.name}
                   className="w-full h-120 lg:h-160 object-cover rounded-xl transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
-                />
+                /> ) : (
+                  <video
+                      className='w-full h-full object-cover'
+                      src={project.image}
+                      autoPlay
+                      loop
+                      muted
+                  />
+              )}
 
                 {/* Content Container */}
                 <div className="absolute bottom-[-2px] left-4 space-y-2 opacity-100 group-hover:translate-y-[-10px] group-hover:opacity-100 transition-all duration-300">

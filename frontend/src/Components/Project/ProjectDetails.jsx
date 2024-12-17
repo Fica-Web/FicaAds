@@ -25,7 +25,18 @@ const ProjectDetails = () => {
                         <h1 className="text-2xl font-bold  xl:text-6xl font-Switzer-Regular uppercase">{selectedProject.name}</h1>
                     </div>
                     <div className='h-96 sm:h-112 md:h-144 xl:h-176'>
+                    {selectedProject.type === "image" ? (
                         <img src={selectedProject.image} alt={selectedProject.name} className='w-full h-full object-cover ' />
+                    ) : (
+                        <video
+                            className='w-full h-full object-cover'
+                            src={selectedProject.image}
+                            autoPlay
+                            loop
+                            muted
+                        />
+                    )}
+      
                     </div>
                 </div>
             </div>
