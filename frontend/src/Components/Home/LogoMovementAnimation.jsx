@@ -1,5 +1,5 @@
 import React from 'react';
-import fica from '../../assets/Images/fica.png'
+import fica from '../../assets/Images/fica.png';
 
 const LogoMovementAnimation = ({ data }) => {
   // Duplicate the logos to create a seamless infinite loop
@@ -17,16 +17,18 @@ const LogoMovementAnimation = ({ data }) => {
               transform: translateX(-100%);
             }
           }
+
+          .scrolling-container {
+            animation: scroll 8s linear infinite;
+          }
+
+          .scrolling-container:hover {
+            animation-play-state: paused; /* Pause animation on hover */
+          }
         `}
       </style>
 
-      <div
-        className="flex gap-24 animate-scroll"
-        style={{
-          animation: 'scroll 10s linear infinite',
-          width: `${logosToRender.length * 230}px`, // Adjust based on item size and gap
-        }}
-      >
+      <div className="flex gap-24 scrolling-container">
         {logosToRender.map((item, index) => (
           <img
             key={index}
