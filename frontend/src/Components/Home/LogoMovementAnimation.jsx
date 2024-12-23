@@ -1,12 +1,11 @@
 import React from 'react';
-import fica from '../../assets/Images/fica.png';
 
 const LogoMovementAnimation = ({ data }) => {
   // Duplicate the logos to create a seamless infinite loop
   const logosToRender = [...data, ...data]; // Duplicate the array for seamless scrolling
 
   return (
-    <div className="w-full h-[200px] overflow-hidden flex items-center">
+    <div className="w-full h-[200px] overflow-hidden flex items-center relative">
       <style>
         {`
           @keyframes scroll {
@@ -19,7 +18,10 @@ const LogoMovementAnimation = ({ data }) => {
           }
 
           .scrolling-container {
-            animation: scroll 8s linear infinite;
+            display: flex;
+            gap: 40px; /* Space between logos */
+            width: max-content; /* Allow content to grow naturally */
+            animation: scroll 20s linear infinite; /* Adjust duration as needed */
           }
 
           .scrolling-container:hover {
@@ -28,11 +30,11 @@ const LogoMovementAnimation = ({ data }) => {
         `}
       </style>
 
-      <div className="flex gap-24 scrolling-container">
+      <div className="scrolling-container">
         {logosToRender.map((item, index) => (
           <img
             key={index}
-            src={fica}
+            src={item}
             alt="Logo"
             className="w-[200px] flex-shrink-0" // Adjust size as needed
           />
