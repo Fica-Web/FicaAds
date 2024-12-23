@@ -2,7 +2,7 @@ import React from 'react'
 
 const PrivacyPolicy = () => {
   return (
-    <div className='mt-20'>
+    <div className='mt-20 mb-8'>
         <div className='w-11/12 mx-auto'>
             <h1 className='text-center text-6xl text-bold'>Privacy Policy</h1>
             <h1 className='mt-20 text-2xl text-bold '>We are committed to protecting your privacy</h1>
