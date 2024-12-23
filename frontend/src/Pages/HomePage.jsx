@@ -30,20 +30,28 @@ const HomePage = () => {
     <div>
       <NavBar />
       <Hero />
-      <Projects showFullContent={false} limit={3} showbutton={true}/>
-       <CreateiveJourney />
+      <Projects showFullContent={false} limit={3} showbutton={true} />
+      <CreateiveJourney />
 
-       <HomeNews />
+      <HomeNews />
 
-       <Behaind />
+      <Behaind />
 
-       <div className='mt-20'>
-        <LogoMovementAnimation data={[client1, client2, client3, client4, client5, client6, client7, client8, client9]} />
-        <LogoMovementAnimation data={[client10, client11, client12, client13, client14, client15, client16, client17]} />
-        {/* <LogoMovementAnimation data={[client10, client11, client12, client13, client14, client15, client16, client17]} /> */}
-       </div>
+      <div className="mt-20">
+        {/* First animation: Left to Right */}
+        <LogoMovementAnimation
+          data={[client1, client2, client3, client4, client5, client6, client7, client8, client9]}
+          direction="left"
+        />
 
-       <HomeHiring />
+        {/* Second animation: Right to Left */}
+        <LogoMovementAnimation
+          data={[client10, client11, client12, client13, client14, client15, client16, client17]}
+          direction="right"
+        />
+      </div>
+
+      <HomeHiring />
     </div>
   )
 }

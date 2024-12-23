@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LogoMovementAnimation = ({ data }) => {
+const LogoMovementAnimation = ({ data, direction = "left" }) => {
   // Duplicate the logos to create a seamless infinite loop
   const logosToRender = [...data, ...data]; // Duplicate the array for seamless scrolling
 
@@ -8,7 +8,7 @@ const LogoMovementAnimation = ({ data }) => {
     <div className="w-full h-[200px] overflow-hidden flex items-center relative">
       <style>
         {`
-          @keyframes scroll {
+          @keyframes scroll-left {
             from {
               transform: translateX(0);
             }
@@ -17,11 +17,27 @@ const LogoMovementAnimation = ({ data }) => {
             }
           }
 
+          @keyframes scroll-right {
+            from {
+              transform: translateX(-100%);
+            }
+            to {
+              transform: translateX(0);
+            }
+          }
+
           .scrolling-container {
             display: flex;
             gap: 75px; /* Space between logos */
             width: max-content; /* Allow content to grow naturally */
-            animation: scroll 20s linear infinite; /* Adjust duration as needed */
+          }
+
+          .scrolling-container-left {
+            animation: scroll-left 20s linear infinite; /* Adjust duration as needed */
+          }
+
+          .scrolling-container-right {
+            animation: scroll-right 20s linear infinite; /* Adjust duration as needed */
           }
 
           .scrolling-container:hover {
@@ -30,7 +46,7 @@ const LogoMovementAnimation = ({ data }) => {
         `}
       </style>
 
-      <div className="scrolling-container">
+      <div className={`scrolling-container scrolling-container-${direction}`}>
         {logosToRender.map((item, index) => (
           <img
             key={index}
