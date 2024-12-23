@@ -19,7 +19,7 @@ const LogoMovementAnimation = ({ data }) => {
 
           .scrolling-container {
             display: flex;
-            gap: 40px; /* Space between logos */
+            gap: 75px; /* Space between logos */
             width: max-content; /* Allow content to grow naturally */
             animation: scroll 20s linear infinite; /* Adjust duration as needed */
           }
@@ -36,7 +36,7 @@ const LogoMovementAnimation = ({ data }) => {
             key={index}
             src={item}
             alt="Logo"
-            className="w-[200px] flex-shrink-0" // Adjust size as needed
+            className="h-[130px] flex-shrink-0" // Adjust size as needed
           />
         ))}
       </div>
