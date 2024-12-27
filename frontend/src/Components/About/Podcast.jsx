@@ -15,7 +15,7 @@ const Podcast = () => {
                 <button className='bg-white text-black font-Switzer-Medium my-4 rounded-xl h-10 p-2'>Listen On Spotify</button>
             </div>
             <div className='w-11/12 h-96 mx-auto pb-10 xl:h-124 lg:w-1/3 lg:pb-8 xl:pb-0 xl:pt-12' >
-                <img src={img1} alt='podcast' className='w-full h-full object-cover rounded-xl my-' />
+                <img src={img1} alt='podcast' className='w-full h-full object-cover rounded-xl' />
             </div>
         </div>
     </div>

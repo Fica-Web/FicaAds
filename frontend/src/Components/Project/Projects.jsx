@@ -42,7 +42,7 @@ import pro46 from "../../assets/Images/Project46.jpg"
 import pro47 from "../../assets/Images/Project47.jpg"
 import pro48 from "../../assets/Images/Project48.jpg"
 
-import pro51 from "../../assets/Images/Project51.jpg"
+import pro51 from "../../assets/Images/john-jacobs.jpg"
 import pro52 from "../../assets/Images/Project54.jpg"
 import pro53 from "../../assets/Images/Project58.jpg"
 import pro54 from "../../assets/Images/Project53.jpg"
@@ -166,31 +166,7 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
       {
         id: 4,
         type: "image",
-        image: pro21,
-        image2: pro25,
-        image3: pro22,
-        image4: pro23,
-        image5: pro24,
-        image6: pro28,
-        image7: pro27,
-        image8: pro26,
-        year: "2024",
-        category: "Identity",
-        title: "Sports wear, Clothing",
-        name: "Run X",
-        description:
-          "RUN X is a modern, performance-driven sports clothing brand that is committed to helping athletes of all ages and skill levels perform at their best. The brand's identity is based on its core values of performance, comfort, and innovation.",
-        description2:
-          "It uses the latest technologies and materials to create clothing that is lightweight, breathable, and durable. The brand also focuses on creating comfortable clothing that allows for a full range of motion. Additionally, RUN X is constantly innovating to develop new and better sports clothing that meets the needs of athletes.",
-        feedback:
-          "At RUN X, we believe that every athlete deserves gear that matches their passion and performance. Every stitch, fabric, and design is shaped by feedback from those who push their limits every day.",
-        founder: "RUN X",
-      },
-
-      {
-        id: 5,
-        type: "image",
-        image: pro51,
+        image: pro55,
         image2: pro52,
         image3: pro53,
         image4: pro54,
@@ -209,6 +185,30 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
         feedback:
           "Our vision at John Jacobs has always been to redefine eyewear—not just as a necessity, but as an extension of your personality. Every frame is a blend of innovation, quality, and timeless design, inspired by the feedback of those who wear them.",
         founder: "John Jacobs",
+      },
+
+      {
+        id: 5,
+        type: "image",
+        image: pro91,
+        image2: pro94,
+        image3: pro96,
+        image4: pro92,
+        image5: pro93,
+        image6: pro97,
+        image7: pro95,
+        
+        year: "2024",
+        category: "Campaign",
+        title: "Campaign",
+        name: "Tobacco Day",
+        description:
+          "Tobacco use remains one of the leading causes of preventable deaths worldwide, impacting not only individual health but also our environment. It's time for us to come together as a global community to combat this threat by spreading awareness, encouraging cessation, and promoting healthier choices. Every step towards a tobacco-free world is a step towards saving lives and protecting future generations.",
+        description2:
+          "Let this be a call to action: Say no to tobacco, yes to life. Together, we can create a healthier, cleaner, and brighter future for everyone.",
+        feedback:
+          "On World No Tobacco Day, we conducted an impactful campaign to raise awareness about the harmful effects of tobacco on health and the environment. Through informative sessions, community discussions, and awareness drives, we encouraged individuals to quit tobacco and adopt healthier lifestyles. The initiative highlighted the dangers of smoking and the importance of protecting future generations from its devastating effects, promoting a tobacco-free world for better health and well-being",
+        founder: "Fica",
       },
 
       {
@@ -283,25 +283,25 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
       {
         id: 9,
         type: "image",
-        image: pro91,
-        image2: pro94,
-        image3: pro96,
-        image4: pro92,
-        image5: pro93,
-        image6: pro97,
-        image7: pro95,
-        
+        image: pro21,
+        image2: pro25,
+        image3: pro22,
+        image4: pro23,
+        image5: pro24,
+        image6: pro28,
+        image7: pro27,
+        image8: pro26,
         year: "2024",
-        category: "Campaign",
-        title: "Campaign",
-        name: "Tobacco Day",
+        category: "Identity",
+        title: "Sports wear, Clothing",
+        name: "Run X",
         description:
-          "Tobacco use remains one of the leading causes of preventable deaths worldwide, impacting not only individual health but also our environment. It's time for us to come together as a global community to combat this threat by spreading awareness, encouraging cessation, and promoting healthier choices. Every step towards a tobacco-free world is a step towards saving lives and protecting future generations.",
+          "RUN X is a modern, performance-driven sports clothing brand that is committed to helping athletes of all ages and skill levels perform at their best. The brand's identity is based on its core values of performance, comfort, and innovation.",
         description2:
-          "Let this be a call to action: Say no to tobacco, yes to life. Together, we can create a healthier, cleaner, and brighter future for everyone.",
+          "It uses the latest technologies and materials to create clothing that is lightweight, breathable, and durable. The brand also focuses on creating comfortable clothing that allows for a full range of motion. Additionally, RUN X is constantly innovating to develop new and better sports clothing that meets the needs of athletes.",
         feedback:
-          "On World No Tobacco Day, we conducted an impactful campaign to raise awareness about the harmful effects of tobacco on health and the environment. Through informative sessions, community discussions, and awareness drives, we encouraged individuals to quit tobacco and adopt healthier lifestyles. The initiative highlighted the dangers of smoking and the importance of protecting future generations from its devastating effects, promoting a tobacco-free world for better health and well-being",
-        founder: "Fica",
+          "At RUN X, we believe that every athlete deserves gear that matches their passion and performance. Every stitch, fabric, and design is shaped by feedback from those who push their limits every day.",
+        founder: "RUN X",
       },
     ];
     dispatch(setProjects(fetchedProjects));
