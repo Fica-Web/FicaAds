@@ -9,7 +9,7 @@ const ContactPage = () => {
   }, []);
   return (
     <div className=''>
-      <NavBar />
+        <NavBar />
         <ContactHero />
     </div>
   )

@@ -18,18 +18,18 @@ const ContactHero = () => {
                         <h1 className='font-Switzer-Medium text-3xl text-white lg:text-4xl xl:text-2xl'>Dubai</h1>
                         <h2 className='mt-4 font-Switzer-Regular text-white lg:text-lg xl:text-lg'>050 7878658</h2>
                         <h2 className='font-Switzer-Regular text-white lg:text-lg xl:text-lg'>hello@ficaads.com</h2>
-                        <h3 className='mt-2 font-Switzer-Regular text-gray lg:text-lg xl:text-lg'>Al Naha Dubai-<br></br>United Arab Emirate</h3>
+                        <h3 className='mt-2 font-Switzer-Regular text-gray3 lg:text-lg xl:text-lg'>Al Naha Dubai-<br></br>United Arab Emirate</h3>
                     </div>
                     <div className='sm:w-1/3 lg:pl-14'>
                         <h1 className='font-Switzer-Medium text-3xl text-white lg:text-4xl xl:text-2xl'>Calicut</h1>
                         <h2 className='mt-4 font-Switzer-Regular text-white lg:text-lg xl:text-lg'>+91 8086555918</h2>
                         <h2 className='font-Switzer-Regular text-white lg:text-lg xl:text-lg'>hello@ficaads.com</h2>
-                        <h3 className='mt-2 font-Switzer-Regular text-gray lg:text-lg xl:text-lg'>UA Building,Kattukulagara<br></br>Pottamal , Calicut</h3>
+                        <h3 className='mt-2 font-Switzer-Regular text-gray3 lg:text-lg xl:text-lg'>UA Building,Kattukulagara<br></br>Pottamal , Calicut</h3>
                     </div>
                     <div className=' sm:w-1/3 lg:pl-20'>
                         <h1 className='font-Switzer-Medium text-white text-3xl lg:text-4xl xl:text-2xl'>Turkiye</h1>
                         <h2 className='mt-4 font-Switzer-Regular text-white lg:text-lg xl:text-lg'>hello@ficaads.com</h2>
-                        <h3 className='md:mt-8 font-Switzer-Regular text-gray lg:text-lg xl:text-lg'>Mecidiyekoy - Sisli , <br></br>Istanbul , Turkiye</h3>
+                        <h3 className='md:mt-8 font-Switzer-Regular text-gray3  lg:text-lg xl:text-lg'>Mecidiyekoy - Sisli , <br></br>Istanbul , Turkiye</h3>
                     </div>
                 </div>
                 <div className='mt-10 space-y-6 h-96 lg:mt-20 lg:w-11/12 lg:mx-auto lg:flex lg:space-y-0 xl:mt-56'>
