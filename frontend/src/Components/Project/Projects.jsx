@@ -33,7 +33,7 @@ import pro37 from "../../assets/Images/Project37.jpg"
 import pro38 from "../../assets/Images/Project38.jpg"
 
 
-import pro41 from "../../assets/Images/Project41.jpg"
+import pro41 from "../../assets/Images/amani.jpg"
 import pro42 from "../../assets/Images/Project42.jpg"
 import pro43 from "../../assets/Images/Project43.jpg"
 import pro44 from "../../assets/Images/Project44.jpg"
