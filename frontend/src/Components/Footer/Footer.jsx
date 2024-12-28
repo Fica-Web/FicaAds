@@ -18,7 +18,7 @@ const Footer = () => {
             <input
               type='text'
               placeholder='hello@ficaads.com'
-              className='bg-transparent rounded-sm py-2 px-4 flex-grow outline-none text-white placeholder-gray-400'
+              className='bg-transparent rounded-sm py-2 px-4 flex-grow outline-none text-white placeholder-gray5'
             />
             <button className='bg-gray1 mr-0.5 px-4 py-2 rounded-lg font-Switzer-Medium text-sm '>
               Submit

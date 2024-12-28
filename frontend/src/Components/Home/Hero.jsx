@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import banner1 from "../../assets/Images/Banner1.webp";
 import banner2 from "../../assets/Images/Banner2.webp";
-import banner3 from "../../assets/Images/Banner3.webp";
+import banner3 from "../../assets/Images/Cover-image.webp";
 import sampleVideo from "../../assets/Images/PURPLE ANIMATION.mp4";
 import NavBar from '../NavBar/NavBar';
 

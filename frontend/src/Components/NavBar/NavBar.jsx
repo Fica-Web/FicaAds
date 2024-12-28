@@ -16,7 +16,7 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full mx-auto md:h-20 bg-white md:px-8 lg:px-12">
+    <div className="w-full mx-auto md:h-20 bg-white md:px-8 lg:px-8 lg:pr-12">
       <div className="md:flex items-center justify-between py-4 relative h-full">
         {/* Logo Section */}
         <div className="w-32 lg:w-22 flex-shrink-0">

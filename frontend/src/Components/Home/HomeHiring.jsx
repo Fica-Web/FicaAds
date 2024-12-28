@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from "../../assets/Images/home5.jpg"
+import img1 from "../../assets/Images/home5.webp"
 import { Link } from 'react-router-dom'
 
 
@@ -13,7 +13,7 @@ const HomeHiring = () => {
                         <h2 className="text-2xl font-bold xl:text-4xl font-Switzer-Medium uppercase ">Let's Elevate your brand </h2>
                         <button  className='backdrop-blur-md bg-black/20 font-Switzer-Medium text-xs mt-4 rounded-xl h-8 md:h-10  px-4'><Link to={'/contact'}>Reach Out</Link></button>
                     </div>
-                    <img src={img1} alt='about' className='w-full h-full object-cover' />
+                    <img src={img1} alt='about' className='w-full h-screen object-cover' />
                 </div>
             </div>
         </div>

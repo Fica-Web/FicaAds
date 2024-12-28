@@ -28,7 +28,7 @@ import pro32 from "../../assets/Images/Project32.jpg"
 import pro33 from "../../assets/Images/Project33.jpg"
 import pro34 from "../../assets/Images/Project34.jpg"
 import pro35 from "../../assets/Images/Project35.jpg"
-import pro36 from "../../assets/Images/PURPLE ANIMATION.mp4"
+import pro36 from "../../assets/Images/color-animation.mp4"
 import pro37 from "../../assets/Images/Project37.jpg"
 import pro38 from "../../assets/Images/Project38.jpg"
 

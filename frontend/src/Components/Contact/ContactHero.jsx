@@ -1,5 +1,5 @@
 import React from 'react'
-import conn from "../../assets/Images/connect.jpeg"
+import conn from "../../assets/Images/contact-page.webp"
 import Behaind from '../Home/Behaind'
 
 const ContactHero = () => {

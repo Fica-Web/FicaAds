@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import news2 from "../../assets/Images/News2.webp"
-import news1 from "../../assets/Images/News.webp"
+import news2 from "../../assets/Images/Vision-pro.webp"
+import news1 from "../../assets/Images/Brand-identity1.webp"
 import news3 from "../../assets/Images/food.webp"
 import news4 from "../../assets/Images/Artboard.jpg"
 
