@@ -30,7 +30,7 @@ const Hero = () => {
                     <div key={hero.id} className='relative w-full md:h-[90vh]'>
                         {/* Conditionally render image or video */}
                         {hero.type === "image" ? (
-                            <img className='w-full h-full object-cover' src={hero.source} alt={`slide ${hero.id}`} />
+                            <img className='w-full h-full md:object-cover' src={hero.source} alt={`slide ${hero.id}`} />
                         ) : (
                             <video
                                 className='w-full h-full object-cover'
@@ -46,7 +46,7 @@ const Hero = () => {
                         </div>*/}
 
                         {/* Keep the text aligned to the bottom-left */}
-                        <div data-aos="fade-up" style={{ lineHeight: '1.3' }} className='absolute bottom-10 left-0 w-full space-y-4 sm:w-4/5 p-8 sm:p-6 md:w-3/5 2xl:w-5/12 md:p-8 lg:p-10 xl:p-16 text-white flex flex-col items-start justify-end'>
+                        <div data-aos="fade-up" style={{ lineHeight: '1.3' }} className='absolute md:bottom-10 bottom-0 left-0 w-full space-y-4 sm:w-4/5 p-8 sm:p-6 md:w-3/5 2xl:w-5/12 md:p-8 lg:p-10 xl:p-16 text-white flex flex-col items-start justify-end'>
                             <h1 data-aos="fade-up" style={{ lineHeight: '1.3' }} className='font-Switzer-Regular text-lg sm:text-xl md:text-3xl lg:text-xl xl:text-xl 2xl:-lg text-left'>
                                 {hero.brand}
                             </h1>
@@ -54,7 +54,7 @@ const Hero = () => {
                                 {hero.heading}
                             </h1>
                             <Link to={'/project'}>
-                                <button className='backdrop-blur-md bg-black/20 font-Switzer-Medium mt-4 rounded-lg h-8 px-6 text-sm'>
+                                <button className='backdrop-blur-md bg-black/20 font-Switzer-Medium md:mt-4 rounded-lg h-8 px-6 text-sm'>
                                     View Project
                                 </button>
                             </Link>
