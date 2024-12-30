@@ -37,7 +37,20 @@ const HomePage = () => {
 
       <Behaind />
 
-      <div className="mt-20">
+      <div className="mt-24">
+        <div className='lg:flex justify-between items-center lg:px-16 font-Switzer-Regular uppercase text-center'>
+          <div className='flex justify-center'>
+            <h3 className='lg:text-5xl sm:text-7xl text-5xl font-semibold my-10 lg:max-w-full sm:max-w-[500px]'>
+              CLIENTS WE WORK WITH 
+            </h3>
+          </div>
+          <div className='flex justify-center my-5'>
+            <h4 className='text-center leading-4 max-w-[400px] lg:max-w-[250px] mx-5 sm:mx-0'>
+              we can't wait to show you what we can do for you and your brand
+            </h4>
+          </div>
+        </div>
+
         {/* First animation: Left to Right */}
         <LogoMovementAnimation
           data={[client1, client2, client3, client4, client5, client6, client7, client8, client9]}
