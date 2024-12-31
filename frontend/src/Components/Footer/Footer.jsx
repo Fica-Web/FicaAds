@@ -27,8 +27,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='md:w-1/2  space-y-8 pt-4 md:flex md:space-y-0'>
-          <div className='w-11/12 mx-auto '>
+        <div className='md:w-1/2  space-y- pt-4 flex md:space-y-0 '>
+          <div className='w-11/12 mx-auto sm:block flex flex-col items-center '>
             <h5 className='font-Switzer-Medium text-xs text-gray3 xl:text-sm'>Sitemap</h5>
             <h3 className='uppercase mt-6 font-Switzer-Medium text-sm xl:text-base'><Link to={"/"}>Home</Link></h3>
             <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'><Link to={'/about'}>About</Link></h3>
@@ -38,7 +38,7 @@ const Footer = () => {
             <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'><Link to={'/contact'}>Contact</Link></h3>
             <h2 className='font-Switzer-Medium text-sm text-gray3 lg:mt-44 xl:mt-36'><Link to={"/privacypolicy"}>Privacy & Policy</Link></h2>
           </div>
-          <div className='w-11/12 mx-auto'>
+          <div className='w-11/12 mx-auto sm:block flex flex-col items-center '>
             <h5 className='font-Switzer-Medium text-xs  text-gray3 xl:text-sm'>Socials</h5>
             <h4 className='mt-6'><a
               href="https://www.facebook.com/ficaads?mibextid=ZbWKwL"
@@ -73,7 +73,7 @@ const Footer = () => {
             >
               x.com
             </a></h4>
-            <h2 className='font-Switzer-Medium text-sm text-gray3 lg:mt-48 xl:mt-48'>Made by Fica</h2>
+            <h2 className='font-Switzer-Medium text-sm text-gray3 lg:mt-48 xl:mt-48 sm:mt-0 mt-4'>Made by Fica</h2>
           </div>
         </div>
       </div>

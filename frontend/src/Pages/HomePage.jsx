@@ -45,7 +45,7 @@ const HomePage = () => {
             </h3>
           </div>
           <div className='flex justify-center my-5'>
-            <h4 className='text-center leading-4 max-w-[400px] lg:max-w-[250px] mx-5 sm:mx-0'>
+            <h4 className='text-center leading-4 max-w-[400px] lg:max-w-[240px] mx-5 sm:mx-0 lg:text-right'>
               we can't wait to show you what we can do for you and your brand
             </h4>
           </div>

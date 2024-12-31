@@ -52,7 +52,7 @@ const LogoMovementAnimation = ({ data, direction = "left" }) => {
             key={index}
             src={item}
             alt="Logo"
-            className="h-[130px] flex-shrink-0" // Adjust size as needed
+            className="h-[100px] sm:h-[110px] lg:h-[130px] flex-shrink-0" // Adjust size as needed
           />
         ))}
       </div>
