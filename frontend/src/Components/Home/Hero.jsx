@@ -47,7 +47,7 @@ const Hero = () => {
                         </div>*/}
 
                         {/* Keep the text aligned to the bottom-left */}
-                        <div data-aos="fade-up" style={{ lineHeight: '1.3' }} className='absolute bottom-10 left-0 w-full space-y-4 sm:w-4/5 p-8 sm:p-6 md:w-3/5 2xl:w-5/12 md:p-8 lg:p-10 xl:p-16 text-white flex flex-col items-start justify-end'>
+                        <div data-aos="fade-up" style={{ lineHeight: '1.3' }} className='absolute bottom-5 sm:bottom-10 left-0 w-full sm:space-y-4 space-y-2 sm:w-4/5 p-8 sm:p-6 md:w-3/5 2xl:w-5/12 md:p-8 lg:p-10 xl:p-16 text-white flex flex-col items-start justify-end'>
                             <h1 data-aos="fade-up" style={{ lineHeight: '1.3' }} className='font-Switzer-Regular text-lg sm:text-xl md:text-3xl lg:text-xl xl:text-xl 2xl:-lg text-left'>
                                 {hero.brand}
                             </h1>

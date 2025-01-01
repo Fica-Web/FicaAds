@@ -16,17 +16,17 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full mx-auto md:h-20 bg-white md:px-8 lg:px-8 lg:pr-12">
-      <div className="md:flex items-center justify-between py-4 relative h-full">
+    <div className="w-full mx-auto h-16 md:h-20 bg-white md:px-8 lg:px-8 lg:pr-12">
+      <div className="flex items-center justify-between py-4 relative h-full">
         {/* Logo Section */}
-        <div className="w-32 lg:w-22 flex-shrink-0">
+        <div className="w-24 lg:w-22 flex-shrink-0 ">
           <img src={logo} alt="Fica Logo" />
         </div>
 
         {/* Mobile Menu Toggle */}
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-2 top-6 cursor-pointer lg:hidden"
+          className="text-2xl mr-5 cursor-pointer lg:hidden"
         >
           {open ? <FaTimes className="text-black" /> : <FaBars className="text-black" />}
         </div>
