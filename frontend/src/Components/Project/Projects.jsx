@@ -387,7 +387,7 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
                 <div className="absolute bottom-[-2px] left-4 space-y-2 opacity-100 group-hover:translate-y-[-10px] group-hover:opacity-100 transition-all duration-300">
                   {/* Title and Name */}
                   <div>
-                    <h2 className="text-sm text-gray3 font-Switzer-Light">
+                    <h2 className="text-sm text-white font-Switzer-Light">
                       {project.title}
                     </h2>
                     <h1 className="text-white text-2xl font-Switzer-Regular">
