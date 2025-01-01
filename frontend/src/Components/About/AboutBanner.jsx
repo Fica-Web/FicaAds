@@ -75,7 +75,7 @@ const AboutBanner = () => {
                                         </span>
                                     </div>
                                     {activeService === service.id && (
-                                        <p className='mt-2 text-gray3 font-Switzer-Light'>{service.details}</p>
+                                        <p className='mt-2 text-gray3 font-Switzer-Light md:w-10/12 w-11/12'>{service.details}</p>
                                     )}
                                 </div>
                             ))}

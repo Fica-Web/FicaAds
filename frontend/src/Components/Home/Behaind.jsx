@@ -36,8 +36,6 @@ const Behaind = () => {
                         </button>
                     </div>
                 </div>
-                
-               
             </div>
 
         </div>

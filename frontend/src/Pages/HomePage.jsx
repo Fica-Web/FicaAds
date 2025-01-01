@@ -37,7 +37,7 @@ const HomePage = () => {
 
       <Behaind />
 
-      <div className="mt-24">
+      <div className="mt-[95px] md:mt-[130px] ">
         <div className='lg:flex justify-between items-center lg:px-16 font-Switzer-Regular uppercase text-center'>
           <div className='flex justify-center'>
             <h3 className='lg:text-5xl sm:text-7xl text-5xl font-semibold my-10 lg:max-w-full sm:max-w-[500px]'>
