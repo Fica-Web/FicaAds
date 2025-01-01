@@ -51,17 +51,40 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* First animation: Left to Right */}
-        <LogoMovementAnimation
-          data={[client1, client2, client3, client4, client5, client6, client7, client8, client9]}
-          direction="left"
-        />
+        <div className='hidden sm:block'>
+          {/* First animation: Left to Right */}
+          <LogoMovementAnimation
+            data={[client1, client2, client3, client4, client5, client6, client7, client8, client9]}
+            direction="left"
+          />
 
-        {/* Second animation: Right to Left */}
-        <LogoMovementAnimation
-          data={[client10, client11, client12, client13, client14, client15, client16, client17]}
-          direction="right"
-        />
+          {/* Second animation: Right to Left */}
+          <LogoMovementAnimation
+            data={[client10, client11, client12, client13, client14, client15, client16, client17]}
+            direction="right"
+          />
+        </div>
+
+        {/* On different  */}
+        <div className='block sm:hidden'>
+          {/* First animation: Left to Right */}
+          <LogoMovementAnimation
+            data={[client1, client2, client3, client4, client5, client6]}
+            direction="left"
+          />
+
+          {/* Second animation: Right to Left */}
+          <LogoMovementAnimation
+            data={[client7, client8, client9, client10, client11]}
+            direction="right"
+          />
+
+          {/* Third animation: Left to Right */}
+          <LogoMovementAnimation
+            data={[client12, client13, client14, client15, client16, client17]}
+            direction="left"
+          />
+        </div>
       </div>
 
       <HomeHiring />

@@ -5,7 +5,7 @@ const LogoMovementAnimation = ({ data, direction = "left" }) => {
   const logosToRender = [...data, ...data]; // Duplicate the array for seamless scrolling
 
   return (
-    <div className="w-full h-[200px] overflow-hidden flex items-center relative">
+    <div className="w-full md:h-[200px] h-[130px] overflow-hidden flex items-center relative">
       <style>
         {`
           @keyframes scroll-left {
@@ -28,7 +28,6 @@ const LogoMovementAnimation = ({ data, direction = "left" }) => {
 
           .scrolling-container {
             display: flex;
-            gap: 75px; /* Space between logos */
             width: max-content; /* Allow content to grow naturally */
           }
 
@@ -46,7 +45,7 @@ const LogoMovementAnimation = ({ data, direction = "left" }) => {
         `}
       </style>
 
-      <div className={`scrolling-container scrolling-container-${direction}`}>
+      <div className={`scrolling-container md:gap-[75px] sm:gap-[65px] gap-[45px] scrolling-container-${direction}`}>
         {logosToRender.map((item, index) => (
           <img
             key={index}
