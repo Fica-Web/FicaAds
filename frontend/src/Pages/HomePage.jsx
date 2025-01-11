@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Helmet } from 'react-helmet-async'
 import CreateiveJourney from '../Components/Home/CreateiveJourney'
 import HomeNews from '../Components/Home/HomeNews'
 import Hero from '../Components/Home/Hero'
@@ -26,8 +27,28 @@ import client16 from '../assets/Images/clients-16.png';
 import client17 from '../assets/Images/clients-17.png';
 
 const HomePage = () => {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "About Page",
+    "url": "https://ficaads.com",
+    "description": "Fica Ad Innovations specializes in innovative marketing strategies for global brands.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Fica Ad Innovations",
+    }
+  };
   return (
     <div>
+      <Helmet>
+        <title>Fica Ad Innovations - Home</title>
+        <meta
+          name="description"
+          content="Discover Fica Ad Innovations - delivering cutting-edge marketing solutions for brands worldwide."
+        />
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
+      </Helmet>
+
       <NavBar />
       <Hero />
       <Projects showFullContent={false} limit={3} showbutton={true} />
