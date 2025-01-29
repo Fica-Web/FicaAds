@@ -26,6 +26,7 @@ const Hero = () => {
                 interval={5000} // Smooth transition
                 transitionTime={500} // Smoother animation
                 stopOnHover={false}
+                swipeable={false}
             >
                 {herodetails.map((hero) => (
                     <div key={hero.id} className='relative w-full h-[90vh]'>
