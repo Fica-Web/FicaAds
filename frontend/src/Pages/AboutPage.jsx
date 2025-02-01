@@ -1,7 +1,8 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import AboutBanner from '../Components/About/AboutBanner'
+import AboutBanner from '../Components/About/AboutBanner';
+import WhoWeAre from '../Components/About/WhoWeAre';
 import AboutHero from '../Components/About/AboutHero'
 import Story from '../Components/About/Story'
 import Podcast from '../Components/About/Podcast'
@@ -54,6 +55,7 @@ const AboutPage = () => {
 
       <NavBar/>
       <AboutBanner/>
+      <WhoWeAre />
       <AboutHero/>
       <Story />
       <Team />
