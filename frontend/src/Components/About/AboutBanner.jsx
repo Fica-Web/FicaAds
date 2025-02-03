@@ -57,7 +57,7 @@ const AboutBanner = () => {
 
                 </div>
 
-                <div className='mt-28 lg:mt-40   space-y-6 md:space-y-0 md:flex'>
+                {/* <div className='mt-28 lg:mt-40   space-y-6 md:space-y-0 md:flex'>
                     <div className='md:w-1/2'>
                         <h2 className='font-Switzer-Medium text-sm  text-gray3 xl:text-xl'>Our Services</h2>
                     </div>
@@ -81,7 +81,7 @@ const AboutBanner = () => {
                             ))}
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
