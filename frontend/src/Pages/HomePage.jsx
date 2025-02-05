@@ -9,6 +9,7 @@ import NavBar from '../Components/NavBar/NavBar'
 import Projects from '../Components/Project/Projects';
 import LogoMovementAnimation from '../Components/Home/LogoMovementAnimation';
 import Services from '../Components/Home/Services';
+import RelatedVideos from '../Components/Home/RelatedVideos';
 import FAQ from '../Components/Home/FAQ';
 import client1 from '../assets/Images/clients-01.png';
 import client2 from '../assets/Images/clients-02.png';
@@ -66,7 +67,7 @@ const HomePage = () => {
         <div className='lg:flex justify-between items-center lg:px-16 font-Switzer-Regular uppercase text-center'>
           <div className='flex justify-center'>
             <h3 className='lg:text-5xl sm:text-7xl text-5xl font-semibold my-10 lg:max-w-full sm:max-w-[500px]'>
-              CLIENTS WE WORK WITH 
+              CLIENTS WE WORK WITH
             </h3>
           </div>
           <div className='flex justify-center my-5'>
@@ -112,6 +113,7 @@ const HomePage = () => {
         </div>
       </div>
 
+      <RelatedVideos />
       <FAQ />
       <HomeHiring />
     </div>
