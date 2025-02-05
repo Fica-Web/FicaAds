@@ -1,4 +1,5 @@
 import React from 'react';
+import services from '../../data/services';
 import SingleService from './SingleService';
 
 const Services = () => {
@@ -7,10 +8,13 @@ const Services = () => {
             <h2 className='text-2xl md:text-4xl lg:text-5xl uppercase font-Switzer-Medium'>
                 Our Services
             </h2>
-            <div className='flex my-10 w-1/2'>
-                <div className='flex flex-col '>
-                    <SingleService />
-                </div>
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-8 my-20 lg:px-10'>
+                {services.map(service => (
+                    <SingleService 
+                        key={service.id}
+                        service={service}
+                    />
+                ))}
             </div>
         </div>
     )
