@@ -16,17 +16,17 @@ import vishnu from "../../assets/Images/vishnu.jpg";
 
 const teams = [
     {id:1, name:"Muhammed Rabith",position:"CEO",image:rabith},
+    {id:11, name:"Shifana",position:"HR Executive",image:shifana},
+    {id:6, name:"Adithyan",position:"Digital Marketing Lead",image:adithyan},
     {id:2, name:"Shibin Raj",position:"Graphic Designer",image:shibin},
     {id:3, name:"Muhammed Shabil",position:"Junior Graphic Designer",image:shabil},
     {id:4, name:"Sanal Balakrishnan",position:"Cinematographer",image:sanal},
     {id:5, name:"Abhinand KK",position:"Video Editor",image:abhi},
-    {id:6, name:"Adithyan",position:"Digital Marketing Lead",image:adithyan},
     {id:7, name:"Muhsin VK",position:"Digital Marketing Executive",image:muhsin},
-    {id:8, name:"Naseeb",position:"Digital Marketing Executive",image:naseeb},
+    {id:8, name:"Naseeb Ali",position:"Digital Marketing Executive",image:naseeb},
     {id:9, name:"Muhammed Ajmal",position:"Web Developer",image:ajmal},
     {id:10, name:"Nehala",position:"Web Developer",image:nehala},
-    {id:11, name:"Shifana",position:"HR Executive",image:shifana},
-    {id:12, name:"Surumiyah",position:"HR Recruiter",image:surumiyah},
+    {id:12, name:"Surumiya Farwi",position:"HR Recruiter",image:surumiyah},
     {id:13, name:"Vishnu Raj",position:"Content Creator",image:vishnu},
 ]
 
