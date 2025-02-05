@@ -9,6 +9,7 @@ import NavBar from '../Components/NavBar/NavBar'
 import Projects from '../Components/Project/Projects';
 import LogoMovementAnimation from '../Components/Home/LogoMovementAnimation';
 import Services from '../Components/Home/Services';
+import FAQ from '../Components/Home/FAQ';
 import client1 from '../assets/Images/clients-01.png';
 import client2 from '../assets/Images/clients-02.png';
 import client3 from '../assets/Images/clients-03.png';
@@ -110,6 +111,8 @@ const HomePage = () => {
           />
         </div>
       </div>
+
+      <FAQ />
       <HomeHiring />
     </div>
   )
