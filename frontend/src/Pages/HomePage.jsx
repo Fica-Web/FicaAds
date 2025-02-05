@@ -8,6 +8,7 @@ import HomeHiring from '../Components/Home/HomeHiring'
 import NavBar from '../Components/NavBar/NavBar'
 import Projects from '../Components/Project/Projects';
 import LogoMovementAnimation from '../Components/Home/LogoMovementAnimation';
+import Services from '../Components/Home/Services';
 import client1 from '../assets/Images/clients-01.png';
 import client2 from '../assets/Images/clients-02.png';
 import client3 from '../assets/Images/clients-03.png';
@@ -55,6 +56,8 @@ const HomePage = () => {
       <CreateiveJourney />
 
       <HomeNews />
+
+      <Services />
 
       <Behaind />
 
@@ -107,7 +110,6 @@ const HomePage = () => {
           />
         </div>
       </div>
-
       <HomeHiring />
     </div>
   )
