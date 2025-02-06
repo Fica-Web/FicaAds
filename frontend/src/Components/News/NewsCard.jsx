@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import blogs from '../../data/blogs';
+import blogs from '../../data/blogs'
 
 
 
