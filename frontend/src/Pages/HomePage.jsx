@@ -10,6 +10,7 @@ import Projects from '../Components/Project/Projects';
 import LogoMovementAnimation from '../Components/Home/LogoMovementAnimation';
 import Services from '../Components/Home/Services';
 import RelatedVideos from '../Components/Home/RelatedVideos';
+import BlogListing from './BlogListing';
 import FAQ from '../Components/Home/FAQ';
 import client1 from '../assets/Images/clients-01.png';
 import client2 from '../assets/Images/clients-02.png';
@@ -114,8 +115,9 @@ const HomePage = () => {
       </div>
 
       <RelatedVideos />
+      <BlogListing />
       <FAQ />
-      <HomeHiring />
+      {/* <HomeHiring /> */}
     </div>
   )
 }

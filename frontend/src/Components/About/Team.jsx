@@ -22,12 +22,12 @@ const teams = [
     {id:3, name:"Muhammed Shabil",position:"Junior Graphic Designer",image:shabil},
     {id:4, name:"Sanal Balakrishnan",position:"Cinematographer",image:sanal},
     {id:5, name:"Abhinand KK",position:"Video Editor",image:abhi},
-    {id:7, name:"Muhsin VK",position:"Digital Marketing Executive",image:muhsin},
-    {id:8, name:"Naseeb Ali",position:"Digital Marketing Executive",image:naseeb},
     {id:9, name:"Muhammed Ajmal",position:"Web Developer",image:ajmal},
+    {id:13, name:"Vishnu Raj",position:"Content Creator",image:vishnu},
+    {id:7, name:"Muhsin VK",position:"Digital Marketing Executive",image:muhsin},
+    {id:8, name:"Naseeb Ali",position:"Performance Marketing Executive",image:naseeb},
     {id:10, name:"Nehala",position:"Web Developer",image:nehala},
     {id:12, name:"Surumiya Farwi",position:"HR Recruiter",image:surumiyah},
-    {id:13, name:"Vishnu Raj",position:"Content Creator",image:vishnu},
 ]
 
 export const Team = () => {

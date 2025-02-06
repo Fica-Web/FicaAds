@@ -9,7 +9,7 @@ const FAQ = () => {
     };
 
     return (
-        <div className="mt-10 lg:mt-28 w-11/12 mx-auto">
+        <div className="mt-10 lg:mt-28 w-11/12 mx-auto mb-20">
             <h2 className="text-2xl md:text-4xl lg:text-5xl uppercase font-Switzer-Medium lg:mb-16 mb-10 text-center">Frequently Asked Questions</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {faqData.map((item, index) => (
