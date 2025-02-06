@@ -5,10 +5,10 @@ import NewsCard from './NewsCard';
 
 const BlogDetails = () => {
   const location = useLocation();
-  const navigate = useNavigate();
+  
   useEffect(() => {
     window.scrollTo(0, 0); // Resets scroll to the top of the page
-  }, []);
+  }, [location]);
 
   // Retrieve the blog data from location.state
   const { blog } = location.state || {};
@@ -26,7 +26,10 @@ const BlogDetails = () => {
         <div className=' space-y-2'>
           <p className='font-Switzer-Medium text-gray'>The Brand Identity</p>
           <h1 className="text-2xl font-Switzer-Medium  uppercase xl:text-5xl">{blog.title}</h1>
-          <p className='font-Switzer-Medium text-gray'>{blog.date}</p>
+          <div className='flex justify-between'>
+            <p className='font-Switzer-Medium text-gray'>{blog.author}</p>
+            <p className='font-Switzer-Medium text-gray'>{blog.date}</p>
+          </div>
           <img
             src={blog.imageUrl}
             alt={blog.title}
