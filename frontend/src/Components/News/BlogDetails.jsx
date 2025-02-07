@@ -38,17 +38,17 @@ const BlogDetails = () => {
           <p className="font-Switzer-Light text-lg mt-4">{blog.content}</p>
 
           {blog.sections?.map((section, index) => (
-            <div key={index} className="mt-6">
-              <h2 className="font-Switzer-Medium text-3xl">{section.heading}</h2>
+            <div key={index} className="mt-10">
+              <h2 className="font-Switzer-Medium text-3xl mt-5">{section.heading}</h2>
 
               {section.subSections?.map((sub, subIndex) => (
-                <div key={subIndex} className="mt-4 pl-3">
-                  {sub.subHeading && <h2 className="font-Switzer-Medium text-xl mb-1">{sub.subHeading}</h2>}
+                <div key={subIndex} className="mt-1 pl-3">
+                  {sub.subHeading && <h2 className="font-Switzer-Medium text-xl mb-1 ">{sub.subHeading}</h2>}
                   
                   {/* Ensure `subDescription` is an array before mapping */}
                   {Array.isArray(sub.subDescription) ? (
                     sub.subDescription.map((desc, descIndex) => (
-                      <p key={descIndex} className="font-Switzer-Light  ml-3">{desc}</p>
+                      <p key={descIndex} className="font-Switzer-Light  ml-3 ">{desc}</p>
                     ))
                   ) : (
                     <p className="font-Switzer-Light ">{sub.subDescription}</p>

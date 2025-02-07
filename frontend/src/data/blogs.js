@@ -133,7 +133,7 @@ const blogs = [
             "Focus on Luxury and Innovation: Dubai’s audience values premium experiences. Highlight what makes your brand stand out.",
             "Stay Updated on Trends: From AI to voice search, Dubai is at the forefront of digital innovation. Stay ahead of the curve."
         ],
-        callToAction: `At [Your Agency Name], we specialize in helping businesses like yours succeed in
+        callToAction: `At fica, we specialize in helping businesses like yours succeed in
             Dubai’s competitive market. From crafting personalized branding strategies to
             executing data-driven campaigns, we’ve got you covered.
             Contact us today to schedule a free consultation and take the rst step toward digital
