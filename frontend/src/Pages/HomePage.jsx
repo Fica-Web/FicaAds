@@ -115,7 +115,7 @@ const HomePage = () => {
       </div>
 
       <RelatedVideos />
-      <BlogListing />
+      {/* <BlogListing /> */}
       <FAQ />
       {/* <HomeHiring /> */}
     </div>

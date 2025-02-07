@@ -9,6 +9,7 @@ import BlogDetails from './Components/News/BlogDetails'
 import PrivacyPolicy from './Pages/PrivacyPolicy'
 import ContactPage from './Pages/ContactPage'
 import CareersPage from './Pages/CareersPage'
+import ServiceDetailsPage from './Pages/ServiceDetailsPage'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Route path='/careers' element={<CareersPage />} />
       <Route path='/privacypolicy' element={<PrivacyPolicy />} />
       <Route path='/contact' element={<ContactPage />} />
+      <Route path='/services/:id' element={<ServiceDetailsPage />} />
     </Routes>
   )
 }
