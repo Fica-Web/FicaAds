@@ -1,7 +1,9 @@
-import news2 from "../assets/Images/Vision-pro.webp";
-import news1 from "../assets/Images/Brand-identity1.webp";
-import news3 from "../assets/Images/food.webp";
-import news4 from "../assets/Images/Artboard.jpg";
+import blog1 from '../assets/Images/blog-1.png';
+import blog2 from '../assets/Images/blog-2.png';
+import blog3 from '../assets/Images/blog-3.png';
+import blog4 from '../assets/Images/blog-4.png';
+import blog5 from '../assets/Images/blog-5.png';
+import blog6 from '../assets/Images/blog-6.png';
 
 const blogs = [
     {
@@ -9,7 +11,7 @@ const blogs = [
         title: 'How to Build Your Brand in Dubai: Tips for Digital Branding Success',
         date: "07 February / 9 min read",
         author: 'Vishnu Raj CGM',
-        imageUrl: news1,
+        imageUrl: blog1,
         content: `Dubai is a global hub of innovation, luxury, and opportunity. With its thriving economy
                 and diverse population, the city offers immense potential for businesses to grow.
                 However, standing out in such a competitive market requires more than just a great
@@ -141,8 +143,8 @@ const blogs = [
         id: 2,
         title: 'Best Digital Marketing Strategies for Businesses in Dubai',
         date: "06 February / 10 min read",
-        author: 'Ajmal Muhammed',
-        imageUrl: news2,
+        author: 'Vishnu Raj CGM',
+        imageUrl: blog2,
         content: `In today’s digital age, businesses in Dubai must leverage powerful digital marketing strategies to stay competitive in this fast-paced, tech-savvy market.`,
         sections: [
             {
@@ -234,7 +236,7 @@ const blogs = [
         title: 'How to Build a Strong Brand Identity Online in Just 5 Steps',
         date: "07 February / 10 min read",
         author: 'Vishnu Raj CGM',
-        imageUrl: news3,
+        imageUrl: blog3,
         content: `In today’s digital world, a strong brand identity is crucial for standing out and making a lasting impression. Whether you're launching a new business or looking to revamp your online presence, building a brand identity that resonates with your audience is the key to long-term success. A strong brand not only helps differentiate your business but also fosters loyalty, trust, and engagement.`,
         sections: [
             {
@@ -322,7 +324,7 @@ const blogs = [
         title: 'The Future of Digital Marketing in Dubai: Trends to Watch in 2025',
         date: "07 February / 12 min read",
         author: 'Vishnu Raj CGM',
-        imageUrl: news3,
+        imageUrl: blog4,
         content: `Dubai is one of the most dynamic and fast-moving cities in the world. As technology evolves, so does the way businesses approach digital marketing. If you’re in Dubai and looking to stay ahead of the curve, it's essential to keep an eye on the latest trends shaping the industry in 2025. From smarter ways to engage your audience to new tools for enhancing customer experience, here's what you need to know.`,
         sections: [
             {
@@ -404,7 +406,7 @@ const blogs = [
         title: 'Influencer Marketing in Dubai: How to Make It Work for Your Business',
         date: "07 February / 11 min read",
         author: 'Vishnu Raj CGM',
-        imageUrl: news4,
+        imageUrl: blog5,
         content: `In a city like Dubai, where trends change faster than you can blink, influencer marketing has become a vital tool for brands looking to get noticed...`,
         sections: [
             {
@@ -460,7 +462,7 @@ const blogs = [
         title: 'How to Generate High-Quality Leads for Your Dubai Business in 2025',
         date: "07 February / 12 min read",
         author: 'Vishnu Raj CGM',
-        imageUrl: news3,
+        imageUrl: blog6,
         content: `Generating high-quality leads is essential for any business, especially in a dynamic market like Dubai. With the digital landscape constantly evolving, the strategies that worked last year might not be enough to ensure consistent growth in 2025...`,
         sections: [
             {
