@@ -21,3 +21,11 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'Singolare-Layers';
+    src: url('../Fonts/Fontspring-DEMO-singolarelayers-one.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

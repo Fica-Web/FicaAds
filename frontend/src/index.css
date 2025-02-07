@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "SingolareLayers";
+    src: local("Fontspring-DEMO-singolarelayers-one"),
+    url('./Fonts/Fontspring-DEMO-singolarelayers-one.otf') format("truetype")
+}

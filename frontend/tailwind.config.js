@@ -53,6 +53,7 @@ export default {
         'Switzer-Light': ['Switzer-Light', 'sans-serif'],
         'Switzer-Medium': ['Switzer-Medium','sans-serif'],
         'Switzer-Regular': ['Switzer-Regular','sans-serif'],
+        'Singolare-Layers': ['Singolare-Layers','sans-serif'],
       },
 
       keyframes: {

@@ -8,16 +8,13 @@ const SingleService = ({ service }) => {
         setIsExpanded(!isExpanded);
     };
 
-    const description =
-        "Gathering and analyzing data about a target audience's preferences, behaviors, and needs to inform design and marketing decisions. This capability enables us to understand market trends, identify opportunities, and tailor strategies to meet consumer demands effectively.";
-
     // Split description into two parts
     const words = service.details.split(' ');
     const visibleWords = words.slice(0, 20).join(' ') + '...';
     const hiddenWords = words.slice(20).join(' ');
 
     return (
-        <div className="flex gap-5">
+        <div className="group flex gap-5">
             {/* Icon Section */}
             <div>
                 <ImPlus
@@ -29,12 +26,14 @@ const SingleService = ({ service }) => {
             </div>
 
             {/* Content Section */}
-            <div>
-                <h3 className="text-4xl font-serif font-bold uppercase tracking-widest">
-                    { service.title }
+            <div className=' cursor-pointer'>
+                <h3 className="relative text-4xl font-Switzer-medium font-bold uppercase tracking-widest group-hover:font-Singolare-Layers w-fit h-fit pb-3">
+                    <span className="relative z-10">{service.title}</span>
+                    {/* Background effect on hover */}
+                    <span className="absolute left-0 top-1/2 w-full h-1/3 bg-brandYellow opacity-0 group-hover:opacity-100 transition-all duration-500"></span>
                 </h3>
                 <div
-                    className={`transition-all duration-500 my-3 ${
+                    className={`transition-all duration-500 my-2 ${
                         isExpanded ? ' opacity-100' : ' opacity-90'
                     } overflow-hidden`}
                 >
