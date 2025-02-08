@@ -2,7 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import NavBar from '../Components/NavBar/NavBar';
 import services from '../data/services';
-import AboutBanner from '../Components/About/AboutBanner';
+import ServiceHero from '../Components/services/ServiceHero';
+import ServiceContentListing from '../Components/services/ServiceContentListing';
 
 const ServiceDetailsPage = () => {
     const { id } = useParams();
@@ -14,12 +15,8 @@ const ServiceDetailsPage = () => {
     return (
         <div>
             <NavBar />
-            <AboutBanner />
-            <div className='w-11/12 mx-auto my-20'>
-                Service Detail page
-                <h1 className="text-3xl font-bold">title: {service.title}</h1>
-                <p className="mt-4">Description{service.details}</p>   
-            </div> 
+            <ServiceHero service={service} />
+            <ServiceContentListing service={service} />
         </div>
     )
 }
