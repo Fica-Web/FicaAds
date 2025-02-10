@@ -134,6 +134,7 @@ const services = [
     {
         "id": "2",
         "title": "Search Engine Optimisation",
+        "homeTitle": "SEO",
         "subTitle": "Your Trusted Web Designing Company in Dubai",
         "details": "At FICA Ads Innovation, we don’t just build websites—we craft Google-ranking machines that blend jaw-dropping design with bulletproof SEO strategy. As Dubai’s leading web design agency and the best SEO agency in Dubai, we turn your website into a 24/7 sales engine that dominates search results and drives real business growth.",
         "sections": [
@@ -238,6 +239,7 @@ const services = [
     {
         "id": "3",
         "title": "Web Design & Development",
+        "homeTitle": "Web",
         "subTitle": "Your Trusted Web Designing Company in Dubai",
         "details": "Looking for a web designing company in Dubai that transforms your vision into a stunning, high-performing website? At FICA Ads Innovation, we combine innovation, technical expertise, and customer-centric strategies to build websites that drive growth, engagement, and results. With over 5+ years of experience serving businesses across Dubai, we’ve earned our reputation as the go-to **web designing company in Dubai** for bespoke digital solutions.",
         "sections": [
@@ -313,7 +315,29 @@ const services = [
     },
     {
         id: "4",
-        title: "Product Launch",
+        title: "Video production",
+        homeTitle: "Production",
+        details:
+        "Planning and execution of introducing a new product to the market. This capability involves developing a comprehensive launch strategy that includes market research, branding, marketing, and promotional activities. We ensure that all visual and communication elements align with the brand identity and resonate with the target audience.",
+    },
+    {
+        id: "5",
+        title: "Social media marketing",
+        homeTitle: "Marketing",
+        details:
+        "Planning and execution of introducing a new product to the market. This capability involves developing a comprehensive launch strategy that includes market research, branding, marketing, and promotional activities. We ensure that all visual and communication elements align with the brand identity and resonate with the target audience.",
+    },
+    {
+        id: "6",
+        title: "Branding & design",
+        homeTitle: "Branding",
+        details:
+        "Planning and execution of introducing a new product to the market. This capability involves developing a comprehensive launch strategy that includes market research, branding, marketing, and promotional activities. We ensure that all visual and communication elements align with the brand identity and resonate with the target audience.",
+    },
+    {
+        id: "7",
+        title: "Performance marketing",
+        homeTitle: "Perfomance",
         details:
         "Planning and execution of introducing a new product to the market. This capability involves developing a comprehensive launch strategy that includes market research, branding, marketing, and promotional activities. We ensure that all visual and communication elements align with the brand identity and resonate with the target audience.",
     },

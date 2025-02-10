@@ -29,7 +29,7 @@ const SingleService = ({ service }) => {
             <div className=' cursor-pointer'>
                 <Link to={`/services/${service.id}`}>
                     <h3 className="relative text-4xl font-Switzer-medium font-bold uppercase tracking-widest group-hover:font-Singolare-Layers w-fit h-fit pb-3">
-                        <span className="relative z-10">{service.title}</span>
+                        <span className="relative z-10">{service.homeTitle}</span>
                         {/* Background effect on hover */}
                         <span className="absolute left-0 top-1/2 w-full h-1/3 bg-brandYellow opacity-0 group-hover:opacity-100 transition-all duration-500"></span>
                     </h3>
