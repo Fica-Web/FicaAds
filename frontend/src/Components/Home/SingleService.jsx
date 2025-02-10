@@ -11,8 +11,8 @@ const SingleService = ({ service }) => {
 
     // Split description into two parts
     const words = service.details.split(' ');
-    const visibleWords = words.slice(0, 20).join(' ') + '...';
-    const hiddenWords = words.slice(20).join(' ');
+    const visibleWords = words.slice(0, 25).join(' ') + '...';
+    const hiddenWords = words.slice(25).join(' ');
 
     return (
         <div className="group flex gap-5">
@@ -34,16 +34,13 @@ const SingleService = ({ service }) => {
                         <span className="absolute left-0 top-1/2 w-full h-1/3 bg-brandYellow opacity-0 group-hover:opacity-100 transition-all duration-500"></span>
                     </h3>
                     <div
-                        className={`transition-all duration-500 my-2 ${isExpanded ? ' opacity-100' : ' opacity-90'
-                            } overflow-hidden`}
+                        className={` my-2 overflow-hidden`}
                     >
-                        <p>
-                            {!isExpanded && visibleWords}
-                            {isExpanded && (
-                                <span className="opacity-100 transition-opacity duration-500">
-                                    {hiddenWords}
-                                </span>
-                            )}
+                        <p className={`overflow-hidden transition-all duration-1000  ${isExpanded ? 'max-h-screen ' : 'max-h-0' } `}>
+                            {hiddenWords}
+                        </p>
+                        <p className={`overflow-hidden transition-all duration-1000 ease-in-out ${isExpanded ? 'max-h-0' : 'max-h-[500px]' } `}>
+                            {visibleWords}
                         </p>
                     </div>
                 </Link>
