@@ -5,7 +5,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import connectDB from './config/connectDB.js';
 import adminRouter from './routers/adminRouter.js';
-// import blogsRouter from './routers/blogsRouter.js';
+import blogsRouter from './routers/blogsRouter.js';
 // import carousalRouter from './routers/carousalRouter.js';
 // import completedProjectRouter from './routers/completedProjectRoutes.js';
 // import messageRouter from './routers/messageRouter.js';
@@ -34,7 +34,7 @@ app.use(cors(corsOptions)); // Enable CORS using the specified options
 
 // Define route handlers
 app.use('/api/admin', adminRouter); // Routes for admin-specific functionalities
-// app.use('/api/blogs', blogsRouter); // Routes for blogs-specific functionalities
+app.use('/api/blogs', blogsRouter); // Routes for blogs-specific functionalities
 // app.use('/api/carousel', carousalRouter); // Routes for carousal-specific functionalities
 // app.use('/api/projects', completedProjectRouter); // Routes for completed works
 // app.use('/api/messages', messageRouter); // Routes for completed works
