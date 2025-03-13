@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import ContactHero from '../Components/Contact/ContactHero'
-import NavBar from '../Components/NavBar/NavBar'
+import ContactHero from '../Components/Contact/ContactHero';
 
 const ContactPage = () => {
   useEffect(() => {
@@ -37,7 +36,6 @@ const ContactPage = () => {
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
       
-        <NavBar />
         <ContactHero />
     </div>
   )

@@ -7,7 +7,6 @@ import './index.css'
 import { BrowserRouter, useLocation } from 'react-router-dom'
 import { Provider } from "react-redux"
 import store from './store.js'
-import Footer from './Components/Footer/Footer.jsx'
 import { initGA, logPageView } from "./analytics.js";
 
 // Initialize Google Analytics on app load
@@ -31,7 +30,6 @@ createRoot(document.getElementById('root')).render(
         <Provider store={store}>
 
           <App />
-          <Footer />
         </Provider>
       </BrowserRouter>
     </HelmetProvider>

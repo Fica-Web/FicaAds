@@ -2,7 +2,6 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';  // Get the project ID from the URL
-import NavBar from '../NavBar/NavBar';
 
 const ProjectDetails = () => {
     useEffect(() => {
@@ -16,8 +15,7 @@ const ProjectDetails = () => {
 
     return (
         <div className=''>
-            <NavBar />
-            <div className="mt-6">
+            <div className="">
                 <div className='bg-primary relative'>
                     <div className=" absolute top-32 space-y-2 md:top-56 lg:top-56 xl:top-62 left-0 md:left-6 xl:left-12 w-10/12 h-full   text-white flex flex-col justify-center  p-4 rounded-xl">
 

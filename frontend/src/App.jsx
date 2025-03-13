@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import HomeLayout from './layout/HomeLayout';
 import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
 import ProjectPage from './Pages/ProjectPage';
@@ -19,19 +20,21 @@ import AdminCareerPage from './admin/pages/AdminCareerPage';
 const App = () => {
   return (
     <Routes>
-      {/* Public Routes */}
-      <Route path='/' element={<HomePage />} />
-      <Route path='/about' element={<AboutPage />} />
-      <Route path='/project' element={<ProjectPage />} />
-      <Route path='/project/:id' element={<ProjectDetails />} />
-      <Route path='/news' element={<NewsPage />} />
-      <Route path='/news/:id' element={<BlogDetails />} />
-      <Route path='/careers' element={<CareersPage />} />
-      <Route path='/privacypolicy' element={<PrivacyPolicy />} />
-      <Route path='/contact' element={<ContactPage />} />
-      <Route path='/services/:id' element={<ServiceDetailsPage />} />
+      {/* Home Layout Routes */}
+      <Route path='/' element={<HomeLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path='about' element={<AboutPage />} />
+        <Route path='project' element={<ProjectPage />} />
+        <Route path='project/:id' element={<ProjectDetails />} />
+        <Route path='news' element={<NewsPage />} />
+        <Route path='news/:id' element={<BlogDetails />} />
+        <Route path='careers' element={<CareersPage />} />
+        <Route path='privacypolicy' element={<PrivacyPolicy />} />
+        <Route path='contact' element={<ContactPage />} />
+        <Route path='services/:id' element={<ServiceDetailsPage />} />
+      </Route>
 
-      {/* Admin Routes (Wrapped in AdminLayout) */}
+      {/* Admin Layout Routes */}
       <Route path='/admin' element={<AdminLayout />}>
         <Route index element={<AdminDashboard />} />
         <Route path='teams' element={<AdminTeamPage />} />

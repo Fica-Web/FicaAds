@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import NewsCard from '../Components/News/NewsCard'
 import NewsHero from '../Components/News/NewsHero'
-import NavBar from '../Components/NavBar/NavBar'
 import ExtraNews from '../Components/News/ExtraNews';
 
 const NewsPage = () => {
@@ -35,7 +34,6 @@ const NewsPage = () => {
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
       
-      <NavBar/>
         <NewsCard />
         <NewsHero />
         <ExtraNews/>

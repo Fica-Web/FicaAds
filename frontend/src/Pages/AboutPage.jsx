@@ -7,7 +7,6 @@ import AboutHero from '../Components/About/AboutHero'
 import Story from '../Components/About/Story'
 import Podcast from '../Components/About/Podcast'
 import AboutHiring from '../Components/About/AboutHiring'
-import NavBar from '../Components/NavBar/NavBar'
 import { Team } from '../Components/About/Team';
 
 const AboutPage = () => {
@@ -53,7 +52,6 @@ const AboutPage = () => {
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
 
-      <NavBar/>
       <AboutBanner/>
       <WhoWeAre />
       <AboutHero/>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import NavBar from '../Components/NavBar/NavBar';
 import services from '../data/services';
 import ServiceHero from '../Components/services/ServiceHero';
 import ServiceContentListing from '../Components/services/ServiceContentListing';
@@ -14,7 +13,6 @@ const ServiceDetailsPage = () => {
     }
     return (
         <div>
-            <NavBar />
             <ServiceHero service={service} />
             <ServiceContentListing service={service} />
         </div>

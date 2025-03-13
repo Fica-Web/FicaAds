@@ -2,7 +2,6 @@ import React from 'react'
 import { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Projects from '../Components/Project/Projects'
-import NavBar from '../Components/NavBar/NavBar'
 
 const ProjectPage = () => {
   useEffect(() => {
@@ -39,7 +38,6 @@ const ProjectPage = () => {
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
 
-      <NavBar/>
       <Projects showFullContent={true} showbutton={false} /> 
     </div>
   )

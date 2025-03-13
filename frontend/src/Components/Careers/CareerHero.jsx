@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import hero1 from "../../assets/Images/careers-page.webp";
-import NavBar from '../NavBar/NavBar';
 
 const CareerHero = () => {
   // State to track when the component has mounted
@@ -19,9 +18,6 @@ const CareerHero = () => {
           src={hero1}
           alt='product'
         />
-        <div className="absolute top-0 left-0 w-full z-20">
-          <NavBar />
-        </div>
       </div>
     </div>
   );
