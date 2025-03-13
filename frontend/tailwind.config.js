@@ -33,6 +33,10 @@ export default {
         primary: "#FFF0CC",
         brandYellow: "#FDC432",
         textColor: "#545454",
+        adminPrimary: '#3c91e6',
+        adminBlack: '#342e37',
+        adminWhite: '#f9f9f9',
+        adminGray: '#eeeeee',
         
       },
       height: {
