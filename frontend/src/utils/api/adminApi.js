@@ -32,36 +32,6 @@ const adminLogoutApi = async () => {
     }
 }
 
-const fetchCompanyInfoApi = async () => {
-    try {
-        const response = await adminInstance.get('/info');
-        return response.data;
-    } catch (error) {
-        console.log("error fetching company info:", error.response);
-        return error.response;
-    }
-}
-
-const fetchAdminDataApi = async () => {
-    try {
-        const response = await adminInstance.get('/get-admin-data');
-        return response.data;
-    } catch (error) {
-        console.log("error fetching admin data:", error.response);
-        return error.response;
-    }
-}
-
-const updateAdminDataApi = async (data) => {
-    try {
-        const response = await adminInstance.post('/update', data);
-        return response.data;
-    } catch (error) {
-        console.log("error updating admin data:", error.response);
-        return error.response;
-    }
-}
-
 const fetchStatsApi = async () => {
     try {
         const response = await adminInstance.get('/stats');
@@ -86,9 +56,6 @@ export {
     adminLoginApi,
     isAdminAuthenticatedApi,
     adminLogoutApi,
-    fetchAdminDataApi,
-    updateAdminDataApi,
-    fetchCompanyInfoApi,
     fetchStatsApi,
     fetchLatestDataApi,
 }
