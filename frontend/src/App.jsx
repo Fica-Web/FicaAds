@@ -47,6 +47,7 @@ const App = () => {
           <Route path='teams' element={<AdminTeamPage />} />
           <Route path='blogs' element={<AdminBlogPage />} />
           <Route path='blogs/create' element={<CreateBlogPage />} />
+          <Route path='blogs/edit/:id' element={<CreateBlogPage />} />
           <Route path='careers' element={<AdminCareerPage />} />
         </Route>
       </Route>
