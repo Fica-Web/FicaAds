@@ -16,6 +16,8 @@ import AdminDashboard from './admin/pages/AdminDashboard';
 import AdminBlogPage from './admin/pages/AdminBlogPage';
 import AdminTeamPage from './admin/pages/AdminTeamPage';
 import AdminCareerPage from './admin/pages/AdminCareerPage';
+import AdminLogin from './admin/pages/AdminLogin';
+import AdminAuth from './utils/auth/AdminAuth';
 
 const App = () => {
   return (
@@ -34,12 +36,17 @@ const App = () => {
         <Route path='services/:id' element={<ServiceDetailsPage />} />
       </Route>
 
-      {/* Admin Layout Routes */}
-      <Route path='/admin' element={<AdminLayout />}>
-        <Route index element={<AdminDashboard />} />
-        <Route path='teams' element={<AdminTeamPage />} />
-        <Route path='blogs' element={<AdminBlogPage />} />
-        <Route path='careers' element={<AdminCareerPage />} />
+      {/* Admin Authentication Route */}
+      <Route path='/admin/login' element={<AdminLogin />} />
+
+      {/* Protected Admin Routes */}
+      <Route path='/admin' element={<AdminAuth />}>
+        <Route element={<AdminLayout />}>
+          <Route index element={<AdminDashboard />} />
+          <Route path='teams' element={<AdminTeamPage />} />
+          <Route path='blogs' element={<AdminBlogPage />} />
+          <Route path='careers' element={<AdminCareerPage />} />
+        </Route>
       </Route>
     </Routes>
   );
