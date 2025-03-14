@@ -14,6 +14,7 @@ import ServiceDetailsPage from './Pages/ServiceDetailsPage';
 import AdminLayout from './layout/AdminLayout';
 import AdminDashboard from './admin/pages/AdminDashboard';
 import AdminBlogPage from './admin/pages/AdminBlogPage';
+import CreateBlogPage from './admin/pages/CreateBlogPage';
 import AdminTeamPage from './admin/pages/AdminTeamPage';
 import AdminCareerPage from './admin/pages/AdminCareerPage';
 import AdminLogin from './admin/pages/AdminLogin';
@@ -45,6 +46,7 @@ const App = () => {
           <Route index element={<AdminDashboard />} />
           <Route path='teams' element={<AdminTeamPage />} />
           <Route path='blogs' element={<AdminBlogPage />} />
+          <Route path='blogs/create' element={<CreateBlogPage />} />
           <Route path='careers' element={<AdminCareerPage />} />
         </Route>
       </Route>
