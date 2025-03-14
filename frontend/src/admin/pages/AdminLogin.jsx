@@ -61,9 +61,9 @@ const AdminLogin = () => {
             const response = await adminLoginApi(formData);
             
             if (response && response.admin) {
-            const { username, email } = response.admin;
+            const { username } = response.admin;
             
-            if (username && email) {
+            if (username) {
                 // Optionally, clear the form after successful submission
                 setUsername('');
                 setPassword('');

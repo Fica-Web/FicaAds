@@ -10,7 +10,7 @@ const Input = ({ name, Icon, placeholder, type = "text", value, onChange, isPass
 
     return (
         <div className='flex flex-col min-w-72 mb-6'>
-            <div className='flex items-center border-b-2 border-gray-400 text-gray-500'>
+            <div className='flex items-center border-b-2 border-gray3 text-gray1'>
                 {Icon && <Icon className='mr-2' />}
                 <input
                     name={name}

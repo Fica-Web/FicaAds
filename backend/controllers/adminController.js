@@ -4,10 +4,10 @@ import Admin from "../models/adminSchema.js";
 
 const adminSignup = async (req, res) => {
     try {
-        const { username, email, password } = req.body;
+        const { username, password } = req.body;
         
         // Validate the input data
-        if (!username || !email || !password) {
+        if (!username || !password) {
             return res.status(400).json({ error: 'All fields are required' });
         }
     
@@ -17,7 +17,6 @@ const adminSignup = async (req, res) => {
         // Create new Admin
         const admin = await Admin.create({
             username,
-            email,
             password: hashedPassword
         })
         
