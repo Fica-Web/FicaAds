@@ -15,7 +15,7 @@ const getBlogs = async (req, res) => {
 
 const createBlog = async (req, res) => {
     try {
-        const { title, description, content, author, category, tags, publishedAt } = req.body;
+        const { title, description, content, author, category, publishedAt } = req.body;
 
         // Ensure content is an array
         const parsedContent = typeof content === "string" ? JSON.parse(content) : content;
@@ -37,7 +37,6 @@ const createBlog = async (req, res) => {
             content: parsedContent, // ✅ Correct field name
             author,
             category,
-            tags,
             coverImage: coverImage.secure_url,
             coverImageId: coverImage.public_id,
             publishedAt

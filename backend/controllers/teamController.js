@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Team from "../models/teamSchema";
+import Team from "../models/teamSchema.js";
 import cloudinary from "../config/cloudinary.js";
 
 const getTeam = async (req, res) => {
