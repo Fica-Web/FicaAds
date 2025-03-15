@@ -8,7 +8,7 @@ const AdminTeamList = () => {
     const [loading, setLoading] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [formData, setFormData] = useState({ name: "", role: "", image: null });
-    const [editingMemberId, setEditingMemberId] = useState(null);
+    const [editingMember, setEditingMember] = useState(null);
 
     useEffect(() => {
         fetchTeamMembers();
@@ -43,13 +43,13 @@ const AdminTeamList = () => {
         try {
             let updatedMember;
 
-            if (editingMemberId) {
-                const response = await updateTeamMemberApi(editingMemberId, formData);
+            if (editingMember) {
+                const response = await updateTeamMemberApi(editingMember._id, formData);
                 updatedMember = response.teamMember;
 
                 setTeamMembers(prevMemb =>
                     prevMemb.map(member =>
-                        member._id === editingMemberId ? updatedMember : member
+                        member._id === editingMember._id ? updatedMember : member
                     )
                 );
             } else {
@@ -60,7 +60,7 @@ const AdminTeamList = () => {
             }
 
             setIsModalOpen(false);
-            setEditingMemberId(null);
+            setEditingMember(null);
             setFormData({ name: "", role: "", image: null });
         } catch (error) {
             console.error("Error submitting team member:", error);
@@ -71,7 +71,7 @@ const AdminTeamList = () => {
 
     const openEditModal = (member) => {
         setFormData({ name: member.name, role: member.role, image: null });
-        setEditingMemberId(member._id);
+        setEditingMember(member);
         setIsModalOpen(true);
     };
 
@@ -81,7 +81,7 @@ const AdminTeamList = () => {
                 <button
                     onClick={() => {
                         setIsModalOpen(true);
-                        setEditingMemberId(null);
+                        setEditingMember(null);
                         setFormData({ name: "", role: "", image: null });
                     }}
                     className="bg-green-500 text-white px-4 py-2 rounded-lg"
@@ -127,14 +127,14 @@ const AdminTeamList = () => {
             {/* Add/Edit Team Member Modal */}
             <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
                 <h3 className="text-xl font-semibold mb-4">
-                    {editingMemberId ? "Edit Team Member" : "Add Team Member"}
+                    {editingMember ? "Edit Team Member" : "Add Team Member"}
                 </h3>
                 <TeamMemberForm
                     formData={formData}
                     setFormData={setFormData}
                     loading={loading}
                     handleSubmit={handleAddOrEditMember}
-                    editingMemberId={editingMemberId}
+                    editingMember={editingMember}
                 />
             </Modal>
         </div>

@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import LoadingButton from "../reusable/LoadingButton";
 
-const TeamMemberForm = ({ formData, setFormData, loading, handleSubmit, editingMemberId }) => {
+const TeamMemberForm = ({ formData, setFormData, loading, handleSubmit, editingMember }) => {
     const [errors, setErrors] = useState({});
-    const [previewImage, setPreviewImage] = useState(formData.imageUrl || ""); // For image preview
+    const [previewImage, setPreviewImage] = useState(formData.imageUrl || editingMember?.imageUrl); // For image preview
 
     const validateForm = () => {
         let newErrors = {};
 
         if (!formData.name.trim()) newErrors.name = "Name is required";
         if (!formData.role.trim()) newErrors.role = "Role is required";
-        if (!editingMemberId && !formData.image) newErrors.image = "Image is required"; // Image required only for new entries
+        if (!editingMember && !formData.image) newErrors.image = "Image is required"; // Image required only for new entries
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
@@ -85,7 +85,7 @@ const TeamMemberForm = ({ formData, setFormData, loading, handleSubmit, editingM
                         <img
                             src={previewImage}
                             alt="Preview"
-                            className="max-h-40 rounded-lg border"
+                            className="h-40 w-40 rounded-lg border object-cover"
                         />
                     </div>
                 )}
@@ -93,8 +93,8 @@ const TeamMemberForm = ({ formData, setFormData, loading, handleSubmit, editingM
 
             <LoadingButton
                 loading={loading}
-                text={editingMemberId ? "Update Member" : "Submit Member"}
-                loadingText={editingMemberId ? "Updating..." : "Submitting..."}
+                text={editingMember ? "Update Member" : "Submit Member"}
+                loadingText={editingMember ? "Updating..." : "Submitting..."}
                 type="submit"
             />
         </form>
