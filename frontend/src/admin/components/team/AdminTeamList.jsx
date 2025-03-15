@@ -51,7 +51,9 @@ const AdminTeamList = () => {
 
             if (editingMemberId) {
                 // Update existing member
-                updatedMember = await updateTeamMemberApi(editingMemberId, formData);
+                const response = await updateTeamMemberApi(editingMemberId, formData);
+                updatedMember = response.teamMember;
+                console.log('updated member form frontend:', updatedMember);
 
                 // Replace the updated member in the state
                 setTeamMembers(prevMemb =>
@@ -61,7 +63,9 @@ const AdminTeamList = () => {
                 );
             } else {
                 // Create new member
-                updatedMember = await createTeamMemberApi(formData);
+                const response = await createTeamMemberApi(formData);
+                updatedMember = response.teamMember
+                console.log('updated member form frontend:', updatedMember);
 
                 // Add the new member to the state
                 setTeamMembers(prevMemb => [...prevMemb, updatedMember]);
