@@ -114,7 +114,7 @@ const deleteTeamMember = async (req, res) => {
         // Delete the team member from database
         await Team.findByIdAndDelete(id);
 
-        res.status(200).json({ message: "Team member and image deleted successfully" });
+        res.status(200).json({ message: "Team member deleted successfully" });
     } catch (error) {
         console.error("Error during team member deletion:", error);
         res.status(500).json({ error: error.message });
