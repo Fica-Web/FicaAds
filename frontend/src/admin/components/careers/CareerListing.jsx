@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { getJobsApi, deleteJobApi } from "../../../utils/api/careerApi";
+import { FaRegEye } from "react-icons/fa";
 import Modal from "../reusable/Modal";
 import CareerForm from "./CareerForm";
+import JobDetailsModal from "./JobDetailsModal";
 
 const AdminCareerList = () => {
     const [jobs, setJobs] = useState([]);
     const [loading, setLoading] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isDetailsOpen, setIsDetailsOpen] = useState(false);
     const [editingJob, setEditingJob] = useState(null);
+    const [selectedJob, setSelectedJob] = useState(null);
 
     useEffect(() => {
         fetchJobs();
@@ -39,6 +43,11 @@ const AdminCareerList = () => {
         setIsModalOpen(true);
     };
 
+    const openDetailsModal = (job) => {
+        setSelectedJob(job);
+        setIsDetailsOpen(true);
+    };
+
     return (
         <div className="p-5">
             <div className="flex justify-between items-center mb-4">
@@ -58,10 +67,20 @@ const AdminCareerList = () => {
             ) : (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {jobs.map((job) => (
-                        <div key={job._id} className="bg-white shadow-lg rounded-xl p-4">
-                            <h3 className="text-lg font-semibold">{job.title}</h3>
+                        <div key={job._id} className="bg-white shadow-lg rounded-xl p-6">
+                            <div className="flex justify-between">
+                                <h3 className="text-lg font-semibold">{job.title}</h3>
+                                <button
+                                    onClick={() => openDetailsModal(job)}
+                                    className="bg-cyan-400 hover:bg-cyan-500 text-white px-3 py-1 rounded"
+                                >
+                                    <FaRegEye />
+                                </button>
+                            </div>
                             <p className="text-gray-500">{job.employmentType} - {job.location}</p>
-                            <p className="mt-2 text-sm text-gray-700">{job.description.slice(0, 100)}...</p>
+                            <p className="mt-2 text-sm text-gray-700">
+                                {job.description.slice(0, 100)}...
+                            </p>
                             <div className="mt-4 flex gap-3">
                                 <button
                                     onClick={() => openModal(job)}
@@ -83,11 +102,16 @@ const AdminCareerList = () => {
 
             {/* Add/Edit Job Modal */}
             <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-                <CareerForm 
-                    editingJob={editingJob} 
-                    onSuccess={fetchJobs} 
-                    onClose={() => setIsModalOpen(false)} 
+                <CareerForm
+                    editingJob={editingJob}
+                    onSuccess={fetchJobs}
+                    onClose={() => setIsModalOpen(false)}
                 />
+            </Modal>
+
+            {/* Job Details Modal */}
+            <Modal isOpen={isDetailsOpen} onClose={() => setIsDetailsOpen(false)}>
+                <JobDetailsModal job={selectedJob} />
             </Modal>
         </div>
     );
