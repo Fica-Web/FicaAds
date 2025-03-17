@@ -7,8 +7,7 @@ import connectDB from './config/connectDB.js';
 import adminRouter from './routers/adminRouter.js';
 import blogsRouter from './routers/blogsRouter.js';
 import teamRouter from './routers/teamRouter.js';
-// import completedProjectRouter from './routers/completedProjectRoutes.js';
-// import messageRouter from './routers/messageRouter.js';
+import careerRouter from './routers/careerRouter.js';
 
 dotenv.config();
 
@@ -36,8 +35,7 @@ app.use(cors(corsOptions)); // Enable CORS using the specified options
 app.use('/api/admin', adminRouter); // Routes for admin-specific functionalities
 app.use('/api/blogs', blogsRouter); // Routes for blogs-specific functionalities
 app.use('/api/team', teamRouter); 
-// app.use('/api/projects', completedProjectRouter); // Routes for completed works
-// app.use('/api/messages', messageRouter); // Routes for completed works
+app.use('/api/careers', careerRouter); // Routes for completed works
 
 app.get('/', (req, res) => {
     res.send('server is running')
