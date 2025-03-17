@@ -32,12 +32,12 @@ const Modal = ({ isOpen, onClose, children }) => {
         >
             <div
                 ref={modalRef}
-                className="bg-white rounded-lg p-6 w-full max-w-md relative shadow-lg max-h-[90vh] overflow-y-auto transition-transform transform scale-95 animate-fadeIn"
+                className="bg-white rounded-lg p-6 w-full max-w-lg relative shadow-lg max-h-[90vh] overflow-y-auto transition-transform transform scale-95 animate-fadeIn"
             >
                 {/* Close Button */}
                 <button
                     onClick={onClose}
-                    className="absolute top-3 right-3 text-gray-600 hover:text-black text-xl"
+                    className="absolute top-8 right-8 text-lightgray hover:text-black text-2xl z-10"
                 >
                     &times;
                 </button>
