@@ -1,22 +1,18 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
 import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { IoMdLogOut, IoMdSettings } from "react-icons/io";
 import adminNavOptions from '../../../data/adminNavOptions';
-// import { adminLogoutApi } from '../../utils/api/adminApi';
-// import { clear_credentials } from '../../redux/slices/adminSlice';
+import { adminLogoutApi } from '../../../utils/api/adminApi';
 
 const AdminSidebar = ({ isOpen }) => {
-    // const dispatch = useDispatch()
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    // const handleLogout = async () => {
-    //     const response = await adminLogoutApi();
-    //     if (response) {
-    //         dispatch(clear_credentials())
-    //         navigate('/admin/login');
-    //     }
-    // };
+    const handleLogout = async () => {
+        const response = await adminLogoutApi();
+        if (response) {
+            navigate('/admin/login');
+        }
+    };
 
     return (
         <aside
@@ -42,15 +38,8 @@ const AdminSidebar = ({ isOpen }) => {
                     ))}
                 </ul>
                 <div className='my-4'>
-                    <Link to={'/admin/settings'}
-                        // onClick={handleLogout}
-                        className='flex items-center gap-3 py-2 p-10 font-semibold text-lg cursor-pointer hover:scale-105 transition-transform duration-300'
-                    >
-                        <IoMdSettings className='font-extrabold' />
-                        Settings
-                    </Link>
                     <button
-                        // onClick={handleLogout}
+                        onClick={handleLogout}
                         className='flex items-center gap-3 py-2 p-10 text-red-600 font-semibold text-lg cursor-pointer hover:scale-105 transition-transform duration-300'
                     >
                         <IoMdLogOut className='font-extrabold' />
