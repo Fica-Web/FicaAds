@@ -13,7 +13,7 @@ const getJobsApi = async () => {
 };
 
 // Create a new job
-const createJobsApi = async (formData) => {
+const createJobApi = async (data) => {
     try {
         const response = await careerInstance.post("/", data);
 
@@ -31,7 +31,7 @@ const createJobsApi = async (formData) => {
 };
 
 // Update an existing job
-const updateJobsApi = async (id, formData) => {
+const updateJobApi = async (id, data) => {
     try {
         const response = await careerInstance.put(`/${id}`, data);
 
@@ -48,7 +48,7 @@ const updateJobsApi = async (id, formData) => {
 };
 
 // Delete a job
-const deleteJobsApi = async (id) => {
+const deleteJobApi = async (id) => {
     try {
         const response = await careerInstance.delete(`/${id}`);
 
@@ -65,4 +65,4 @@ const deleteJobsApi = async (id) => {
     }
 };
 
-export { getJobsApi, createJobsApi, updateJobsApi, deleteJobsApi };
+export { getJobsApi, createJobApi, updateJobApi, deleteJobApi };
