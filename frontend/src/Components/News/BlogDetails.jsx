@@ -31,10 +31,10 @@ const BlogDetails = () => {
   }, [id]);
 
   if (loading) return <div className="text-center mt-20">Loading...</div>;
-  if (error) return <div className="text-center mt-20 text-red-500">{error}</div>;
+  if (error) return <div className="text-center m-20 text-red-500">{error}</div>;
 
   return (
-    <div className="w-11/12 mx-auto mt-20 space-y-10 lg:w-3/4 xl:w-2/3">
+    <div className="w-11/12 mx-auto mt-20 mb-10 space-y-10 lg:w-3/4 xl:w-2/3">
       {/* Blog Header Section */}
       <div className="text-center">
         <p className="font-Switzer-Medium text-gray uppercase tracking-wider">{blog.category}</p>
@@ -76,7 +76,9 @@ const BlogDetails = () => {
       </div>
 
       {/* Related Blogs Section */}
-      <LatestBlog latestBlogs={latestBlogs} />
+      {latestBlogs.length > 0 && (
+        <LatestBlog latestBlogs={latestBlogs} />
+      )}
     </div>
   );
 };
