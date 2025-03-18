@@ -1,18 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getSingleBlogApi,  } from "../../utils/api/blogApi";
+import { getSingleBlogApi, getLatestBlogApi } from "../../utils/api/blogApi";
+import LatestBlog from "./LatestBlogs";
 
 const BlogDetails = () => {
   const { id } = useParams(); // Get blog ID from URL
   const [blog, setBlog] = useState(null);
+  const [latestBlogs, setLatestBlogs] = useState([]); // ✅ Fixed missing state
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchBlogDetails = async () => {
+    const fetchData = async () => {
       try {
-        const response = await getSingleBlogApi(id);
-        setBlog(response.blog);
+        const [blogResponse, latestBlogResponse] = await Promise.all([
+          getSingleBlogApi(id),
+          getLatestBlogApi(id),
+        ]);
+
+        setBlog(blogResponse.blog);
+        setLatestBlogs(latestBlogResponse.latestBlogs);
       } catch (err) {
         setError("Failed to load blog details.");
       } finally {
@@ -20,7 +27,7 @@ const BlogDetails = () => {
       }
     };
 
-    fetchBlogDetails();
+    fetchData();
   }, [id]);
 
   if (loading) return <div className="text-center mt-20">Loading...</div>;
@@ -50,9 +57,9 @@ const BlogDetails = () => {
         <img
           src={blog.coverImage}
           alt={blog.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all"></div>
       </div>
 
       {/* Blog Content */}
@@ -68,8 +75,8 @@ const BlogDetails = () => {
           ))}
       </div>
 
-      {/* Related News Section */}
-      
+      {/* Related Blogs Section */}
+      <LatestBlog latestBlogs={latestBlogs} />
     </div>
   );
 };
