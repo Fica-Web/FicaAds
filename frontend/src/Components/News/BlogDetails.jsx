@@ -1,95 +1,75 @@
-import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import NewsCard from './NewsCard';
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { getSingleBlogApi,  } from "../../utils/api/blogApi";
 
 const BlogDetails = () => {
-  const location = useLocation();
-  
+  const { id } = useParams(); // Get blog ID from URL
+  const [blog, setBlog] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
   useEffect(() => {
-    window.scrollTo(0, 0); // Resets scroll to the top of the page
-  }, [location]);
+    const fetchBlogDetails = async () => {
+      try {
+        const response = await getSingleBlogApi(id);
+        setBlog(response.blog);
+      } catch (err) {
+        setError("Failed to load blog details.");
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  // Retrieve the blog data safely
-  const blog = location.state?.blog;
+    fetchBlogDetails();
+  }, [id]);
 
-  if (!blog) {
-    return <div className="text-center mt-20">No blog data found</div>;
-  }
+  if (loading) return <div className="text-center mt-20">Loading...</div>;
+  if (error) return <div className="text-center mt-20 text-red-500">{error}</div>;
 
   return (
-    <div>
-      <div className="w-11/12 mx-auto mt-20 space-y-10 lg:w-1/2">
-        <div className='space-y-2'>
-          <p className='font-Switzer-Medium text-gray'>The Brand Identity</p>
-          <h2 className="text-2xl font-Switzer-Medium uppercase xl:text-5xl">{blog.title}</h2>
-          <div className='flex justify-between'>
-            <p className='font-Switzer-Medium text-gray'>{blog.author}</p>
-            <p className='font-Switzer-Medium text-gray'>{blog.date}</p>
-          </div>
-          <img
-            src={blog.imageUrl}
-            alt={blog.title}
-            className="mt-6 w-full h-124 object-cover rounded-lg"
-          />
-        </div>
-        
-        {/* Blog Content */}
-        <div className='space-y-4'>
-          <p className="font-Switzer-Light text-lg mt-4">{blog.content}</p>
-
-          {blog.sections?.map((section, index) => (
-            <div key={index} className="mt-10">
-              <h2 className="font-Switzer-Medium text-3xl mt-5">{section.heading}</h2>
-
-              {section.subSections?.map((sub, subIndex) => (
-                <div key={subIndex} className="mt-1 pl-3">
-                  {sub.subHeading && <h2 className="font-Switzer-Medium text-xl mb-1 ">{sub.subHeading}</h2>}
-                  
-                  {/* Ensure `subDescription` is an array before mapping */}
-                  {Array.isArray(sub.subDescription) ? (
-                    sub.subDescription.map((desc, descIndex) => (
-                      <p key={descIndex} className="font-Switzer-Light  ml-3 ">{desc}</p>
-                    ))
-                  ) : (
-                    <p className="font-Switzer-Light ">{sub.subDescription}</p>
-                  )}
-                </div>
-              ))}
-            </div>
-          ))}
-
-          {/* Blog Conclusion */}
-          {blog.conclusion && (
-            <div className="mt-6">
-              <h2 className="font-Switzer-Medium text-3xl">Conclusion</h2>
-              <p className="font-Switzer-Light mt-2">{blog.conclusion}</p>
-            </div>
-          )}
-
-          {/* Pro Tips */}
-          {blog.proTips?.length > 0 && (
-            <div className="mt-6">
-              <h2 className="font-Switzer-Medium text-3xl">Pro Tips</h2>
-              <ul className="list-disc ml-5 mt-2 space-y-1">
-                {blog.proTips.map((tip, tipIndex) => (
-                  <li key={tipIndex} className="font-Switzer-Light text-lg">{tip}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {/* Call to Action */}
-          {blog.callToAction && (
-            <div className="mt-6">
-              <h2 className="font-Switzer-Medium text-3xl">Call to Action</h2>
-              <p className="font-Switzer-Light lg mt-2">{blog.callToAction}</p>
-            </div>
-          )}
+    <div className="w-11/12 mx-auto mt-20 space-y-10 lg:w-3/4 xl:w-2/3">
+      {/* Blog Header Section */}
+      <div className="text-center">
+        <p className="font-Switzer-Medium text-gray uppercase tracking-wider">{blog.category}</p>
+        <h1 className="text-3xl xl:text-5xl font-Switzer-Medium uppercase leading-tight mt-2">{blog.title}</h1>
+        <div className="flex justify-center items-center space-x-4 mt-3 text-sm text-lightgray">
+          <p className="font-Switzer-Medium">{blog.author}</p>
+          <span>•</span>
+          <p className="font-Switzer-Medium">
+            {new Date(blog.createdAt).toLocaleDateString("en-US", {
+              month: "short",
+              day: "2-digit",
+              year: "numeric",
+            })}
+          </p>
         </div>
       </div>
 
+      {/* Cover Image with Overlay */}
+      <div className="relative w-full h-96 rounded-lg overflow-hidden">
+        <img
+          src={blog.coverImage}
+          alt={blog.title}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+      </div>
+
+      {/* Blog Content */}
+      <div className="space-y-6">
+        {blog.description && <p className="font-Switzer-Light text-lg">{blog.description}</p>}
+
+        {Array.isArray(blog.content) &&
+          blog.content.map((section, index) => (
+            <div key={index} className="mt-8">
+              <h2 className="font-Switzer-Medium text-2xl xl:text-3xl">{section.contentTitle}</h2>
+              <p className="font-Switzer-Light text-lg mt-2 leading-relaxed">{section.contentDescription}</p>
+            </div>
+          ))}
+      </div>
+
       {/* Related News Section */}
-      <NewsCard />
+      
     </div>
   );
 };
