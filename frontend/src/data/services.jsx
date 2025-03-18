@@ -140,6 +140,7 @@ const services = [
         "sections": [
             {
                 "heading": "Why Web Design & SEO Go Hand-in-Hand",
+                "type": "",
                 "subSections": [
                     {
                         "subHeading": "",
@@ -158,6 +159,7 @@ const services = [
             },
             {
                 "heading": "Our SEO-Driven Web Design Process",
+                "type": "",
                 "subSections": [
                     {
                         "subHeading": "#1: Discovery & Keyword Blueprinting",
@@ -216,6 +218,7 @@ const services = [
             },
             {
                 "heading": "Your Dubai SEO Advantage",
+                "type": "",
                 "subSections": [
                     { "subHeading": "🔑 Local SEO Domination", "subDescription": [
                         { "content": " Google My Business profile setup/optimization", "type": "list" },
@@ -245,6 +248,7 @@ const services = [
         "sections": [
             {
                 "heading": "Why Choose Our Web Designing Company in Dubai?",
+                "type": "",
                 "subSections": [
                     { "subHeading": "", "subDescription": [
                         { "content": "Your website is the face of your brand online. We design and develop websites that are not just visually captivating but also user-friendly, responsive, and optimized for search engines. Here’s what sets us apart: ", "type": "description" }
@@ -265,6 +269,7 @@ const services = [
             },
             {
                 "heading": "Our Web Design & Development Services",
+                "type": "",
                 "subSections": [
                     { "subHeading": "Custom Website Development", "subDescription": [
                         { "content": " Stand out with a website tailored to your goals. Whether it’s a dynamic portal, educational platform, or corporate site, we code it from scratch.", "type": "list" }
@@ -285,6 +290,7 @@ const services = [
             },
             {
                 "heading": "Our Process: Transparent, Collaborative, Results-Driven",
+                "type": "",
                 "subSections": [
                     { "subHeading": "Discovery & Strategy", "subDescription": [
                         { "content": "We start by understanding your business, audience, and competitors to craft a data-driven plan.", "type": "content" }
@@ -302,6 +308,7 @@ const services = [
             },
             {
                 "heading": "Why Businesses in Dubai Trust Us",
+                "type": "",
                 "subSections": [
                     { "subHeading": "", "subDescription": [
                         { "content": " 15+ Years of Excellence: Proven expertise as Dubai’s preferred **web designing company**.", "type": "list" },

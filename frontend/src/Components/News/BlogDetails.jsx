@@ -38,7 +38,7 @@ const BlogDetails = () => {
       {/* Blog Header Section */}
       <div className="text-center">
         <p className="font-Switzer-Medium text-gray uppercase tracking-wider">{blog.category}</p>
-        <h1 className="text-3xl xl:text-5xl font-Switzer-Medium uppercase leading-tight mt-2">{blog.title}</h1>
+        <h2 className="text-3xl xl:text-5xl font-Switzer-Medium uppercase leading-tight mt-2">{blog.title}</h2>
         <div className="flex justify-center items-center space-x-4 mt-3 text-sm text-lightgray">
           <p className="font-Switzer-Medium">{blog.author}</p>
           <span>•</span>

@@ -49,9 +49,9 @@ const AboutBanner = () => {
                             />
                         </div>
                         <div className='mt-6 lg:w-9/12 xl:w-8/12 animate-fade-up duration-1000'>
-                            <h1 className='font-Switzer-Medium uppercase text-black text-4xl md:text-4xl lg:text-5xl xl:text-6xl'>
+                            <h2 className='font-Switzer-Medium uppercase text-black text-4xl md:text-4xl lg:text-5xl xl:text-6xl'>
                                 A Dynamic Team of Passionate Designers
-                            </h1>
+                            </h2>
                         </div>
                     </div>
 
