@@ -101,7 +101,7 @@ const AdminTeamList = () => {
                             <img
                                 src={member.imageUrl}
                                 alt={member.name}
-                                className="max-h-48 rounded-full object-cover mb-3"
+                                className="max-h-48 w-48 rounded-full object-cover mb-3"
                             />
                             <h3 className="text-lg font-semibold">{member.name}</h3>
                             <p className="text-gray-500">{member.role}</p>

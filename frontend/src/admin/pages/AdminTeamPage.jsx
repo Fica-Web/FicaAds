@@ -11,4 +11,4 @@ const AdminTeamPage = () => {
   )
 }
 
-export default AdminTeamPage
+export default AdminTeamPage;
