@@ -4,6 +4,7 @@ import services from '../data/services';
 import ServiceHero from '../Components/services/ServiceHero';
 import ServiceContentListing from '../Components/services/ServiceContentListing';
 import ProcessListing from '../Components/services/ProcessListing';
+import GridBox from '../Components/services/GridBox';
 
 const ServiceDetailsPage = () => {
     const { id } = useParams();
@@ -17,6 +18,7 @@ const ServiceDetailsPage = () => {
             <ServiceHero service={service} />
             <ServiceContentListing service={service} />
             <ProcessListing />
+            <GridBox />
         </div>
     )
 }
