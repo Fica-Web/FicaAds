@@ -159,7 +159,7 @@ const services = [
             },
             {
                 "heading": "Our SEO-Driven Web Design Process",
-                "type": "",
+                "type": "process",
                 "subSections": [
                     {
                         "subHeading": "#1: Discovery & Keyword Blueprinting",
