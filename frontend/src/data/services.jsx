@@ -140,7 +140,7 @@ const services = [
         "sections": [
             {
                 "heading": "Why Web Design & SEO Go Hand-in-Hand",
-                "type": "",
+                "type": "list",
                 "subSections": [
                     {
                         "subHeading": "",

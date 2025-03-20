@@ -5,6 +5,7 @@ import ServiceHero from '../Components/services/ServiceHero';
 import ServiceContentListing from '../Components/services/ServiceContentListing';
 import ProcessListing from '../Components/services/ProcessListing';
 import GridBox from '../Components/services/GridBox';
+import SeoWebDesign from '../Components/services/ListBox';
 
 const ServiceDetailsPage = () => {
     const { id } = useParams();
@@ -16,7 +17,8 @@ const ServiceDetailsPage = () => {
     return (
         <div>
             <ServiceHero service={service} />
-            <ServiceContentListing service={service} />
+            {/* <ServiceContentListing service={service} /> */}
+            <SeoWebDesign />
             <ProcessListing />
             <GridBox />
         </div>
