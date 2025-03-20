@@ -44,7 +44,10 @@ const GridBox = ({ section }) => {
                         <ul className="text-lg space-y-3 text-gray-700">
                             {sub.subDescription.map((desc, i) => (
                                 <li key={i} className="flex items-center space-x-3">
-                                    <span className="text-brandYellow text-xl">✔</span>
+                                    {/* ✅ Show tick icon ONLY if there are multiple items */}
+                                    {sub.subDescription.length > 1 && (
+                                        <span className="text-brandYellow text-xl">✔</span>
+                                    )}
                                     <span className="font-medium">{desc.content}</span>
                                 </li>
                             ))}

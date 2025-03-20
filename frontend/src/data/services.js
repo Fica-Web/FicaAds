@@ -822,7 +822,7 @@ const services = [
             {
                 "heading": "Ready to Transform Your Business?",
                 "description": "If you’re tired of mediocre results and are ready to work with a performance marketing agency in Dubai that truly delivers, let’s talk. We’re here to help you navigate the complexities of digital marketing and achieve the success you deserve.",
-                "type": "cta"
+                "type": "content"
             }
         ]
     }    

@@ -15,8 +15,7 @@ const ServiceDetailsPage = () => {
         <div>
             <ServiceHero service={service} />
             <ServiceContentListing service={service} />
-            {/* <SeoWebDesign />
-            <ProcessListing />
+            {/* <ProcessListing />
             <GridBox /> */}
         </div>
     )

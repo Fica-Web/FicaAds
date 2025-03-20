@@ -2,9 +2,9 @@ import React from 'react';
 import GridBox from './GridBox';
 import ListBox from './ListBox';
 import ProcessListing from './ProcessListing';
+import ContentListing from './ContentListing';
 
 const ServiceContentListing = ({ service }) => {
-    console.log(service);
 
     return (
         <div className='my-20 w-11/12 mx-auto'>
@@ -16,13 +16,15 @@ const ServiceContentListing = ({ service }) => {
 
             {/* Sections Rendering */}
             {service.sections?.map((section, index) => {
-                console.log('this is from frontend:', section)
+                console.log('this is from frontend:', section.type)
                 if (section.type === 'list') {
                     return <ListBox key={index} section={section} />;
                 } else if (section.type === 'process') {
                     return <ProcessListing key={index} section={section} />;
                 } else if (section.type === 'gridBox') {
                     return <GridBox key={index} section={section} />;
+                } else if (section.type === 'content') {
+                    return <ContentListing key={index} section={section} />;
                 } else {
                     return (
                         <div key={index} className="mt-10">
