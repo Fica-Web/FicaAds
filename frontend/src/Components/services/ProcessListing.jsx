@@ -28,16 +28,25 @@ const ProcessListing = ({ section }) => {
             </div>
 
             {/* Right Section: Selected Content */}
-            <div className="md:w-2/3 p-8 bg-white rounded-xl shadow-xl border-l-4 border-brandYellow transition-all duration-500 animate-fade-up">
-                <h3 className="text-2xl font-bold text-brandGreen font-Switzer-Regular">{section.subSections[selectedStep].subHeading}</h3>
-                <div className="mt-4 space-y-3">
-                    {section.subSections[selectedStep].subDescription.map((desc, i) => (
-                        desc.type === "content" ? (
-                            <p key={i} className="text-lg text-textColor">{desc.content}</p>
-                        ) : (
-                            <li key={i} className="text-lg text-lightgray list-disc ml-6">{desc.content}</li>
-                        )
-                    ))}
+            <div className="md:w-2/3 p-8 bg-white rounded-xl shadow-xl border-l-4 border-brandYellow transition-all duration-500 animate-fade-up flex justify-center items-center">
+                <div className="">
+                    <h3 className="text-3xl font-bold text-brandGreen font-Switzer-Regular leading-tight text-center">
+                        {section.subSections[selectedStep].subHeading}
+                    </h3>
+                    <div className="mt-6 space-y-4">
+                        {section.subSections[selectedStep].subDescription.map((desc, i) => (
+                            desc.type === "content" ? (
+                                <p key={i} className="text-lg text-textColor leading-relaxed">
+                                    {desc.content}
+                                </p>
+                            ) : (
+                                <div key={i} className="flex items-start gap-3">
+                                    <span className="text-brandYellow text-xl">•</span>
+                                    <p className="text-lg text-lightgray">{desc.content}</p>
+                                </div>
+                            )
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

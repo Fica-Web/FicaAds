@@ -1,136 +1,4 @@
 const services = [
-    // {
-    //     id: "1",
-    //     title: "Web Design & development content",
-    //     subTitle: "Your Trusted Web Designing Company in Dubai",
-    //     details:
-    //         "Looking for a web designing company in dubai that transforms your vision into a stunning, high-performing website? At fica ad innovation, we combine innovation, technical expertise, and customer-centric strategies to build websites that drive growth, engagement, and results. With over 5+ years of experience serving businesses across Dubai, we’ve earned our reputation as the go-to web designing company in Dubai for bespoke digital solutions. ",
-    //     sections: [
-    //         {
-    //             heading: "Awareness: Make Your Brand Known in Dubai’s Crowded Market",
-    //             subSections: [
-    //                 {
-    //                     subHeading: "Why Choose Our Web Designing Company in Dubai?",
-    //                     subDescription: <div className="flex flex-col gap-5">
-    //                         <p className='text-center'>
-    //                             Your website is the face of your brand online. We design and develop websites that are not just visually captivating but also user-friendly, responsive, and optimized for search engines. Here’s what sets us apart:
-    //                         </p>
-    //                         <p><span>Tailored Designs</span>
-    //                             No two businesses are alike. Our custom web designs reflect your brand’s uniqueness while prioritizing user experience.  
-    //                         </p>
-    //                         <p><span>Mobile-First Approach:</span>
-    //                             Over 60% of web traffic comes from mobile devices. We ensure your site looks flawless on all screens.  
-    //                         </p>
-    //                         <p><span>SEO-Ready:</span>
-    //                             Built with clean code and SEO best practices, your website will rank higher and attract organic traffic. 
-    //                         </p>
-    //                         <p><span>E-Commerce Expertise</span>
-    //                             From secure payment gateways to intuitive product catalogs, we create online stores that convert.
-    //                         </p>
-    //                         <p>
-    //                             From secure payment gateways to intuitive product catalogs, we create online stores that convert.
-    //                         </p>
-    //                     </div>
-    //                 },
-    //                 {
-    //                     subHeading: "Our Web Design & Development Services",
-    //                     subDescription: [
-    //                         "Optimize your website for local search terms like 'best [your industry] in Dubai.'",
-    //                         "Ensure your Google My Business profile is complete with accurate contact details, photos, and reviews."
-    //                     ]
-    //                 },
-    //                 {
-    //                     subHeading: "Why Businesses in Kerala Trust Us",
-    //                     subDescription: [
-    //                         "Use platforms like Facebook Ads and Google Ads to target Dubai-based audiences.",
-    //                         "Highlight what makes your brand unique, whether it’s luxury, affordability, or innovation."
-    //                     ]
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             heading: "Conservation: Engage Your Audience and Build Trust",
-    //             subSections: [
-    //                 {
-    //                     subHeading: "Create Valuable Content",
-    //                     subDescription: [
-    //                         "Share content that educates, entertains, or inspires your audience.",
-    //                         "● Blog posts about industry trends in Dubai.",
-    //                         "● Videos showcasing your expertise or product benefits.",
-    //                         "● Infographics with tips and statistics relevant to your niche."
-    //                     ]
-    //                 },
-    //                 {
-    //                     subHeading: "Be Active on Social Media",
-    //                     subDescription: [
-    //                         "Respond to comments, messages, and reviews promptly.",
-    //                         "Show your audience that you value their feedback and are ready to help."
-    //                     ]
-    //                 },
-    //                 {
-    //                     subHeading: "Host Events or Webinars",
-    //                     subDescription: [
-    //                         "Organize virtual or in-person events to connect with your audience.",
-    //                         "For example, a webinar on 'How to Succeed in Dubai’s [Your Industry] Market' can position your brand as an authority."
-    //                     ]
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             heading: "Conversion: Turn Interest into Sales",
-    //             subSections: [
-    //                 {
-    //                     subHeading: "Optimize Your Website for Conversions",
-    //                     subDescription: [
-    //                         "Ensure your website is user-friendly, mobile-responsive, and fast-loading.",
-    //                         "Use clear calls-to-action (CTAs) like 'Book Now,' 'Get a Free Quote,' or 'Shop Today.'"
-    //                     ]
-    //                 },
-    //                 {
-    //                     subHeading: "Offer Exclusive Deals",
-    //                     subDescription: [
-    //                         "Dubai shoppers love a good deal.",
-    //                         "Offer limited-time discounts, bundle offers, or free trials to encourage purchases."
-    //                     ]
-    //                 },
-    //                 {
-    //                     subHeading: "Use Retargeting Ads",
-    //                     subDescription: [
-    //                         "Not everyone will convert on their first visit.",
-    //                         "Use retargeting ads to remind potential customers about your brand and bring them back to your website."
-    //                     ]
-    //                 }
-    //             ]
-    //         },
-    //         {
-    //             heading: "Action: Build Long-Term Loyalty",
-    //             subSections: [
-    //                 {
-    //                     subHeading: "Provide Exceptional Customer Service",
-    //                     subDescription: [
-    //                         "In Dubai, word-of-mouth is powerful.",
-    //                         "Ensure every customer has a positive experience with your brand.",
-    //                         "Offer personalized support and go the extra mile to solve their problems."
-    //                     ]
-    //                 },
-    //                 {
-    //                     subHeading: "Launch a Loyalty Program",
-    //                     subDescription: [
-    //                         "Reward repeat customers with discounts, exclusive offers, or early access to new products.",
-    //                         "This will encourage them to keep coming back."
-    //                     ]
-    //                 },
-    //                 {
-    //                     subHeading: "Encourage User-Generated Content",
-    //                     subDescription: [
-    //                         "Ask your customers to share their experiences with your brand on social media.",
-    //                         "Repost their content (with permission) to build social proof and strengthen your community."
-    //                     ]
-    //                 }
-    //             ]
-    //         }
-    //     ],
-    // },
     {
         "id": "1",
         "title": "Search Engine Optimisation",
@@ -162,7 +30,7 @@ const services = [
                 "type": "process",
                 "subSections": [
                     {
-                        "subHeading": "#1: Discovery & Keyword Blueprinting",
+                        "subHeading": "1: Discovery & Keyword Blueprinting",
                         "subDescription": [
                             {
                                 "content": "We start by reverse-engineering your competitors. Using tools like Ahrefs and SEMrush, we identify:",
@@ -174,7 +42,7 @@ const services = [
                         ]
                     },
                     {
-                        "subHeading": "#2: UX-Centric Wireframing",
+                        "subHeading": "2: UX-Centric Wireframing",
                         "subDescription": [
                             {
                                 "content": "Every pixel is planned for SEO + conversions:",
@@ -186,7 +54,7 @@ const services = [
                         ]
                     },
                     {
-                        "subHeading": "#3: Development with SEO Hardwired",
+                        "subHeading": "3: Development with SEO Hardwired",
                         "subDescription": [
                             { "content": "Our coders and SEO specialists work side-by-side to:", "type": "content" },
                             { "content": " Optimize every image (compressed + alt-text tagged)", "type": "list" },
@@ -196,17 +64,17 @@ const services = [
                         ]
                     },
                     {
-                        "subHeading": "#4: Pre-Launch SEO Stress Test",
+                        "subHeading": "4: Pre-Launch SEO Stress Test",
                         "subDescription": [
                             { "content": "Before going live, we run 50+ checks:", "type": "content" },
-                            { "content": " Mobile-friendliness (Google’s #1 ranking factor)", "type": "list" },
+                            { "content": " Mobile-friendliness (Google’s 1 ranking factor)", "type": "list" },
                             { "content": " Broken link scans", "type": "list" },
                             { "content": " SSL security validation", "type": "list" },
                             { "content": " Page speed optimization (90+ Google PageSpeed score)", "type": "list" }
                         ]
                     },
                     {
-                        "subHeading": "#5: Launch & Rank Tracking",
+                        "subHeading": "5: Launch & Rank Tracking",
                         "subDescription": [
                             { "content": "We don’t disappear after delivery. For 30 days post-launch, we:", "type": "content" },
                             { "content": " Monitor keyword rankings daily", "type": "list" },
