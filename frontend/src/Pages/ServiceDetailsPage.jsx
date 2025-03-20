@@ -17,10 +17,10 @@ const ServiceDetailsPage = () => {
     return (
         <div>
             <ServiceHero service={service} />
-            {/* <ServiceContentListing service={service} /> */}
-            <SeoWebDesign />
+            <ServiceContentListing service={service} />
+            {/* <SeoWebDesign />
             <ProcessListing />
-            <GridBox />
+            <GridBox /> */}
         </div>
     )
 }

@@ -1,40 +1,63 @@
-import React from 'react'
+import React from 'react';
+import GridBox from './GridBox';
+import ListBox from './ListBox';
+import ProcessListing from './ProcessListing';
 
 const ServiceContentListing = ({ service }) => {
-    console.log(service)
+    console.log(service);
+
     return (
         <div className='my-20 w-11/12 mx-auto'>
+            {/* Title & Details */}
             <h3 className='font-Switzer-Medium text-3xl my-2 font-semibold'>
-                { service.subTitle }
+                {service.subTitle}
             </h3>
-            <p className='text-lg md:pl-5'>
-                { service.details }
-            </p>
-            {service.sections?.map((section, index) => (
-                <div key={index} className="mt-10">
-                    <h2 className="font-Switzer-Medium text-3xl mt-5 font-semibold">{section.heading}</h2>
+            <p className='text-lg md:pl-5'>{service.details}</p>
 
-                    {section?.subSections?.map((sub, subIndex) => (
-                        <div key={subIndex} className="mt-1 md:pl-3">
-                            {sub.subHeading && <h2 className="font-Switzer-Medium text-xl mb-1 mt-5 font-medium ">{sub.subHeading}</h2>}
+            {/* Sections Rendering */}
+            {service.sections?.map((section, index) => {
+                console.log('this is from frontend:', section)
+                if (section.type === 'list') {
+                    return <ListBox key={index} section={section} />;
+                } else if (section.type === 'process') {
+                    return <ProcessListing key={index} section={section} />;
+                } else if (section.type === 'gridBox') {
+                    return <GridBox key={index} section={section} />;
+                } else {
+                    return (
+                        <div key={index} className="mt-10">
+                            <h2 className="font-Switzer-Medium text-3xl mt-5 font-semibold">
+                                {section.heading}
+                            </h2>
 
-                            {Array.isArray(sub.subDescription) ? (
-                                sub.subDescription.map((desc, descIndex) => (
-                                    desc.type === "list" ? (
-                                        <li key={descIndex} className="font-Switzer-Light ml-3 list-disc">{desc.content}</li>
+                            {section?.subSections?.map((sub, subIndex) => (
+                                <div key={subIndex} className="mt-1 md:pl-3">
+                                    {sub.subHeading && (
+                                        <h2 className="font-Switzer-Medium text-xl mb-1 mt-5 font-medium">
+                                            {sub.subHeading}
+                                        </h2>
+                                    )}
+
+                                    {/* Handling List & Paragraph Content */}
+                                    {Array.isArray(sub.subDescription) ? (
+                                        <ul className="list-disc ml-5 space-y-2">
+                                            {sub.subDescription.map((desc, descIndex) => (
+                                                <li key={descIndex} className="font-Switzer-Light">
+                                                    {desc.content}
+                                                </li>
+                                            ))}
+                                        </ul>
                                     ) : (
-                                        <p key={descIndex} className="font-Switzer-Light">{desc.content}</p>
-                                    )
-                                ))
-                            ) : (
-                                <p className="font-Switzer-Light">{sub.subDescription}</p>
-                            )}
+                                        <p className="font-Switzer-Light">{sub.subDescription}</p>
+                                    )}
+                                </div>
+                            ))}
                         </div>
-                    ))}
-                </div>
-            ))}
+                    );
+                }
+            })}
         </div>
-    )
-}
+    );
+};
 
-export default ServiceContentListing
+export default ServiceContentListing;

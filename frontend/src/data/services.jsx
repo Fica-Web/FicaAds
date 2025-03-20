@@ -218,7 +218,7 @@ const services = [
             },
             {
                 "heading": "Your Dubai SEO Advantage",
-                "type": "",
+                "type": "gridBox",
                 "subSections": [
                     { "subHeading": "🔑 Local SEO Domination", "subDescription": [
                         { "content": " Google My Business profile setup/optimization", "type": "list" },
@@ -308,7 +308,7 @@ const services = [
             },
             {
                 "heading": "Why Businesses in Dubai Trust Us",
-                "type": "",
+                "type": "list",
                 "subSections": [
                     { "subHeading": "", "subDescription": [
                         { "content": " 15+ Years of Excellence: Proven expertise as Dubai’s preferred **web designing company**.", "type": "list" },
