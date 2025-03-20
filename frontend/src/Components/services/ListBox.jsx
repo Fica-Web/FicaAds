@@ -5,7 +5,7 @@ const ListBox = ({ section }) => {
     if (!section || !section.subSections) return null; // Ensure data exists
 
     return (
-        <div className="w-11/12 mx-auto my-20 flex flex-col items-center text-center relative group">
+        <div className="w-11/12 mx-auto my-28 flex flex-col items-center text-center relative group">
             {/* Floating Background Animation */}
             <div className="absolute inset-0 overflow-hidden -z-10">
                 <div className="w-80 h-80 bg-brandYellow/20 rounded-full blur-3xl absolute top-10 left-1/3 animate-pulse"></div>
@@ -28,7 +28,7 @@ const ListBox = ({ section }) => {
 
             {/* Glassmorphic Card with Animated List */}
             <motion.div
-                className="relative bg-white/10 backdrop-blur-lg p-8 md:p-10 rounded-2xl shadow-2xl border border-gray-500 max-w-3xl transition-all duration-300 hover:scale-105 hover:shadow-gray-500/50"
+                className="relative bg-white/10 backdrop-blur-lg p-8 md:p-10 rounded-2xl shadow-2xl border border-gray5 max-w-3xl transition-all duration-300 hover:scale-105 hover:shadow-gray-500/50"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}

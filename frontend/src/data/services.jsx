@@ -132,7 +132,7 @@ const services = [
     //     ],
     // },
     {
-        "id": "2",
+        "id": "1",
         "title": "Search Engine Optimisation",
         "homeTitle": "SEO",
         "subTitle": "Your Trusted Web Designing Company in Dubai",
@@ -240,7 +240,7 @@ const services = [
         ]
     },    
     {
-        "id": "3",
+        "id": "2",
         "title": "Web Design & Development",
         "homeTitle": "Web",
         "subTitle": "Your Trusted Web Designing Company in Dubai",
@@ -248,78 +248,165 @@ const services = [
         "sections": [
             {
                 "heading": "Why Choose Our Web Designing Company in Dubai?",
-                "type": "",
+                "description": "Your website is the face of your brand online. We design and develop websites that are not just visually captivating but also user-friendly, responsive, and optimized for search engines. Here’s what sets us apart: ",
+                "type": "gridBox",
                 "subSections": [
-                    { "subHeading": "", "subDescription": [
-                        { "content": "Your website is the face of your brand online. We design and develop websites that are not just visually captivating but also user-friendly, responsive, and optimized for search engines. Here’s what sets us apart: ", "type": "description" }
-                    ] },
-                    { "subHeading": "Tailored Designs", "subDescription": [
-                        { "content": "No two businesses are alike. Our custom web designs reflect your brand’s uniqueness while prioritizing user experience.", "type": "content" }
-                    ] },
-                    { "subHeading": "Mobile-First Approach", "subDescription": [
-                        { "content": "Over 60% of web traffic comes from mobile devices. We ensure your site looks flawless on all screens.", "type": "content" }
-                    ] },
-                    { "subHeading": "SEO-Ready", "subDescription": [
-                        { "content": "Built with clean code and SEO best practices, your website will rank higher and attract organic traffic.", "type": "content" }
-                    ] },
-                    { "subHeading": "E-Commerce Expertise", "subDescription": [
-                        { "content": " From secure payment gateways to intuitive product catalogs, we create online stores that convert. ", "type": "content" }
-                    ] }
+                    {
+                        "subHeading": "Tailored Designs",
+                        "subDescription": [
+                            {
+                                "content": "No two businesses are alike. Our custom web designs reflect your brand’s uniqueness while prioritizing user experience.",
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "Mobile-First Approach",
+                        "subDescription": [
+                            {
+                                "content": "Over 60% of web traffic comes from mobile devices. We ensure your site looks flawless on all screens.",
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "SEO-Ready",
+                        "subDescription": [
+                            {
+                                "content": "Built with clean code and SEO best practices, your website will rank higher and attract organic traffic.",
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "E-Commerce Expertise",
+                        "subDescription": [
+                            {
+                                "content": "From secure payment gateways to intuitive product catalogs, we create online stores that convert.",
+                            }
+                        ]
+                    }
                 ]
             },
             {
                 "heading": "Our Web Design & Development Services",
-                "type": "",
+                "type": "gridBox",
                 "subSections": [
-                    { "subHeading": "Custom Website Development", "subDescription": [
-                        { "content": " Stand out with a website tailored to your goals. Whether it’s a dynamic portal, educational platform, or corporate site, we code it from scratch.", "type": "list" }
-                    ] },
-                    { "subHeading": "E-Commerce Solutions", "subDescription": [
-                        { "content": " Launch a scalable online store with features like inventory management, multi-payment options, and AI-driven recommendations.", "type": "list" }
-                    ] },
-                    { "subHeading": "WordPress & CMS Development", "subDescription": [
-                        { "content": " Manage your content effortlessly with user-friendly WordPress sites or custom CMS platforms.", "type": "list" }
-                    ] },
-                    { "subHeading": "UI/UX Design", "subDescription": [
-                        { "content": " Engage visitors with intuitive navigation, eye-catching visuals, and seamless interactions.", "type": "list" }
-                    ] },
-                    { "subHeading": "Website Maintenance & Support", "subDescription": [
-                        { "content": " Get 24/7 technical support, security updates, and performance optimization.", "type": "list" }
-                    ] }
+                    {
+                        "subHeading": "Custom Website Development",
+                        "subDescription": [
+                            {
+                                "content": "Stand out with a website tailored to your goals. Whether it’s a dynamic portal, educational platform, or corporate site, we code it from scratch.",
+                                "type": "list"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "E-Commerce Solutions",
+                        "subDescription": [
+                            {
+                                "content": "Launch a scalable online store with features like inventory management, multi-payment options, and AI-driven recommendations.",
+                                "type": "list"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "WordPress & CMS Development",
+                        "subDescription": [
+                            {
+                                "content": "Manage your content effortlessly with user-friendly WordPress sites or custom CMS platforms.",
+                                "type": "list"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "UI/UX Design",
+                        "subDescription": [
+                            {
+                                "content": "Engage visitors with intuitive navigation, eye-catching visuals, and seamless interactions.",
+                                "type": "list"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "Website Maintenance & Support",
+                        "subDescription": [
+                            {
+                                "content": "Get 24/7 technical support, security updates, and performance optimization.",
+                                "type": "list"
+                            }
+                        ]
+                    }
                 ]
             },
             {
                 "heading": "Our Process: Transparent, Collaborative, Results-Driven",
-                "type": "",
+                "type": "process",
                 "subSections": [
-                    { "subHeading": "Discovery & Strategy", "subDescription": [
-                        { "content": "We start by understanding your business, audience, and competitors to craft a data-driven plan.", "type": "content" }
-                    ] },
-                    { "subHeading": "Design & Prototyping", "subDescription": [
-                        { "content": "Our designers create wireframes and prototypes, incorporating your feedback until every pixel is perfect.", "type": "content" }
-                    ] },
-                    { "subHeading": "Development & Testing", "subDescription": [
-                        { "content": " Using agile methodologies, we build your site and rigorously test it for speed, security, and responsiveness.", "type": "content" }
-                    ] },
-                    { "subHeading": "Launch & Growth", "subDescription": [
-                        { "content": "We deploy your website and provide SEO/marketing support to maximize visibility and conversions.", "type": "content" }
-                    ] }
+                    {
+                        "subHeading": "Discovery & Strategy",
+                        "subDescription": [
+                            {
+                                "content": "We start by understanding your business, audience, and competitors to craft a data-driven plan.",
+                                "type": "content"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "Design & Prototyping",
+                        "subDescription": [
+                            {
+                                "content": "Our designers create wireframes and prototypes, incorporating your feedback until every pixel is perfect.",
+                                "type": "content"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "Development & Testing",
+                        "subDescription": [
+                            {
+                                "content": "Using agile methodologies, we build your site and rigorously test it for speed, security, and responsiveness.",
+                                "type": "content"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "Launch & Growth",
+                        "subDescription": [
+                            {
+                                "content": "We deploy your website and provide SEO/marketing support to maximize visibility and conversions.",
+                                "type": "content"
+                            }
+                        ]
+                    }
                 ]
             },
             {
                 "heading": "Why Businesses in Dubai Trust Us",
                 "type": "list",
                 "subSections": [
-                    { "subHeading": "", "subDescription": [
-                        { "content": " 15+ Years of Excellence: Proven expertise as Dubai’s preferred **web designing company**.", "type": "list" },
-                        { "content": " 500+ Happy Clients: From startups to enterprises, we’ve delivered success across industries.", "type": "list" },
-                        { "content": " 100% Transparency: Regular updates, no hidden costs, and post-launch support.", "type": "list" },
-                        { "content": " Award-Winning Team: Skilled designers, developers, and SEO specialists under one roof.", "type": "list" }
-                    ] }
+                    {
+                        "subHeading": "",
+                        "subDescription": [
+                            {
+                                "content": "15+ Years of Excellence: Proven expertise as Dubai’s preferred **web designing company**.",
+                                "type": "list"
+                            },
+                            {
+                                "content": "500+ Happy Clients: From startups to enterprises, we’ve delivered success across industries.",
+                                "type": "list"
+                            },
+                            {
+                                "content": "100% Transparency: Regular updates, no hidden costs, and post-launch support.",
+                                "type": "list"
+                            },
+                            {
+                                "content": "Award-Winning Team: Skilled designers, developers, and SEO specialists under one roof.",
+                                "type": "list"
+                            }
+                        ]
+                    }
                 ]
             }
         ]
-    },
+    },    
     {
         id: "4",
         title: "Video production",

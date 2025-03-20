@@ -6,7 +6,7 @@ const ProcessListing = ({ section }) => {
     if (!section || !section.subSections) return null; // Ensure data exists
 
     return (
-        <div className="w-11/12 mx-auto my-20 flex flex-col md:flex-row gap-8">
+        <div className="w-11/12 mx-auto my-28 flex flex-col md:flex-row gap-8">
             {/* Left Section: Process Steps */}
             <div className="md:w-1/3 bg-offwhite p-6 rounded-xl shadow-lg">
                 <h2 className="text-3xl font-extrabold text-brandGreen mb-6 font-Switzer-Medium">{section.heading}</h2>
