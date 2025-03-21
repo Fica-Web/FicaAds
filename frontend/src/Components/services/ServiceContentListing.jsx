@@ -9,11 +9,12 @@ const ServiceContentListing = ({ service }) => {
     return (
         <div className='my-20 w-11/12 mx-auto'>
             {/* Title & Details */}
-            <h3 className='font-Switzer-Medium text-3xl my-2 font-semibold'>
+            <h2 className="text-3xl md:text-4xl text-center font-extrabold text-brandGreen font-Switzer-Medium mb-4">
                 {service.subTitle}
-            </h3>
-            <p className='text-lg md:pl-5'>{service.details}</p>
-
+            </h2>
+            <p className="text-lg text-gray-700 max-w-5xl mx-auto mb-6 text-center">
+                {service.details}
+            </p>
             {/* Sections Rendering */}
             {service.sections?.map((section, index) => {
                 console.log('this is from frontend:', section.type)

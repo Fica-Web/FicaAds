@@ -804,7 +804,7 @@ const services = [
                         "subHeading": "",
                         "subDescription": [
                             {
-                                "content": "FLOWRA (Menestra; cup) – Scalable e-commerce growth strategies.",
+                                "content": "FLOWRA (Menstrual cup) – Scalable e-commerce growth strategies.",
                                 "type": "list"
                             },
                             {
