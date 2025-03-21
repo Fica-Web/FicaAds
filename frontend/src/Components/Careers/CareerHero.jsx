@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import hero1 from "../../assets/Images/careers-page.webp";
+import hero1 from "../../assets/Images/Careers-page.webp";
 
 const CareerHero = () => {
   // State to track when the component has mounted
