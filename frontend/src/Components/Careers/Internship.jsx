@@ -1,5 +1,5 @@
 import React from 'react'
-import employee from "../../assets/Images/internship.webp"
+import employee from "../../assets/Images/Internship.webp"
 import { Link } from 'react-router-dom'
 
 const Internship = () => {
