@@ -22,7 +22,7 @@ export const Team = () => {
 
         {teams.map((item) => (
           <div
-            key={item.id}
+            key={item._id}
             className="bg-white   overflow-hidden"
           >
             <img
