@@ -41,5 +41,6 @@ app.get('/', (req, res) => {
     res.send('server is running');
 })
 
-// Export the app for Vercel (No app.listen)
-export default app;
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`)
+})
