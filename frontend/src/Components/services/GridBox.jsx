@@ -6,7 +6,7 @@ const GridBox = ({ section }) => {
     return (
         <div className="w-11/12 mx-auto my-28">
             {/* Heading */}
-            <h2 className="text-3xl md:text-4xl font-extrabold text-brandGreen text-center font-Singolare-Layers mb-6">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-brandGreen text-center font-Switzer-Medium mb-6 uppercase">
                 {section.heading}
             </h2>
 
