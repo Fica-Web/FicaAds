@@ -1,4 +1,5 @@
 import React from 'react';
+import ServiceTitle from './ServiceTitle';
 import GridBox from './GridBox';
 import ListBox from './ListBox';
 import ProcessListing from './ProcessListing';
@@ -9,15 +10,10 @@ const ServiceContentListing = ({ service }) => {
     return (
         <div className='my-20 w-11/12 mx-auto'>
             {/* Title & Details */}
-            <h2 className="text-3xl md:text-4xl text-center font-extrabold text-brandGreen font-Switzer-Medium mb-4 uppercase">
-                {service.subTitle}
-            </h2>
-            <p className="text-lg text-gray-700 max-w-5xl mx-auto mb-6 text-center">
-                {service.details}
-            </p>
+            <ServiceTitle service={service} />
+
             {/* Sections Rendering */}
             {service.sections?.map((section, index) => {
-                console.log('this is from frontend:', section.type)
                 if (section.type === 'list') {
                     return <ListBox key={index} section={section} />;
                 } else if (section.type === 'process') {
