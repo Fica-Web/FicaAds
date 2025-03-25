@@ -1,31 +1,49 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import img1 from '../../assets/Images/aboutbanner.jpg';
+import React, { useRef, useEffect, useState } from "react";
+import image from "../../assets/Images/aboutbanner.jpg";
 
 const ServiceHero = ({ service }) => {
+    const grayDivRef = useRef(null);
+    const [grayHeight, setGrayHeight] = useState(0);
+
+    useEffect(() => {
+        if (grayDivRef.current) {
+            setGrayHeight(grayDivRef.current.offsetHeight);
+        }
+    }, [service]);
+
     return (
-        <div className='w-11/12 mx-auto '>
-            <div className='w-full h-96 lg:h-124 animate-fade-up duration-1000'>
-                <img
-                    src={img1}
-                    alt='About Banner'
-                    className='w-full h-full rounded-xl object-cover'
-                />
+        <div
+            className="relative w-full bg-black mb-40 flex flex-col items-center lg:flex-row lg:items-center lg:justify-between px-6 lg:px-20"
+            style={{
+                height: `${grayHeight}px`,
+                backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(${image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+            }}
+        >
+            {/* Service Title - Positioned differently based on screen size */}
+            <div className="text-center lg:text-right mt-6 lg:mt-0 lg:absolute lg:right-20 lg:top-1/2 lg:-translate-y-1/2">
+                <h2 className="text-4xl md:text-5xl font-bold text-gray5 uppercase mt-5">
+                    {service.title}
+                </h2>
             </div>
-            <div className='mt-6 lg:w-9/12 xl:w-8/12 animate-fade-up duration-1000 group'>
-                <motion.h2
-                    className="relative text-4xl md:text-5xl font-Switzer-medium font-bold uppercase tracking-widest group-hover:font-Singolare-Layers w-fit h-fit pb-3"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                >
-                    <span className="relative z-10">{service.title}</span>
-                    {/* Background effect on hover */}
-                    <span className="absolute left-0 top-1/2 w-full h-1/3 bg-brandYellow opacity-0 group-hover:opacity-100 transition-all duration-500"></span>
-                </motion.h2>
+
+            {/* Gray Content Box */}
+            <div
+                ref={grayDivRef}
+                className="w-[90%] max-w-2xl bg-gray5 border-b border-gray5 p-7 sm:p-10 lg:p-20 absolute sm:top-20 top-32
+                      left-1/2 -translate-x-1/2 
+                      lg:left-20 lg:translate-x-0"
+            >
+                <h2 className="text-3xl md:text-4xl font-extrabold text-brandGreen font-Switzer-Medium mb-4 uppercase">
+                    {service.subTitle}
+                </h2>
+                <p className="text-lg text-gray1 mx-auto mb-6">
+                    {service.details}
+                </p>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ServiceHero
+export default ServiceHero;

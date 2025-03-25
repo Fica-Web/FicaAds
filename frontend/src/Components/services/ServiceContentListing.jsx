@@ -9,8 +9,6 @@ const ServiceContentListing = ({ service }) => {
 
     return (
         <div className='my-20 w-11/12 mx-auto'>
-            {/* Title & Details */}
-            <ServiceTitle service={service} />
 
             {/* Sections Rendering */}
             {service.sections?.map((section, index) => {
