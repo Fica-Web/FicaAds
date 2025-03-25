@@ -6,9 +6,11 @@ const GridBox = ({ section }) => {
     return (
         <div className="w-11/12 mx-auto my-28">
             {/* Heading */}
-            <h2 className="text-3xl md:text-4xl font-extrabold text-brandGreen text-center font-Switzer-Medium mb-6 uppercase">
-                {section.heading}
-            </h2>
+            <div className="flex justify-center">
+                <h2 className="max-w-3xl text-3xl md:text-4xl font-extrabold text-brandGreen text-center font-Switzer-Medium mb-6 uppercase">
+                    {section.heading}
+                </h2>
+            </div>
 
             {/* Optional Description */}
             {section.description && (
@@ -24,7 +26,7 @@ const GridBox = ({ section }) => {
                         key={index}
                         className="relative p-6 bg-white rounded-2xl shadow-lg border-t-4 transition-all duration-300 transform 
                             hover:shadow-2xl hover:scale-105 hover:border-transparent group"
-                        style={{ 
+                        style={{
                             borderColor: index === 0 ? "#FDC432" : index === 1 ? "#977124" : "#163029",
                             background: "linear-gradient(135deg, rgba(255,255,255,0.9), rgba(245,245,245,1))"
                         }}
@@ -33,15 +35,15 @@ const GridBox = ({ section }) => {
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
 
                         {/* Icon */}
-                        <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-brandYellow text-white text-lg font-bold px-3 py-1 rounded-bl-xl">
+                        <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-gray4 text-white text-lg font-bold px-3 py-1 rounded-bl-xl">
                             {index + 1}
                         </div>
 
-                        <h3 className="text-xl font-bold text-gray-800 font-Switzer-Medium mb-4">
+                        <h3 className="text-xl font-bold text-gray1 font-Switzer-Medium mb-4">
                             {sub.subHeading}
                         </h3>
 
-                        <ul className="text-lg space-y-3 text-gray-700">
+                        <ul className="text-lg space-y-3 text-lightgray">
                             {sub.subDescription.map((desc, i) => (
                                 <li key={i} className="flex items-center space-x-3">
                                     {/* ✅ Show tick icon ONLY if there are multiple items */}

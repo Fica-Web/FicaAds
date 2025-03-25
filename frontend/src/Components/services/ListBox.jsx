@@ -8,7 +8,7 @@ const ListBox = ({ section }) => {
         <div className="w-11/12 mx-auto my-28 flex flex-col items-center text-center relative group">
             {/* Floating Background Animation */}
             <div className="absolute inset-0 overflow-hidden -z-10">
-                <div className="w-80 h-80 bg-brandYellow/20 rounded-full blur-3xl absolute top-10 left-1/3 animate-pulse"></div>
+                {/* <div className="w-80 h-80 bg-brandYellow/20 rounded-full blur-3xl absolute top-10 left-1/3 animate-pulse"></div> */}
                 <div className="w-64 h-64 bg-brandGreen/20 rounded-full blur-3xl absolute bottom-10 right-1/3 animate-pulse"></div>
             </div>
 
@@ -44,7 +44,7 @@ const ListBox = ({ section }) => {
                                 {sub.subDescription.map((desc, index) => (
                                     <motion.li
                                         key={index}
-                                        className="flex items-center space-x-4 bg-gray-900/40 p-4 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-gray-500/40 border-l-4 border-transparent hover:border-brandYellow"
+                                        className="flex items-center space-x-4 bg-gray-900/40 p-4 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-gray-500/40 border-l-4 border-transparent hover:border-gray4"
                                         initial={{ opacity: 0, x: -30 }}
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ delay: index * 0.2, duration: 0.5 }}
