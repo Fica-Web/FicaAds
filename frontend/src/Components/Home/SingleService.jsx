@@ -32,7 +32,7 @@ const SingleService = ({ service }) => {
 
             {/* Content Section */}
             <div className="cursor-pointer">
-                <Link to={`/services/${service.id}`}>
+                <Link to={`/services/${service.id}`} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                     <h3 className="relative text-4xl font-Switzer-medium font-bold uppercase tracking-widest group-hover:font-Singolare-Layers w-fit h-fit pb-3">
                         <span className="relative z-10">{service.homeTitle}</span>
                         {/* Background effect on hover */}
