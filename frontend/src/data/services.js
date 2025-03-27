@@ -656,11 +656,174 @@ const services = [
         ]
     },    
     {
-        id: "5",
-        title: "Branding & design",
-        homeTitle: "Branding",
-        details:
-        "Planning and execution of introducing a new product to the market. This capability involves developing a comprehensive launch strategy that includes market research, branding, marketing, and promotional activities. We ensure that all visual and communication elements align with the brand identity and resonate with the target audience.",
+        "id": "5",
+        "title": "Branding & Design",
+        "homeTitle": "Branding",
+        "subTitle": "Your Premier Advertising Agency in Dubai",
+        "details": "At Fica Ad Innovation, we redefine the future of advertising through bold ideas, cutting-edge technology, and data-driven creativity. As one of Dubai’s leading innovative advertising agencies, we craft campaigns that break boundaries, captivate audiences, and drive measurable results.",
+        "sections": [
+            {
+                "heading": "Why Choose Fica Ad?",
+                "description": "Fica Ad Innovation is an industry leader with a proven track record of excellence in advertising and marketing.",
+                "type": "gridBox",
+                "subSections": [
+                    {
+                        "subHeading": "10+ Years of Expertise",
+                        "subDescription": [
+                            {
+                                "content": "Over a decade of pioneering digital and traditional advertising."
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "50+ In-House Visionaries",
+                        "subDescription": [
+                            {
+                                "content": "Strategists, creatives, tech wizards, and media mavericks driving innovation."
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "2,000+ Campaigns Launched",
+                        "subDescription": [
+                            {
+                                "content": "Delivering high-impact campaigns across the MENA region and beyond."
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "98% Client Retention Rate",
+                        "subDescription": [
+                            {
+                                "content": "Proven commitment to client success and satisfaction."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "heading": "Think. Create. Dominate.",
+                "description": "Our approach revolves around three core principles that ensure campaign success.",
+                "type": "gridBox",
+                "subSections": [
+                    {
+                        "subHeading": "THINK",
+                        "subDescription": [
+                            {
+                                "content": "Best Advertising Agency in Dubai – Fica Ad Innovation."
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "CREATE",
+                        "subDescription": [
+                            {
+                                "content": "Award-Winning Campaigns – Fica Ad Innovation."
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "DOMINATE",
+                        "subDescription": [
+                            {
+                                "content": "Data-Driven Results – Fica Ad Innovation."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "heading": "Your Partner in Advertising Excellence",
+                "description": "We blend creativity with analytics to deliver campaigns that resonate locally and globally.",
+                "type": "gridBox",
+                "subSections": [
+                    {
+                        "subHeading": "Digital Advertising",
+                        "subDescription": [
+                            {
+                                "content": "Social media, PPC, programmatic ads, and influencer collaborations.",
+                                "type": "list"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "Creative Campaign Development",
+                        "subDescription": [
+                            {
+                                "content": "Viral content, video production, and interactive experiences.",
+                                "type": "list"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "Media Strategy & Buying",
+                        "subDescription": [
+                            {
+                                "content": "Maximize ROI with precision targeting across TV, radio, OOH, and digital platforms.",
+                                "type": "list"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "Brand Activation",
+                        "subDescription": [
+                            {
+                                "content": "Experiential campaigns that spark conversations and loyalty.",
+                                "type": "list"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "Data Analytics",
+                        "subDescription": [
+                            {
+                                "content": "Real-time insights to optimize performance and drive growth.",
+                                "type": "list"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "heading": "Our Process: Innovate. Execute. Elevate.",
+                "description": "We follow a structured approach to ensure effective advertising results.",
+                "type": "process",
+                "subSections": [
+                    {
+                        "subHeading": "INNOVATE – Strategy That Sparks Change",
+                        "subDescription": [
+                            {
+                                "content": "Advertising is more than catchy slogans – it’s about impact. We dive into market trends, audience behavior, and brand DNA to build strategies that convert.",
+                                "type": "content"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "EXECUTE – Creativity Meets Precision",
+                        "subDescription": [
+                            {
+                                "content": "From concept to launch, our team crafts campaigns that blend artistry with technology.",
+                                "type": "content"
+                            }
+                        ]
+                    },
+                    {
+                        "subHeading": "ELEVATE – Sustain Momentum",
+                        "subDescription": [
+                            {
+                                "content": "A great campaign is just the beginning. We refine, optimize, and scale efforts to keep your brand top-of-mind.",
+                                "type": "content"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "heading": "Ready to Outperform the Competition?",
+                "description": "Join forces with Fica Ad Innovation – where imagination meets execution. Let’s build campaigns that don’t just trend but transform.",
+                "type": "content"
+            }
+        ]
     },
     {
         "id": "6",
@@ -825,7 +988,7 @@ const services = [
                 "type": "content"
             }
         ]
-    }    
+    }
 ];
 
 export default services;
