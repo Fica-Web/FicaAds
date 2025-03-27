@@ -25,7 +25,7 @@ const ServiceHero = ({ service }) => {
             {/* Gray Content Box */}
             <div
                 ref={grayDivRef}
-                className="w-full lg:w-1/2 max-w-2xl bg-gray5 border-b border-gray5 p-7 sm:p-10 lg:p-20 relative top-28 lg:mx-5"
+                className="w-full lg:w-1/2 max-w-2xl bg-gray5 border-b border-gray5 p-7 sm:p-10 lg:p-20 lg:-mb-40 -mb-28 lg:mx-5"
             >
                 <h2 className="text-2xl md:text-4xl font-extrabold text-brandGreen font-Switzer-Medium mb-4 uppercase">
                     {service.subTitle}
@@ -36,7 +36,7 @@ const ServiceHero = ({ service }) => {
             </div>
             
             {/* Service Title - Positioned differently based on screen size */}
-            <div className="lg:w-1/2 w-full mt-6 lg:mt-0 relative lg:static top-28">
+            <div className="lg:w-1/2 w-full mt-6 lg:mt-0">
                 <h2 className="text-4xl md:text-5xl font-bold text-gray5 uppercase mt-8 text-center">
                     {service.title}
                 </h2>
