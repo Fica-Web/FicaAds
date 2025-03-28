@@ -704,7 +704,7 @@ const services = [
             {
                 "heading": "Think. Create. Dominate.",
                 "description": "Our approach revolves around three core principles that ensure campaign success.",
-                "type": "gridBox",
+                "type": "fourBox",
                 "subSections": [
                     {
                         "subHeading": "THINK",
