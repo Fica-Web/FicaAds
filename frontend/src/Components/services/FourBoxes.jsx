@@ -1,26 +1,6 @@
 import React from 'react';
 import bgImage from '../../assets/Images/behind.jpg';
 
-const principles = {
-    "heading": "Think. Create. Dominate.",
-    "description": "Our approach revolves around three core principles that ensure campaign success.",
-    "type": "fourBox",
-    "subSections": [
-        {
-            "subHeading": "THINK",
-            "subDescription": "Best Advertising Agency in Dubai – Fica Ad Innovation."
-        },
-        {
-            "subHeading": "CREATE",
-            "subDescription": "Award-Winning Campaigns – Fica Ad Innovation."
-        },
-        {
-            "subHeading": "DOMINATE",
-            "subDescription": "Data-Driven Results – Fica Ad Innovation."
-        }
-    ]
-}
-
 const FourBoxes = ({ section }) => {
     console.log('section:', section)
     return (
@@ -40,11 +20,11 @@ const FourBoxes = ({ section }) => {
                         {/* Title Section */}
                         <div className="col-span-2 md:col-span-1 flex flex-col justify-center p-14 bg-gray">
                             <h2 className="text-4xl lg:text-6xl font-bold font-Switzer-Medium max-w-[350px] text-black mb-4 uppercase">{section?.heading}</h2>
-                            <p className="text-gray-700">{principles.description}</p>
+                            <p className="text-gray-700">{section?.description}</p>
                         </div>
 
                         {/* Principle Boxes */}
-                        {principles.subSections.map((section, index) => (
+                        {section?.subSections?.map((section, index) => (
                             <div key={index} className="bg-gray-100 p-14 border border-gray5 flex items-center">
                                 <div className=''>
                                     <h3 className="text-xl font-semibold text-black">{section.subHeading}</h3>

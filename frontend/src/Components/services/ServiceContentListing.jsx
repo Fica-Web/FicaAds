@@ -19,7 +19,6 @@ const ServiceContentListing = ({ service }) => {
                 } else if (section.type === 'gridBox') {
                     return <GridBox key={index} section={section} />;
                 }else if (section.type === 'fourBox') {
-                    console.log('section type:', section.type)
                     return <FourBoxes key={index} section={section} />;
                 } else if (section.type === 'content') {
                     return <ContentListing key={index} section={section} />;

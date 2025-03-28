@@ -708,27 +708,15 @@ const services = [
                 "subSections": [
                     {
                         "subHeading": "THINK",
-                        "subDescription": [
-                            {
-                                "content": "Best Advertising Agency in Dubai – Fica Ad Innovation."
-                            }
-                        ]
+                        "subDescription": "Best Advertising Agency in Dubai – Fica Ad Innovation."
                     },
                     {
                         "subHeading": "CREATE",
-                        "subDescription": [
-                            {
-                                "content": "Award-Winning Campaigns – Fica Ad Innovation."
-                            }
-                        ]
+                        "subDescription": "Award-Winning Campaigns – Fica Ad Innovation."
                     },
                     {
                         "subHeading": "DOMINATE",
-                        "subDescription": [
-                            {
-                                "content": "Data-Driven Results – Fica Ad Innovation."
-                            }
-                        ]
+                        "subDescription": "Data-Driven Results – Fica Ad Innovation."
                     }
                 ]
             },
