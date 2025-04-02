@@ -50,7 +50,7 @@ const GridBox = ({ section }) => {
                                     {sub.subDescription.length > 1 && (
                                         <span className="text-brandYellow text-xl">✔</span>
                                     )}
-                                    <span className="font-medium">{desc.content}</span>
+                                    <span className="">{desc.content}</span>
                                 </li>
                             ))}
                         </ul>

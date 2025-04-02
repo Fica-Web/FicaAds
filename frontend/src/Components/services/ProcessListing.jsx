@@ -17,7 +17,7 @@ const ProcessListing = ({ section }) => {
                             onClick={() => setSelectedStep(index)}
                             className={`w-full text-left p-4 rounded-lg transition-all duration-300 text-lg font-medium font-Switzer-Medium
                 ${selectedStep === index
-                                    ? "bg-gradient-to-r from-brandYellow to-golden text-white shadow-lg"
+                                    ? "bg-lightgray text-white shadow-lg"
                                     : "bg-gray-100 hover:bg-gray-200 text-gray-700"
                                 }`}
                         >
@@ -28,7 +28,7 @@ const ProcessListing = ({ section }) => {
             </div>
 
             {/* Right Section: Selected Content */}
-            <div className="md:w-2/3 p-8 bg-white rounded-xl shadow-xl border-l-4 border-brandYellow transition-all duration-500 animate-fade-up flex justify-center items-center">
+            <div className="md:w-2/3 p-8 bg-white rounded-xl shadow-xl border-l-4 border-lightgray transition-all duration-500 animate-fade-up flex justify-center items-center">
                 <div className="">
                     <h3 className="text-3xl font-bold text-brandGreen font-Switzer-Regular leading-tight text-center">
                         {section.subSections[selectedStep].subHeading}
