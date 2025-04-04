@@ -62,9 +62,9 @@ const adminLogin = async (req, res) => {
         // Set the JWT token as a secure cookie
         res.cookie('adminToken', adminToken, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production', // Only send cookie over HTTPS in production
-            sameSite: 'strict', // Prevent CSRF attacks
-            maxAge: 15 * 24 * 60 * 60 * 1000 // Set cookie expiration to 15 days in milliseconds
+            secure: true,         // required for HTTPS (which you have in production)
+            sameSite: 'None',     // allows cross-origin
+            maxAge: 15 * 24 * 60 * 60 * 1000 // 15 days
         });
 
         // Respond with a success message or user data (without password)
