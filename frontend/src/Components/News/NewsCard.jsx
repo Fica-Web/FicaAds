@@ -15,7 +15,7 @@ const NewsCard = () => {
       } catch (error) {
         console.error("Error fetching blogs:", error);
       }
-    };
+    }; 
     fetchBlogs();
   }, []);
 
@@ -25,7 +25,7 @@ const NewsCard = () => {
 
   return (
     <>
-      {blogs.length > 0 && (
+      {blogs?.length > 0 && (
         <div className="mt-20 animate-fade-up duration-1000 mb-10">
           <div className="w-11/12 mx-auto">
             <h1 className="text-2xl uppercase font-Switzer-Medium md:text-4xl lg:text-5xl">
