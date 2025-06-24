@@ -14,7 +14,7 @@ const NewsPage = () => {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "News - Fica Ad Innovations",
-    "url": "https://ficaads.com/news",
+    "url": "https://ficaads.com/",
     "description": "Stay updated with the latest news and updates from Fica Ad Innovations.",
     "publisher": {
       "@type": "Organization",
