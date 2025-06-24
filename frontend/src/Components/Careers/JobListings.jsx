@@ -77,7 +77,7 @@ const JobListings = () => {
     <div className="relative">
       {/* Job Listings */}
       <div className="mt-20  w-11/12 mx-auto py-8 px-4">
-        {jobs.map((job, index) => (
+        {jobs?.map((job, index) => (
           <div
             key={index}
             className="flex flex-col lg:flex-row items-start lg:items-center justify-between border-b py-4"
