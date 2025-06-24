@@ -36,7 +36,7 @@ export const Team = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {teams.map((item) => (
+            {teams?.map((item) => (
               <div
                 key={item._id}
                 className="bg-white overflow-hidden rounded-xl shadow-lg"
