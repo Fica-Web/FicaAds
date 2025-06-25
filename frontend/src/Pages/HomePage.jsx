@@ -56,7 +56,7 @@ const HomePage = () => {
       <Projects showFullContent={false} limit={3} showbutton={true} />
       <CreateiveJourney />
 
-      <HomeNews />
+     
 
       <Services />
 
@@ -114,6 +114,7 @@ const HomePage = () => {
 
       {/* <RelatedVideos /> */}
       {/* <BlogListing /> */}
+       <HomeNews />
       <FAQ />
       {/* <HomeHiring /> */}
     </div>

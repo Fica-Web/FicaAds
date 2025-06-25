@@ -1,6 +1,9 @@
+import img1 from '../assets/Images/services/image1.png'
+
 const services = [
     {
         "id": "1",
+        Image:    ,
         "title": "Search Engine Optimisation",
         "homeTitle": "SEO",
         "subTitle": "Your Trusted Web Designing Company in Dubai",

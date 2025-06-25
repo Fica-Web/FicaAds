@@ -21,9 +21,9 @@ const FAQ = () => {
 
 
     return (
-        <div className="flex flex-col lg:flex-row justify-between gap-0 lg:gap-16 mt-10 lg:mt-28 w-full mx-auto mb-20 px-3 lg:px-20">
+        <div className="flex flex-col lg:flex-row justify-between gap-0 lg:gap-16 mt-20 md:mt-10 lg:mt-28 w-full mx-auto mb-10 px-3 lg:px-20 ">
             <div className="w-full lg:w-[487px] text-center lg:text-left  pt-0 lg:pt-4 ">
-                <h2 className="text-2xl md:text-4xl lg:text-5xl uppercase font-Switzer-Medium lg:mb-4 mb-5 text-[#0C0C0C] ">
+                <h2 className="text-2xl md:text-4xl lg:text-5xl uppercase font-Switzer-Medium lg:mb-4 mb-5 text-[#0C0C0C] leading-[40px] md:leading-[50px] lg:leading-[60px] ">
                     Frequently Asked Questions </h2>
 
                 <p className="text-[#0C0C0C] lg:mb-7 mb-10 font-Switzer-Medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
@@ -35,7 +35,7 @@ const FAQ = () => {
             </div>
 
 
-            <div className="grid grid-cols-1 lg:grid-cols-1  w-full lg:w-[850px] ">
+            <div className="grid grid-cols-1 lg:grid-cols-1  w-full lg:w-[850px] sm:mb-10 ">
                 {visibleFaqs.map((item, index) => (
                     <motion.div
                         key={index}
