@@ -7,7 +7,7 @@ const Services = () => {
             <h2 className='text-2xl md:text-4xl lg:text-5xl lg:pt-5 uppercase font-medium font-Switzer-Medium'>
                 SERVICE WE OFFER
             </h2>
-           <div className="container mx-auto  py-20">
+           <div className="container mx-auto mt-10 lg:mt-[40px]">
       <SingleService/>
     </div>
         </div>
