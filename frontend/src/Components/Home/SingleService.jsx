@@ -17,14 +17,14 @@ const SingleService = () => {
 
   return (
     <div>
-    <div className="hidden lg:flex  justify-between gap-1 w-full ">
+    <div className="hidden lg:flex  justify-between gap-20 w-full ">
       {/* LEFT: Image + Details */}
       <Link
         to={`/services/${selectedService.id}`}
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className="block group"
       >
-        <div className="flex flex-col items-start lg:w-[739px] ">
+        <div className="flex flex-col items-start lg:w-[739px] bg-slate-400">
           <img
             src={selectedService.image}
             alt={selectedService.title}
@@ -45,7 +45,8 @@ const SingleService = () => {
           >
             <div className="leading-none" style={{ lineHeight: "0.25px" }}>
               <span
-                className={`block text-xl font-Switzer-Medium tracking-widest ${index === selectedIndex ? "text-[#0C0C0C]" : "text-[#0C0C0C]/50"
+                className={`block text-xl font-Switzer-Medium
+                 tracking-widest ${index === selectedIndex ? "text-[#0C0C0C]" : "text-[#0C0C0C]/50"
                   }`}
               >
                 {formatIndex(index)}
