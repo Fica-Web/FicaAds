@@ -1,6 +1,15 @@
+import img1 from '../assets/Images/services/image1.png'
+import img2 from '../assets/Images/services/image2.png'
+import img3 from '../assets/Images/services/image3.png'
+import img4 from '../assets/Images/services/image4.png'
+import img5 from '../assets/Images/services/image5.png'
+import img6 from '../assets/Images/services/image6.png'
+
+
 const services = [
     {
         "id": "1",
+        "image":   img1 ,
         "title": "Search Engine Optimisation",
         "homeTitle": "SEO",
         "subTitle": "Your Trusted Web Designing Company in Dubai",
@@ -109,6 +118,7 @@ const services = [
     },    
     {
         "id": "2",
+        "image":   img2 ,
         "title": "Web Design & Development",
         "homeTitle": "Web",
         "subTitle": "Your Trusted Web Designing Company in Dubai",
@@ -277,6 +287,7 @@ const services = [
     },    
     {
         "id": "3",
+        "image":   img3 ,
         "title": "Video Production",
         "homeTitle": "Video",
         "subTitle": "Dubai’s Premier Video Production Company",
@@ -436,6 +447,7 @@ const services = [
     },
     {
         "id": "4",
+        "image":   img4,
         "title": "Social Media Marketing",
         "homeTitle": "Social Media",
         "subTitle": "Premier Social Media Marketing Agency in Dubai",
@@ -657,6 +669,7 @@ const services = [
     },    
     {
         "id": "5",
+        "image":   img5 ,
         "title": "Branding & Design",
         "homeTitle": "Branding",
         "subTitle": "Your Premier Advertising Agency in Dubai",
@@ -815,6 +828,7 @@ const services = [
     },
     {
         "id": "6",
+        "image":   img6 ,
         "title": "Performance Marketing",
         "homeTitle": "Performance",
         "subTitle": "Performance Marketing Agency in Dubai",
