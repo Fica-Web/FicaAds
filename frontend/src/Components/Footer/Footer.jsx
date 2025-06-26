@@ -33,7 +33,7 @@ const Footer = () => {
             <h3 className='uppercase mt-6 font-Switzer-Medium text-sm xl:text-base'><Link to={"/"}>Home</Link></h3>
             <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'><Link to={'/about'}>About</Link></h3>
             <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'><Link to={'/project'}>Projects</Link></h3>
-            <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'><Link to={'/news'}>News</Link></h3>
+            <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'><Link to={'/blogs'}>Blogs</Link></h3>
             <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'><Link to={'/careers'}>Careers</Link></h3>
             <h3 className='uppercase font-Switzer-Medium text-sm xl:text-base'><Link to={'/contact'}>Contact</Link></h3>
             <h2 className='font-Switzer-Medium text-sm text-gray3 lg:mt-44 xl:mt-36'><Link to={"/privacypolicy"}>Privacy & Policy</Link></h2>
