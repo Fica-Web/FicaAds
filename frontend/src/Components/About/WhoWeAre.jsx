@@ -18,20 +18,21 @@ const WhoWeAre = () => {
                             alt="who we are image"
                             className='object-cover max-h-[90vh] w-full rounded-2xl'
                         />
-                    </div> 
-                    
-                    <div className='lg:w-7/12 flex flex-col justify-center gap-8 lg:text-lg '>
-                        {/* Display first two paragraphs */}
-                        <p>
-                            Since 2021, Fica Ad Innovations has proudly stood as the best digital marketing agency in Dubai, pushing boundaries and reimagining what advertising can achieve. Born in Dubai and now thriving across the UAE, India, Turkey, and Kuwait, we’re a global team with a passion for turning creative ideas into real-world results. Our expertise spans social media marketing (SMM), search engine marketing (SEM), SEO, branding & design, video production, web design & development, and performance marketing—all tailored to help brands shine in crowded markets.
-                        </p>
-                        <p>
-                            What makes us the best digital marketing agency in Dubai? It’s simple: we combine artistry with analytics. Whether we’re launching a viral Instagram campaign, optimizing Google Ads for razor-sharp targeting, or building websites that convert, our focus is always on delivering growth. Our team—a mix of storytellers, data nerds, and tech wizards—uses the latest tools and trends to ensure your brand doesn’t just compete but dominates. From sleek video productions that stop scrolls to SEO strategies that put you on page one, we’re here to make your audience take notice.
-                        </p>
+                    </div>
 
-                        {/* Conditionally display the remaining paragraphs */}
-                        {showMore && (
+                    <div className='lg:w-7/12 flex flex-col justify-center gap-8 lg:text-lg '>
+                        {!showMore ? (
+                            <>{/* Display first two paragraphs */}
+                                <p className=''>
+                                    Since 2021, Fica Ad Innovations has proudly stood as the best digital marketing agency in Dubai, pushing boundaries and reimagining what advertising can achieve. Born in Dubai and now thriving across the UAE, India, Turkey, and Kuwait, we’re a global team with a passion for turning creative ideas into real-world results. Our expertise spans social media marketing (SMM), search engine marketing (SEM), SEO, branding & design, video production, web design & development, and performance marketing—all tailored to help brands shine in crowded markets.
+                                </p>
+                                <p>
+                                    What makes us the best digital marketing agency in Dubai? It’s simple: we combine artistry with analytics. Whether we’re launching a viral Instagram campaign, optimizing Google Ads for razor-sharp targeting, or building websites that convert, our focus is always on delivering growth. Our team—a mix of storytellers, data nerds, and tech wizards—uses the latest tools and trends to ensure your brand doesn’t just compete but dominates. From sleek video productions that stop scrolls to SEO strategies that put you on page one, we’re here to make your audience take notice.
+                                </p>
+                            </>
+                        ) : (
                             <>
+                                {/* Conditionally display the remaining paragraphs */}
                                 <p>
                                     But we’re more than just a Dubai-based agency. We’re your partners in evolution. The digital world moves fast, and so do we. While others play catch-up, we’re already testing new platforms, refining algorithms, and brainstorming campaigns that resonate today. Whether you’re a startup aiming to disrupt or an established brand ready to reinvent, we adapt to your goals, not the other way around.
                                 </p>
@@ -43,6 +44,10 @@ const WhoWeAre = () => {
                                 </p>
                             </>
                         )}
+
+
+
+
 
                         {/* Read More/Read Less Button */}
                         <button
