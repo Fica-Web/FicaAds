@@ -6,8 +6,8 @@ import services from '../../data/services';
 const SingleService = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const selectedService = services[selectedIndex];
-  console.log('servicedata', services);
-  console.log("selectedService:", selectedService);
+  // console.log('servicedata', services);
+  // console.log("selectedService:", selectedService);
 
 
   const formatIndex = (index) => {
@@ -31,7 +31,7 @@ const SingleService = () => {
               className="w-full h-auto rounded-lg object-cover mb-5"
             />
             {/* <h2 className="text-2xl font-bold text-primary mb-4">{selectedService.title}</h2> */}
-            <p className="text-[#0C0C0C] font-Switzer-Medium font-thin lg:text-lg ">{selectedService.details}</p>
+            <p className="text-[#0C0C0C] font-Switzer-Light font-thin lg:text-lg ">{selectedService.details}</p>
           </div>
         </Link>
 
@@ -86,31 +86,30 @@ const SingleService = () => {
               onClick={() => setSelectedIndex(index)}
               className="w-full text-left text-xl font-medium mb-1"
             >
-<div style={{ display: 'flex', flexDirection: 'column' }}>
-  <span
-    className={`text-base font-Switzer-Medium font-medium tracking-widest leading-[1] ${
-      index === selectedIndex ? "text-[#0C0C0C]" : "text-[#0C0C0C]/50"
-    }`}
-  >
-    {formatIndex(index)}
-  </span>
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <span
+                  className={`text-base font-Switzer-Medium font-medium tracking-widest leading-[1] ${index === selectedIndex ? "text-[#0C0C0C]" : "text-[#0C0C0C]/50"
+                    }`}
+                >
+                  {formatIndex(index)}
+                </span>
 
-  {index === selectedIndex ? (
-    <Link
-      to={`/services/${service.id}`}
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="-mt-4"
-    >
-      <span className="text-base font-Switzer-Medium font-medium pl-7 text-[#0C0C0C] -mt-1 leading-[1.1] ">
-        {service.title}
-      </span>
-    </Link>
-  ) : (
-    <span className="text-base font-Switzer-Medium font-medium pl-7 text-[#0C0C0C]/50 -mt-2 leading-[1.1]">
-      {service.title}
-    </span>
-  )}
-</div>
+                {index === selectedIndex ? (
+                  <Link
+                    to={`/services/${service.id}`}
+                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                    className="-mt-4"
+                  >
+                    <span className="text-base font-Switzer-Medium font-medium pl-7 text-[#0C0C0C] -mt-1 leading-[1.1] ">
+                      {service.title}
+                    </span>
+                  </Link>
+                ) : (
+                  <span className="text-base font-Switzer-Medium font-medium pl-7 text-[#0C0C0C]/50 -mt-2 leading-[1.1]">
+                    {service.title}
+                  </span>
+                )}
+              </div>
 
             </button>
 
@@ -122,7 +121,7 @@ const SingleService = () => {
                   window.scrollTo({ top: 0, behavior: "smooth" })
                 }
               >
-                <p className="mt-2 text-[#0C0C0C] text-xs text-justify font-Switzer-Medium font-light ">
+                <p className="mt-2 text-xs text-justify font-Switzer-Medium font-light ">
                   {service.details}
                 </p>
               </Link>
