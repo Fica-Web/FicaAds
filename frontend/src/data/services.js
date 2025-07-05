@@ -1,4 +1,4 @@
-import img1 from '../assets/Images/services/image1.png'
+import img1 from '../assets/Images/services/image1.jpg'
 import img2 from '../assets/Images/services/image2.png'
 import img3 from '../assets/Images/services/image3.png'
 import img4 from '../assets/Images/services/image4.png'
@@ -12,7 +12,7 @@ const services = [
         "image":   img1 ,
         "title": "Search Engine Optimisation",
         "homeTitle": "SEO",
-        "subTitle": "Your Trusted Web Designing Company in Dubai",
+        "subTitle": "Best SEO Agency in Dubai",
         "details": "At FICA Ads Innovation, we don’t just build websites—we craft Google-ranking machines that blend jaw-dropping design with bulletproof SEO strategy. As Dubai’s leading web design agency and the best SEO agency in Dubai, we turn your website into a 24/7 sales engine that dominates search results and drives real business growth.",
         "sections": [
             {

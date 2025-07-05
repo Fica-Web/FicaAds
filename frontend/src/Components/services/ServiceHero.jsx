@@ -46,7 +46,7 @@ const ServiceHero = ({ service }) => {
             <div className='w-11/12 mx-auto '>
                 <div className=''>
                     <div className=''>
-                        <div className='w-full h-96 lg:h-124 animate-fade-up duration-1000'>
+                        <div className='w-full h-96 lg:h-128 animate-fade-up duration-1000'>
                             <img
                                 src={service.image}
                                 alt='About Banner'
