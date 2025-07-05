@@ -1,12 +1,12 @@
-import img from '../../assets/Images/services/image2.png';
+import img from '../../assets/Images/services/seo1.jpg';
 
 const ListBox = ({ section }) => {
     if (!section || !section.subSections) return null; // Ensure data exists
 
     return (
-        <div className="my-28 flex flex-col md:flex-row gap-8 items-center md:items-start">
+        <div className="my-28 flex flex-col md:flex-row gap-8 items-center ">
             {/* Left Section: Headline + Description + Checklist */}
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 h-full ">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-6 text-black leading-tight">
                     {section.heading}
                 </h2>
@@ -32,12 +32,12 @@ const ListBox = ({ section }) => {
             </div>
 
             {/* Right Section: Image */}
-            <div className="md:w-1/2 h-full bg-red-300 flex justify-center items-center">
-                <div className="rounded-xl overflow-hidden shadow-lg w-full max-w-md">
+            <div className="md:w-1/2 flex justify-center md:justify-end items-stretch h-full">
+                <div className="h-full rounded-xl overflow-hidden shadow-lg w-full max-w-xl">
                     <img
                         src={img}
                         alt="Desk setup with laptop and accessories"
-                        className="w-full h-auto object-cover"
+                        className="w-full h-full object-cover"
                     />
                 </div>
             </div>

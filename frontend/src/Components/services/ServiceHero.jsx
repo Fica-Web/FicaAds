@@ -54,7 +54,7 @@ const ServiceHero = ({ service }) => {
                             />
                         </div>
                         <div className='mt-6 animate-fade-up duration-1000'>
-                            <h2 className='font-Switzer-Regular font-bold uppercase text-black text-4xl md:text-4xl lg:text-5xl '>
+                            <h2 className='font-Switzer-Medium font-semi-bold uppercase text-black text-4xl md:text-4xl lg:text-5xl '>
                                 {service.subTitle}
                             </h2>
                             <p className="text-lg text-gray1 mx-auto mt-6">
