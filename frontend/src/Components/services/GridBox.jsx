@@ -1,16 +1,12 @@
-import React from "react";
-
 const GridBox = ({ section }) => {
-    if (!section || !section.subSections) return null; // Ensure data exists
+    if (!section || !section.subSections) return null;
 
     return (
-        <div className="w-11/12 mx-auto my-28">
+        <div className="my-28">
             {/* Heading */}
-            <div className="flex justify-center">
-                <h2 className="max-w-3xl text-3xl md:text-4xl font-extrabold text-brandGreen text-center font-Switzer-Medium mb-6 uppercase">
-                    {section.heading}
-                </h2>
-            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-Switzer-Regular font-semibold mb-12 text-black leading-tight">
+                {section.heading}
+            </h2>
 
             {/* Optional Description */}
             {section.description && (
@@ -19,38 +15,21 @@ const GridBox = ({ section }) => {
                 </p>
             )}
 
-            {/* SEO Advantage Sections */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Grid of Advantage Sections */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {section.subSections.map((sub, index) => (
                     <div
                         key={index}
-                        className="relative p-6 bg-white rounded-2xl shadow-lg border-t-4 transition-all duration-300 transform 
-                            hover:shadow-2xl hover:scale-105 hover:border-transparent group"
-                        style={{
-                            borderColor: index === 0 ? "#FDC432" : index === 1 ? "#977124" : "#163029",
-                            background: "linear-gradient(135deg, rgba(255,255,255,0.9), rgba(245,245,245,1))"
-                        }}
+                        className="p-8 border border-gray1 rounded-2xl bg-white"
                     >
-                        {/* Floating Background Glow */}
-                        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-
-                        {/* Icon */}
-                        <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2 bg-gray4 text-white text-lg font-bold px-3 py-1 rounded-bl-xl">
-                            {index + 1}
-                        </div>
-
-                        <h3 className="text-xl font-bold text-gray1 font-Switzer-Medium mb-4">
+                        <h3 className="text-xl font-bold text-black mb-6 text-center">
                             {sub.subHeading}
                         </h3>
 
-                        <ul className="text-lg space-y-3 text-lightgray">
+                        <ul className="text-lg space-y-4 text-gray1 list-disc list-outside pl-6">
                             {sub.subDescription.map((desc, i) => (
-                                <li key={i} className="flex items-center space-x-3">
-                                    {/* ✅ Show tick icon ONLY if there are multiple items */}
-                                    {sub.subDescription.length > 1 && (
-                                        <span className="text-brandYellow text-xl">✔</span>
-                                    )}
-                                    <span className="">{desc.content}</span>
+                                <li key={i}>
+                                    {desc.content}
                                 </li>
                             ))}
                         </ul>

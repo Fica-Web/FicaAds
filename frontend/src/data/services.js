@@ -97,17 +97,17 @@ const services = [
                 "heading": "Your Dubai SEO Advantage",
                 "type": "gridBox",
                 "subSections": [
-                    { "subHeading": "🔑 Local SEO Domination", "subDescription": [
+                    { "subHeading": "Local SEO Domination", "subDescription": [
                         { "content": " Google My Business profile setup/optimization", "type": "list" },
                         { "content": " Arabic + English keyword targeting", "type": "list" },
                         { "content": " Location pages for Dubai, Abu Dhabi, Sharjah", "type": "list" }
                     ] },
-                    { "subHeading": "🔑 E-Commerce SEO Mastery", "subDescription": [
+                    { "subHeading": "E-Commerce SEO Mastery", "subDescription": [
                         { "content": " Product schema for higher click-through rates", "type": "list" },
                         { "content": " Category page optimization", "type": "list" },
                         { "content": " Cart abandonment SEO recovery", "type": "list" }
                     ] },
-                    { "subHeading": "🔑 Enterprise-Grade Security", "subDescription": [
+                    { "subHeading": "Enterprise-Grade Security", "subDescription": [
                         { "content": " Daily malware scans", "type": "list" },
                         { "content": " Automated backups", "type": "list" },
                         { "content": " DDoS protection", "type": "list" }
