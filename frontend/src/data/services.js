@@ -39,7 +39,7 @@ const services = [
                 "type": "process",
                 "subSections": [
                     {
-                        "subHeading": "1: Discovery & Keyword Blueprinting",
+                        "subHeading": "Discovery & Keyword Blueprinting",
                         "subDescription": [
                             {
                                 "content": "We start by reverse-engineering your competitors. Using tools like Ahrefs and SEMrush, we identify:",
@@ -51,7 +51,7 @@ const services = [
                         ]
                     },
                     {
-                        "subHeading": "2: UX-Centric Wireframing",
+                        "subHeading": "UX-Centric Wireframing",
                         "subDescription": [
                             {
                                 "content": "Every pixel is planned for SEO + conversions:",
@@ -63,7 +63,7 @@ const services = [
                         ]
                     },
                     {
-                        "subHeading": "3: Development with SEO Hardwired",
+                        "subHeading": "Development with SEO Hardwired",
                         "subDescription": [
                             { "content": "Our coders and SEO specialists work side-by-side to:", "type": "content" },
                             { "content": " Optimize every image (compressed + alt-text tagged)", "type": "list" },
@@ -73,7 +73,7 @@ const services = [
                         ]
                     },
                     {
-                        "subHeading": "4: Pre-Launch SEO Stress Test",
+                        "subHeading": "Pre-Launch SEO Stress Test",
                         "subDescription": [
                             { "content": "Before going live, we run 50+ checks:", "type": "content" },
                             { "content": " Mobile-friendliness (Google’s 1 ranking factor)", "type": "list" },
@@ -83,7 +83,7 @@ const services = [
                         ]
                     },
                     {
-                        "subHeading": "5: Launch & Rank Tracking",
+                        "subHeading": "Launch & Rank Tracking",
                         "subDescription": [
                             { "content": "We don’t disappear after delivery. For 30 days post-launch, we:", "type": "content" },
                             { "content": " Monitor keyword rankings daily", "type": "list" },
