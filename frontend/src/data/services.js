@@ -9,7 +9,7 @@ import img6 from '../assets/Images/services/image6.jpg'
 const services = [
     {
         "id": "1",
-        "image":   img1 ,
+        "image": img1,
         "title": "Search Engine Optimisation",
         "slug": "seo",
         "subTitle": "Best SEO Agency in Dubai",
@@ -97,28 +97,34 @@ const services = [
                 "heading": "Your Dubai SEO Advantage",
                 "type": "gridBox",
                 "subSections": [
-                    { "subHeading": "Local SEO Domination", "subDescription": [
-                        { "content": " Google My Business profile setup/optimization", "type": "list" },
-                        { "content": " Arabic + English keyword targeting", "type": "list" },
-                        { "content": " Location pages for Dubai, Abu Dhabi, Sharjah", "type": "list" }
-                    ] },
-                    { "subHeading": "E-Commerce SEO Mastery", "subDescription": [
-                        { "content": " Product schema for higher click-through rates", "type": "list" },
-                        { "content": " Category page optimization", "type": "list" },
-                        { "content": " Cart abandonment SEO recovery", "type": "list" }
-                    ] },
-                    { "subHeading": "Enterprise-Grade Security", "subDescription": [
-                        { "content": " Daily malware scans", "type": "list" },
-                        { "content": " Automated backups", "type": "list" },
-                        { "content": " DDoS protection", "type": "list" }
-                    ] }
+                    {
+                        "subHeading": "Local SEO Domination", "subDescription": [
+                            { "content": " Google My Business profile setup/optimization", "type": "list" },
+                            { "content": " Arabic + English keyword targeting", "type": "list" },
+                            { "content": " Location pages for Dubai, Abu Dhabi, Sharjah", "type": "list" }
+                        ]
+                    },
+                    {
+                        "subHeading": "E-Commerce SEO Mastery", "subDescription": [
+                            { "content": " Product schema for higher click-through rates", "type": "list" },
+                            { "content": " Category page optimization", "type": "list" },
+                            { "content": " Cart abandonment SEO recovery", "type": "list" }
+                        ]
+                    },
+                    {
+                        "subHeading": "Enterprise-Grade Security", "subDescription": [
+                            { "content": " Daily malware scans", "type": "list" },
+                            { "content": " Automated backups", "type": "list" },
+                            { "content": " DDoS protection", "type": "list" }
+                        ]
+                    }
                 ]
             }
         ]
     },
     {
         "id": "6",
-        "image":   img2 ,
+        "image": img2,
         "title": "Performance Marketing",
         "slug": "performance-marketing",
         "subTitle": "Performance Marketing Agency in Dubai",
@@ -283,7 +289,7 @@ const services = [
     },
     {
         "id": "4",
-        "image":   img3,
+        "image": img3,
         "title": "Social Media Marketing",
         "slug": "social-media-marketing",
         "subTitle": "Premier Social Media Marketing Agency in Dubai",
@@ -505,7 +511,7 @@ const services = [
     },
     {
         "id": "2",
-        "image":   img4,
+        "image": img4,
         "title": "Web Development",
         "slug": "web-development",
         "subTitle": "Your Trusted Web Designing Company in Dubai",
@@ -671,10 +677,10 @@ const services = [
                 ]
             }
         ]
-    },    
+    },
     {
         "id": "3",
-        "image":   img5 ,
+        "image": img5,
         "title": "Video Production",
         "slug": "video-production",
         "subTitle": "Dubai’s Premier Video Production Company",
@@ -831,10 +837,10 @@ const services = [
                 ]
             }
         ]
-    },    
+    },
     {
         "id": "5",
-        "image":   img6 ,
+        "image": img6,
         "title": "Branding",
         "slug": "branding",
         "subTitle": "Your Premier Advertising Agency in Dubai",
@@ -880,23 +886,31 @@ const services = [
                 ]
             },
             {
-                "heading": "Think. Create. Dominate.",
+                "heading": "Think, Create, Dominate",
                 "description": "Our approach revolves around three core principles that ensure campaign success.",
-                "type": "fourBox",
-                "subSections": [
+                "type": "list",
+                subSections: [
                     {
-                        "subHeading": "THINK",
-                        "subDescription": "Best Advertising Agency in Dubai – Fica Ad Innovation."
+                        subDescription: [
+                            {
+                                type: "content",
+                                content: "Our approach revolves around three core principles that ensure campaign success.",
+                            },
+                            {
+                                type: "list",
+                                content: "Best Advertising Agency in Dubai – Fica Ad Innovation.",
+                            },
+                            {
+                                type: "list",
+                                content: "Award-Winning Campaigns – Fica Ad Innovation.",
+                            },
+                            {
+                                type: "list",
+                                content: "Data-Driven Results – Fica Ad Innovation.",
+                            },
+                        ],
                     },
-                    {
-                        "subHeading": "CREATE",
-                        "subDescription": "Award-Winning Campaigns – Fica Ad Innovation."
-                    },
-                    {
-                        "subHeading": "DOMINATE",
-                        "subDescription": "Data-Driven Results – Fica Ad Innovation."
-                    }
-                ]
+                ],
             },
             {
                 "heading": "Your Partner in Advertising Excellence",
