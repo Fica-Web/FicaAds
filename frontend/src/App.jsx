@@ -34,7 +34,7 @@ const App = () => {
         <Route path='careers' element={<CareersPage />} />
         <Route path='privacypolicy' element={<PrivacyPolicy />} />
         <Route path='contact' element={<ContactPage />} />
-        <Route path='services/:id' element={<ServiceDetailsPage />} />
+        <Route path='services/:slug' element={<ServiceDetailsPage />} />
       </Route>
 
       {/* Admin Authentication Route */}

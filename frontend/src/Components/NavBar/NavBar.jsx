@@ -20,10 +20,12 @@ const NavBar = () => {
   ];
 
   const services = [
-    { name: "Web Design", link: "/services/web-design" },
     { name: "SEO Optimization", link: "/services/seo" },
+    { name: "Performance Marketing", link: "/services/performance-marketing" },
+    { name: "Social Media Marketing", link: "/services/social-media-marketing" },
+    { name: "Web Development", link: "/services/web-development" },
+    { name: "Video Production", link: "/services/video-production" },
     { name: "Branding", link: "/services/branding" },
-    { name: "Social Media Marketing", link: "/services/smm" },
   ];
 
   const isMobile = typeof window !== "undefined" && window.innerWidth < 1024;

@@ -20,7 +20,7 @@ const SingleService = () => {
       <div className="hidden lg:flex  justify-between gap-20 w-full ">
         {/* LEFT: Image + Details */}
         <Link
-          to={`/services/${selectedService.id}`}
+          to={`/services/${selectedService.slug}`}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="block group"
         >
@@ -52,7 +52,7 @@ const SingleService = () => {
                 </span>
                 {index === selectedIndex ? (
                   <Link
-                    to={`/services/${service.id}`}
+                    to={`/services/${service.slug}`}
                     onClick={() =>
                       window.scrollTo({ top: 0, behavior: "smooth" })
                     }
@@ -96,7 +96,6 @@ const SingleService = () => {
 
                 {index === selectedIndex ? (
                   <Link
-                    to={`/services/${service.id}`}
                     onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                     className="-mt-4"
                   >
@@ -116,7 +115,7 @@ const SingleService = () => {
             {/* Show selected service details below its title */}
             {index === selectedIndex && (
               <Link
-                to={`/services/${service.id}`}
+                to={`/services/${service.slug}`}
                 onClick={() =>
                   window.scrollTo({ top: 0, behavior: "smooth" })
                 }

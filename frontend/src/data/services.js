@@ -11,7 +11,7 @@ const services = [
         "id": "1",
         "image":   img1 ,
         "title": "Search Engine Optimisation",
-        "homeTitle": "SEO",
+        "slug": "seo",
         "subTitle": "Best SEO Agency in Dubai",
         "details": "At FICA Ads Innovation, we don’t just build websites—we craft Google-ranking machines that blend jaw-dropping design with bulletproof SEO strategy. As Dubai’s leading web design agency and the best SEO agency in Dubai, we turn your website into a 24/7 sales engine that dominates search results and drives real business growth.",
         "sections": [
@@ -120,7 +120,7 @@ const services = [
         "id": "6",
         "image":   img2 ,
         "title": "Performance Marketing",
-        "homeTitle": "Performance",
+        "slug": "performance-marketing",
         "subTitle": "Performance Marketing Agency in Dubai",
         "details": "Looking for a performance marketing agency in Dubai that delivers measurable results? You’ve just found your partner in success. At FICA Ads Innovation, we specialize in turning data into actionable strategies that drive traffic, boost conversions, and maximize ROI. Whether it’s SEO, PPC, Paid Social, or a combination of all three, we don’t just follow trends—we set them.",
         "sections": [
@@ -285,7 +285,7 @@ const services = [
         "id": "4",
         "image":   img3,
         "title": "Social Media Marketing",
-        "homeTitle": "Social Media",
+        "slug": "social-media-marketing",
         "subTitle": "Premier Social Media Marketing Agency in Dubai",
         "details": "Looking for a social media marketing agency in Dubai that transforms likes into leads and followers into customers? At FICA Ads Innovation, we craft data-driven, visually stunning campaigns tailored to Dubai’s dynamic market. Whether you’re a startup or an enterprise, our bespoke strategies on platforms like Instagram, LinkedIn, TikTok, and YouTube ensure your brand stands out in the UAE’s competitive digital arena.",
         "sections": [
@@ -507,7 +507,7 @@ const services = [
         "id": "2",
         "image":   img4,
         "title": "Web Development",
-        "homeTitle": "Web",
+        "slug": "web-development",
         "subTitle": "Your Trusted Web Designing Company in Dubai",
         "details": "Looking for a web designing company in Dubai that transforms your vision into a stunning, high-performing website? At FICA Ads Innovation, we combine innovation, technical expertise, and customer-centric strategies to build websites that drive growth, engagement, and results. With over 5+ years of experience serving businesses across Dubai, we’ve earned our reputation as the go-to **web designing company in Dubai** for bespoke digital solutions.",
         "sections": [
@@ -676,7 +676,7 @@ const services = [
         "id": "3",
         "image":   img5 ,
         "title": "Video Production",
-        "homeTitle": "Video",
+        "slug": "video-production",
         "subTitle": "Dubai’s Premier Video Production Company",
         "details": "Looking for a video production company in Dubai that blends innovation, expertise, and reliability? At FICA Ads Innovation, we’re a leading Dubai video production agency with over a decade of experience crafting compelling visual stories. Whether you need corporate videos, commercials, or social media content, our award-winning team delivers tailored solutions to amplify your brand’s voice.",
         "sections": [
@@ -836,7 +836,7 @@ const services = [
         "id": "5",
         "image":   img6 ,
         "title": "Branding",
-        "homeTitle": "Branding",
+        "slug": "branding",
         "subTitle": "Your Premier Advertising Agency in Dubai",
         "details": "At Fica Ad Innovation, we redefine the future of advertising through bold ideas, cutting-edge technology, and data-driven creativity. As one of Dubai’s leading innovative advertising agencies, we craft campaigns that break boundaries, captivate audiences, and drive measurable results.",
         "sections": [
