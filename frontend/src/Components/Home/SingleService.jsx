@@ -28,7 +28,7 @@ const SingleService = () => {
             <img
               src={selectedService.image}
               alt={selectedService.title}
-              className="w-full h-auto rounded-lg object-cover mb-5"
+              className="w-full h-auto lg:max-h-80 rounded-lg object-cover mb-5"
             />
             {/* <h2 className="text-2xl font-bold text-primary mb-4">{selectedService.title}</h2> */}
             <p className="text-[#0C0C0C] font-Switzer-Light font-thin lg:text-lg ">{selectedService.details}</p>

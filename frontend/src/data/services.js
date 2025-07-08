@@ -1,9 +1,9 @@
 import img1 from '../assets/Images/services/image1.jpg'
-import img2 from '../assets/Images/services/image2.png'
-import img3 from '../assets/Images/services/image3.png'
-import img4 from '../assets/Images/services/image4.png'
-import img5 from '../assets/Images/services/image5.png'
-import img6 from '../assets/Images/services/image6.png'
+import img2 from '../assets/Images/services/image2.jpg'
+import img3 from '../assets/Images/services/image3.jpg'
+import img4 from '../assets/Images/services/image4.jpg'
+import img5 from '../assets/Images/services/image5.jpg'
+import img6 from '../assets/Images/services/image6.jpg'
 
 
 const services = [
