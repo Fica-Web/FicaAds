@@ -849,7 +849,7 @@ const services = [
             {
                 "heading": "Why Choose Fica Ad?",
                 "description": "Fica Ad Innovation is an industry leader with a proven track record of excellence in advertising and marketing.",
-                "type": "gridBox",
+                "type": "scrollBox",
                 "subSections": [
                     {
                         "subHeading": "10+ Years of Expertise",
@@ -859,30 +859,30 @@ const services = [
                             }
                         ]
                     },
-                    {
-                        "subHeading": "50+ In-House Visionaries",
-                        "subDescription": [
-                            {
-                                "content": "Strategists, creatives, tech wizards, and media mavericks driving innovation."
-                            }
-                        ]
-                    },
-                    {
-                        "subHeading": "2,000+ Campaigns Launched",
-                        "subDescription": [
-                            {
-                                "content": "Delivering high-impact campaigns across the MENA region and beyond."
-                            }
-                        ]
-                    },
-                    {
-                        "subHeading": "98% Client Retention Rate",
-                        "subDescription": [
-                            {
-                                "content": "Proven commitment to client success and satisfaction."
-                            }
-                        ]
-                    }
+                    // {
+                    //     "subHeading": "50+ In-House Visionaries",
+                    //     "subDescription": [
+                    //         {
+                    //             "content": "Strategists, creatives, tech wizards, and media mavericks driving innovation."
+                    //         }
+                    //     ]
+                    // },
+                    // {
+                    //     "subHeading": "2,000+ Campaigns Launched",
+                    //     "subDescription": [
+                    //         {
+                    //             "content": "Delivering high-impact campaigns across the MENA region and beyond."
+                    //         }
+                    //     ]
+                    // },
+                    // {
+                    //     "subHeading": "98% Client Retention Rate",
+                    //     "subDescription": [
+                    //         {
+                    //             "content": "Proven commitment to client success and satisfaction."
+                    //         }
+                    //     ]
+                    // }
                 ]
             },
             {
