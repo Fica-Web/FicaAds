@@ -19,31 +19,33 @@ const ScrollBox = ({ section }) => {
                 </div>
 
                 {/* Right Section */}
-                {section.subSections.map((item, index) => (
-                    <div className='relative lg:w-1/2 h-full flex font-Switzer-Medium'>
-                        <div className=' pr-10 border-r border-gray1 text-xl font-semibold'>
-                            {String(index + 1).padStart(2, "0")}
+                <div className='lg:w-1/2 h-full font-Switzer-Medium'>
+                    {section.subSections.map((item, index) => (
+                        <div className='flex relative'>
+                            <div className=' pr-10 border-r border-gray1 text-xl font-semibold'>
+                                {String(index + 1).padStart(2, "0")}
+                            </div>
+
+                            <div className='absolute w-full h-1 bottom-4 border-t'></div>
+
+                            <div className=' h-full w-full pl-5 lg:pb-10 '>
+                                <h3 className="text-xl font-semibold tracking-wide mb-2">
+                                    {item.subHeading}
+                                </h3>
+
+                                {item.subDescription.map((desc, i) => (
+                                    <p
+                                        key={i}
+                                        className="text-lg leading-relaxed font-Switzer-Light text-neutral-700 lg:max-w-sm "
+                                    >
+                                        {desc.content}
+                                    </p>
+                                ))}
+                            </div>
                         </div>
+                    ))}
 
-                        <div className='absolute w-full h-1 bottom-4 border-t'></div>
-
-                        <div className=' h-full w-full pl-5 lg:pb-10 '>
-                            <h3 className="text-xl font-semibold tracking-wide mb-2">
-                                {item.subHeading}
-                            </h3>
-
-                            {item.subDescription.map((desc, i) => (
-                                <p
-                                    key={i}
-                                    className="text-lg leading-relaxed font-Switzer-Light text-neutral-700 lg:max-w-sm "
-                                >
-                                    {desc.content}
-                                </p>
-                            ))}
-                        </div>
-
-                    </div>
-                ))}
+                </div>
             </div>
         </div>
     );
