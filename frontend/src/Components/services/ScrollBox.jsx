@@ -19,14 +19,14 @@ const ScrollBox = ({ section }) => {
                 </div>
 
                 {/* Right Section */}
-                <div className='lg:w-1/2 h-full font-Switzer-Medium'>
+                <div className='lg:w-1/2  max-h-40 overflow-auto no-scrollbar font-Switzer-Medium pt-5'>
                     {section.subSections.map((item, index) => (
                         <div className='flex relative'>
                             <div className=' pr-10 border-r border-gray1 text-xl font-semibold'>
                                 {String(index + 1).padStart(2, "0")}
                             </div>
 
-                            <div className='absolute w-full h-1 bottom-4 border-t'></div>
+                            <div className='absolute w-full h-1 bottom-4 last:border-0 border-t'></div>
 
                             <div className=' h-full w-full pl-5 lg:pb-10 '>
                                 <h3 className="text-xl font-semibold tracking-wide mb-2">
