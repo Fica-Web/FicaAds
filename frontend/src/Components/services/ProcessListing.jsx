@@ -8,19 +8,19 @@ const ProcessListing = ({ section }) => {
     if (!section || !section.subSections) return null; // Ensure data exists
 
     return (
-        <div className="my-28 flex flex-col md:flex-row gap-8 md:gap-14 items-stretch">
+        <div className="md:my-28 my-12 flex flex-col md:flex-row gap-8 md:gap-14 items-stretch">
             {/* Left Section: Static Image */}
             <div className="md:w-1/2 flex items-center rounded-xl overflow-hidden">
                 <img
                     src={section.image }
                     alt="Process visual"
-                    className="w-full h-full max-h-[90vh] object-cover rounded-xl"
+                    className="w-full h-full max-h-[90vh] object-cover rounded-xl md:block hidden"
                 />
             </div>
 
             {/* Right Section: Process Steps */}
             <div className="md:w-1/2 flex flex-col justify-center">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-8 text-black leading-tight">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-8 text-black md:text-start text-center leading-tight">
                     {section.heading}
                 </h2>
 

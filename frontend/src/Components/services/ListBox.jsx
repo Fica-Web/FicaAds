@@ -4,10 +4,10 @@ const ListBox = ({ section }) => {
     if (!section || !section.subSections) return null; // Ensure data exists
 
     return (
-        <div className="my-28 flex flex-col md:flex-row gap-8 items-center ">
+        <div className="md:my-28 flex flex-col md:flex-row gap-8 items-center ">
             {/* Left Section: Headline + Description + Checklist */}
             <div className="md:w-1/2 h-full ">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-6 text-black leading-tight">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-6 text-black md:text-start text-center leading-tight">
                     {section.heading}
                 </h2>
 
