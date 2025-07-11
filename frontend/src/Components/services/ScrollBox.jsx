@@ -14,51 +14,53 @@ const ScrollBox = ({ section }) => {
     const yTransform = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
 
     return (
-        <div ref={containerRef} className="my-24 ">
-            <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start justify-between">
-                {/* Left Section */}
-                <div className="lg:w-1/2 ">
-                    <h2 className="text-4xl lg:text-5xl font-semibold text-black mb-6 tracking-tight">
-                        {section.heading}
-                    </h2>
-                    {section.description && (
-                        <p className="text-lg text-neutral-700 leading-relaxed max-w-xl">
-                            {section.description}
-                        </p>
-                    )}
-                </div>
+        <div className='w-full my-24'>
+            <h2 className="lg:w-1/2 text-3xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-6 text-black leading-tight">
+                {section.heading}
+            </h2>
+            <div ref={containerRef} className=" ">
+                <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start justify-between">
+                    {/* Left Section */}
+                    <div className="lg:w-1/2 ">
+                        {section.description && (
+                            <p className="text-lg text-neutral-700 leading-relaxed max-w-xl">
+                                {section.description}
+                            </p>
+                        )}
+                    </div>
 
-                {/* Right Section */}
-                <div className='lg:w-1/2  max-h-40 overflow-auto no-scrollbar font-Switzer-Medium pt-5'>
-                    <motion.div
-                        style={{ y: yTransform }}
-                    >
-                        {section.subSections.map((item, index) => (
-                            <div className='flex relative'>
-                                <div className=' pr-10 border-r border-gray1 text-xl font-semibold'>
-                                    {String(index + 1).padStart(2, "0")}
+                    {/* Right Section */}
+                    <div className='lg:w-1/2  max-h-40 overflow-auto no-scrollbar font-Switzer-Medium pt-5'>
+                        <motion.div
+                            style={{ y: yTransform }}
+                        >
+                            {section.subSections.map((item, index) => (
+                                <div className='flex relative'>
+                                    <div className=' pr-10 border-r border-gray1 text-xl font-semibold'>
+                                        {String(index + 1).padStart(2, "0")}
+                                    </div>
+
+                                    <div className='absolute w-full h-1 bottom-4 last:border-0 border-t'></div>
+
+                                    <div className=' h-full w-full pl-5 lg:pb-10 '>
+                                        <h3 className="text-xl font-semibold tracking-wide mb-2">
+                                            {item.subHeading}
+                                        </h3>
+
+                                        {item.subDescription.map((desc, i) => (
+                                            <p
+                                                key={i}
+                                                className="text-lg leading-relaxed font-Switzer-Light text-neutral-700 lg:max-w-sm "
+                                            >
+                                                {desc.content}
+                                            </p>
+                                        ))}
+                                    </div>
                                 </div>
+                            ))}
+                        </motion.div>
 
-                                <div className='absolute w-full h-1 bottom-4 last:border-0 border-t'></div>
-
-                                <div className=' h-full w-full pl-5 lg:pb-10 '>
-                                    <h3 className="text-xl font-semibold tracking-wide mb-2">
-                                        {item.subHeading}
-                                    </h3>
-
-                                    {item.subDescription.map((desc, i) => (
-                                        <p
-                                            key={i}
-                                            className="text-lg leading-relaxed font-Switzer-Light text-neutral-700 lg:max-w-sm "
-                                        >
-                                            {desc.content}
-                                        </p>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </motion.div>
-
+                    </div>
                 </div>
             </div>
         </div>

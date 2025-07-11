@@ -133,7 +133,7 @@ const services = [
             {
                 "heading": "Why Choose Us?",
                 "description": "As a leading performance marketing agency in Dubai, we understand that every business is unique. That’s why we ditch the one-size-fits-all approach and craft tailored strategies designed to meet your specific goals. From startups to global brands, we’ve helped businesses across industries achieve digital excellence.",
-                "type": "gridBox",
+                "type": "scrollBox",
                 "subSections": [
                     {
                         "subHeading": "Data-Driven Decisions",
@@ -298,7 +298,7 @@ const services = [
             {
                 "heading": "Why Choose FICA Ads Innovation as Your Social Media Marketing Agency in Dubai?",
                 "description": "Dubai thrives on innovation, and so do we. As a leading social media marketing agency in Dubai, we blend creativity with analytics to deliver measurable results. Here’s what sets us apart:",
-                "type": "gridBox",
+                "type": "scrollBox",
                 "subSections": [
                     {
                         "subHeading": "Hyper-Targeted Campaigns",
@@ -520,7 +520,7 @@ const services = [
             {
                 "heading": "Why Choose Our Web Designing Company in Dubai?",
                 "description": "Your website is the face of your brand online. We design and develop websites that are not just visually captivating but also user-friendly, responsive, and optimized for search engines. Here’s what sets us apart: ",
-                "type": "gridBox",
+                "type": "scrollBox",
                 "subSections": [
                     {
                         "subHeading": "Tailored Designs",
@@ -689,7 +689,7 @@ const services = [
             {
                 "heading": "Why Choose Our Video Production Company in Dubai?",
                 "description": "As a trusted video production company in Dubai, we prioritize your vision. Our process starts with understanding your goals, audience, and message. Through collaborative brainstorming and cutting-edge technology, we transform ideas into high-impact videos that resonate. From scriptwriting to post-production, we ensure every frame aligns with your brand’s identity.",
-                "type": "gridBox",
+                "type": "scrollBox",
                 "subSections": [
                     {
                         "subHeading": "Tailored Storytelling",
