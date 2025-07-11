@@ -10,11 +10,11 @@ const ProcessListing = ({ section }) => {
     return (
         <div className="my-28 flex flex-col md:flex-row gap-8 md:gap-14 items-stretch">
             {/* Left Section: Static Image */}
-            <div className="md:w-1/2 flex-shrink-0 rounded-xl overflow-hidden shadow-lg">
+            <div className="md:w-1/2 flex items-center rounded-xl overflow-hidden">
                 <img
-                    src={img}
+                    src={section.image }
                     alt="Process visual"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full max-h-[90vh] object-cover rounded-xl"
                 />
             </div>
 

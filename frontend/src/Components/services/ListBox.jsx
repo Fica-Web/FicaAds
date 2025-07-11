@@ -33,9 +33,9 @@ const ListBox = ({ section }) => {
 
             {/* Right Section: Image */}
             <div className="md:w-1/2 flex justify-center md:justify-end items-stretch h-full">
-                <div className="h-full rounded-xl overflow-hidden shadow-lg w-full max-w-xl">
+                <div className="h-full max-h-[90vh] flex items-center rounded-xl overflow-hidden shadow-lg w-full max-w-xl">
                     <img
-                        src={img}
+                        src={section.image || img}
                         alt="Desk setup with laptop and accessories"
                         className="w-full h-full object-cover"
                     />

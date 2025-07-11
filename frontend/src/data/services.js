@@ -5,6 +5,24 @@ import img4 from '../assets/Images/services/image4.jpg'
 import img5 from '../assets/Images/services/image5.jpg'
 import img6 from '../assets/Images/services/image6.jpg'
 
+import seo1 from '../assets/Images/services/seo1.jpg';
+import seo2 from '../assets/Images/services/seo2.jpg';
+
+import perfomance1 from '../assets/Images/services/perfomance1.jpg';
+import perfomance2 from '../assets/Images/services/perfomance2.jpg';
+
+import social1 from '../assets/Images/services/social1.jpg';
+import social2 from '../assets/Images/services/social2.jpg';
+import social3 from '../assets/Images/services/social3.jpg';
+
+import web1 from '../assets/Images/services/web1.jpg';
+import web2 from '../assets/Images/services/web2.jpg';
+
+import video1 from '../assets/Images/services/video1.jpg';
+import video2 from '../assets/Images/services/video2.jpg';
+
+import branding1 from '../assets/Images/services/branding1.jpg';
+import branding2 from '../assets/Images/services/branding2.jpg';
 
 const services = [
     {
@@ -18,6 +36,7 @@ const services = [
             {
                 "heading": "Why Web Design & SEO Go Hand-in-Hand",
                 "type": "list",
+                image: seo1,
                 "subSections": [
                     {
                         "subHeading": "",
@@ -37,6 +56,7 @@ const services = [
             {
                 "heading": "Our SEO-Driven Web Design Process",
                 "type": "process",
+                image: seo2,
                 "subSections": [
                     {
                         "subHeading": "Discovery & Keyword Blueprinting",
@@ -165,6 +185,7 @@ const services = [
                 "heading": "Our Approach",
                 "description": "Our performance marketing strategy follows a structured process to maximize results.",
                 "type": "process",
+                image: perfomance1,
                 "subSections": [
                     {
                         "subHeading": "We Listen",
@@ -260,6 +281,7 @@ const services = [
                 "heading": "Trusted by Leading Brands",
                 "description": "Our expertise as a performance marketing agency in Dubai has earned the trust of global and local brands alike.",
                 "type": "list",
+                image: perfomance2,
                 "subSections": [
                     {
                         "subHeading": "",
@@ -400,6 +422,7 @@ const services = [
             {
                 "heading": "Industries We Elevate",
                 "type": "list",
+                image: social1,
                 "subSections": [
                     {
                         "subHeading": "",
@@ -427,6 +450,7 @@ const services = [
             {
                 "heading": "Our 6-Step Process for Social Media Success in Dubai",
                 "type": "process",
+                image: social2,
                 "subSections": [
                     {
                         "subHeading": "Audit & Goal Setting",
@@ -487,6 +511,7 @@ const services = [
             {
                 "heading": "Why Dubai Brands Trust Us",
                 "type": "list",
+                image: social3,
                 "subSections": [
                     {
                         "subHeading": "",
@@ -610,6 +635,7 @@ const services = [
             {
                 "heading": "Our Process: Transparent, Collaborative, Results-Driven",
                 "type": "process",
+                image: web1,
                 "subSections": [
                     {
                         "subHeading": "Discovery & Strategy",
@@ -652,6 +678,7 @@ const services = [
             {
                 "heading": "Why Businesses in Dubai Trust Us",
                 "type": "list",
+                image: web2,
                 "subSections": [
                     {
                         "subHeading": "",
@@ -770,6 +797,7 @@ const services = [
             {
                 "heading": "Our Process: From Concept to Creation",
                 "type": "process",
+                image: video1,
                 "subSections": [
                     {
                         "subHeading": "Creative Discovery",
@@ -812,6 +840,7 @@ const services = [
             {
                 "heading": "Why Dubai Businesses Trust Us for Video Production",
                 "type": "list",
+                image: video2,
                 "subSections": [
                     {
                         "subHeading": "",
@@ -889,6 +918,7 @@ const services = [
                 "heading": "Think, Create, Dominate",
                 "description": "Our approach revolves around three core principles that ensure campaign success.",
                 "type": "list",
+                image: branding1,
                 subSections: [
                     {
                         subDescription: [
@@ -968,6 +998,7 @@ const services = [
                 "heading": "Our Process: Innovate. Execute. Elevate.",
                 "description": "We follow a structured approach to ensure effective advertising results.",
                 "type": "process",
+                image: branding2,
                 "subSections": [
                     {
                         "subHeading": "INNOVATE – Strategy That Sparks Change",
