@@ -66,7 +66,7 @@ const SingleService = () => {
                   </Link>
                 ) : (
                   <span
-                    className={`block lg:text-[28px] font-Switzer-Medium font-medium pl-10 ${index === selectedIndex ? "text-[#0C0C0C]" : "text-[#0C0C0C]/50"
+                    className={`block lg:text-[28px] font-Switzer-Medium font-medium pl-10  ${index === selectedIndex ? "text-[#0C0C0C]" : "text-[#0C0C0C]/50"
                       }`}
                   >
                     {service.title}

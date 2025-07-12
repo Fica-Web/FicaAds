@@ -46,7 +46,7 @@ const ScrollBox = ({ section }) => {
     });
 
     // Map 0 → 1 scroll progress to 0% → -100% translateY
-    const yTransform = useTransform(scrollYProgress, [0, 1], ['0%', '-100%']);
+    const yTransform = useTransform(scrollYProgress, [0.2, 1], ['0%', '-100%']);
 
     return (
         <div className="w-full my-24">
