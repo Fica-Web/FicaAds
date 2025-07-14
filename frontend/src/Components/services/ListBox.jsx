@@ -7,17 +7,17 @@ const ListBox = ({ section }) => {
         <div className="md:my-28 flex flex-col md:flex-row gap-8 items-center ">
             {/* Left Section: Headline + Description + Checklist */}
             <div className="md:w-1/2 h-full ">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-6 text-black md:text-start text-center leading-tight">
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-6 text-black md:text-start text-center leading-tight">
                     {section.heading}
                 </h2>
 
                 {section.subSections[0].subDescription.find(desc => desc.type === "content") && (
-                    <p className="text-gray-600 mb-6 max-w-xl text-lg">
+                    <p className="text-gray-600 mb-6 max-w-xl lg:text-lg">
                         {section.subSections[0].subDescription.find(desc => desc.type === "content").content}
                     </p>
                 )}
 
-                <ul className="space-y-4 border-t border-gray-300 pt-6 text-lg">
+                <ul className="space-y-4 border-t border-gray-300 pt-6 lg:text-lg">
                     {section?.subSections[0]?.subDescription
                         .filter(desc => desc.type === "list")
                         .map((desc, index, arr) => (

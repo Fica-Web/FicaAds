@@ -20,7 +20,7 @@ const ProcessListing = ({ section }) => {
 
             {/* Right Section: Process Steps */}
             <div className="md:w-1/2 flex flex-col justify-center">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-8 text-black md:text-start text-center leading-tight">
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-8 text-black md:text-start text-center leading-tight">
                     {section.heading}
                 </h2>
 
@@ -35,7 +35,7 @@ const ProcessListing = ({ section }) => {
                                 <span className="absolute -top-2 text-lg font-bold font-Switzer-Light text-black">
                                     {String(index + 1).padStart(2, '0')}
                                 </span>
-                                <h3 className="text-xl font-semibold text-black ml-9 mb-3">
+                                <h3 className="lg:text-xl text-lg font-semibold text-black ml-9 mb-3">
                                     {sub.subHeading}
                                 </h3>
                             </button>
@@ -52,13 +52,13 @@ const ProcessListing = ({ section }) => {
                                     >
                                         {sub.subDescription.map((desc, i) =>
                                             desc.type === "content" ? (
-                                                <p key={i} className="text-gray1 text-lg font-Switzer-Light leading-relaxed">
+                                                <p key={i} className="text-gray1 lg:text-lg font-Switzer-Light leading-relaxed">
                                                     {desc.content}
                                                 </p>
                                             ) : (
                                                 <div key={i} className="flex items-start gap-2">
-                                                    <span className="text-black text-lg">•</span>
-                                                    <p className="text-gray1 text-lg">{desc.content}</p>
+                                                    <span className="text-black lg:text-lg">•</span>
+                                                    <p className="text-gray1 lg:text-lg">{desc.content}</p>
                                                 </div>
                                             )
                                         )}

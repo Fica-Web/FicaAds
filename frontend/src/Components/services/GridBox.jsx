@@ -4,13 +4,13 @@ const GridBox = ({ section }) => {
     return (
         <div className="md:my-28 my-12">
             {/* Heading */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-4 text-black md:text-start text-center leading-tight">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-4 text-black md:text-start text-center leading-tight">
                 {section.heading}
             </h2>
 
             {/* Optional Description */}
             {section.description && (
-                <p className="text-lg text-gray-700 ">
+                <p className="lg:text-lg text-gray-700 ">
                     {section.description}
                 </p>
             )}
@@ -22,12 +22,12 @@ const GridBox = ({ section }) => {
                         key={index}
                         className="p-8 border border-gray1 rounded-2xl bg-white"
                     >
-                        <h3 className="text-xl font-bold text-black mb-6 text-center">
+                        <h3 className="lg:text-xl text-lg font-bold text-black mb-6 text-center">
                             {sub.subHeading}
                         </h3>
 
                         <ul
-                            className={`text-lg space-y-4 text-gray1 pl-6 ${sub.subDescription.length === 1 ? 'list-none' : 'list-disc list-outside'
+                            className={`lg:text-lg space-y-4 text-gray1 pl-6 ${sub.subDescription.length === 1 ? 'list-none' : 'list-disc list-outside'
                                 }`}
                         >
                             {sub.subDescription.map((desc, i) => (

@@ -51,17 +51,17 @@ const ScrollBox = ({ section }) => {
     return (
         <div className="w-full my-24">
             {/* Heading ----------------------------------------------------- */}
-            <h2 className="lg:w-1/2 text-3xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-6 text-black leading-tight">
+            <h2 className="lg:w-1/2 text-2xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-6 text-black leading-tight lg:text-start text-center">
                 {section.heading}
             </h2>
 
             {/* Scroll-tracked container ------------------------------------ */}
             <div ref={containerRef}>
-                <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start justify-between">
+                <div className="flex flex-col lg:flex-row gap-1 lg:gap-24 items-start justify-between ">
                     {/* Left column --------------------------------------------- */}
-                    <div className="lg:w-1/2">
+                    <div className="lg:w-1/2 lg:text-start text-center ">
                         {section.description && (
-                            <p className="text-lg text-neutral-700 leading-relaxed max-w-xl">
+                            <p className="lg:text-lg text-neutral-700 leading-relaxed max-w-xl">
                                 {section.description}
                             </p>
                         )}
@@ -90,14 +90,14 @@ const ScrollBox = ({ section }) => {
                                         className={`h-full w-full pl-5 ${index === section.subSections.length - 1 ? '' : 'pb-8 lg:pb-10'
                                         }`}
                                     >
-                                        <h3 className="text-xl font-semibold tracking-wide mb-2">
+                                        <h3 className="lg:text-xl text-lg font-semibold tracking-wide mb-2">
                                             {item.subHeading}
                                         </h3>
 
                                         {item.subDescription.map((desc, i) => (
                                             <p
                                                 key={i}
-                                                className="text-lg leading-relaxed font-Switzer-Light text-neutral-700 lg:max-w-sm"
+                                                className="lg:text-lg leading-relaxed font-Switzer-Light text-neutral-700 lg:max-w-sm"
                                             >
                                                 {desc.content}
                                             </p>

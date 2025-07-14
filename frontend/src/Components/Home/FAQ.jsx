@@ -48,7 +48,7 @@ const FAQ = () => {
                             className=" w-full text-left flex justify-between items-center font-Switzer-Light  text-[#0C0C0C] leading-[28px] tracking-normal text-xs md:text-base lg:text-lg transition-all duration-300"
                             onClick={() => toggleQuestion(index)}
                         >
-                            <div className="max-w-[92%] md:max-w-[58%]  lg:max-w-[60%] lg:text-lg text-md font-Switzer-Medium">
+                            <div className="max-w-[92%] md:max-w-[58%]  lg:max-w-[60%] text-lg font-Switzer-Medium">
                                 {item.question} 
                             </div>
 
