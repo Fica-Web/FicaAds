@@ -540,7 +540,7 @@ const services = [
         "title": "Web Development",
         "slug": "web-development",
         "subTitle": "Your Trusted Web Designing Company in Dubai",
-        "details": "Looking for a web designing company in Dubai that transforms your vision into a stunning, high-performing website? At FICA Ads Innovation, we combine innovation, technical expertise, and customer-centric strategies to build websites that drive growth, engagement, and results. With over 5+ years of experience serving businesses across Dubai, we’ve earned our reputation as the go-to **web designing company in Dubai** for bespoke digital solutions.",
+        "details": "Looking for a web designing company in Dubai that transforms your vision into a stunning, high-performing website? At FICA Ads Innovation, we combine innovation, technical expertise, and customer-centric strategies to build websites that drive growth, engagement, and results. With over 5+ years of experience serving businesses across Dubai, we’ve earned our reputation as the go-to web designing company in Dubai for bespoke digital solutions.",
         "sections": [
             {
                 "heading": "Why Choose Our Web Designing Company in Dubai?",
@@ -684,7 +684,7 @@ const services = [
                         "subHeading": "",
                         "subDescription": [
                             {
-                                "content": "15+ Years of Excellence: Proven expertise as Dubai’s preferred **web designing company**.",
+                                "content": "15+ Years of Excellence: Proven expertise as Dubai’s preferred web designing company.",
                                 "type": "list"
                             },
                             {

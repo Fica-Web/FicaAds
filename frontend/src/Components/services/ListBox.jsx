@@ -17,7 +17,7 @@ const ListBox = ({ section }) => {
                     </p>
                 )}
 
-                <ul className="space-y-4 border-t border-gray-300 pt-6 lg:text-lg">
+                <ul className="space-y-4 border-t border-gray-300 pt-6 lg:text-lg  font-Switzer-Light">
                     {section?.subSections[0]?.subDescription
                         .filter(desc => desc.type === "list")
                         .map((desc, index, arr) => (

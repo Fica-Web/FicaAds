@@ -9,90 +9,87 @@ const SingleService = () => {
   // console.log('servicedata', services);
   // console.log("selectedService:", selectedService);
 
-
   const formatIndex = (index) => {
     return (index + 1).toString().padStart(2, "0");
   };
 
-
   return (
     <div>
       {/* DESKTOP: Image left, list right */}
-<div className="hidden lg:flex justify-between gap-20 w-full">
-  {/* LEFT: Image + details */}
-  <Link
-    to={`/services/${selectedService.slug}`}
-    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-    className="block group"
-  >
-    <div className="flex flex-col items-start lg:w-[739px]">
-      <img
-        src={selectedService.image}
-        alt={selectedService.title}
-        className="w-full h-auto lg:max-h-80 rounded-lg object-cover mb-5"
-      />
-      <p className="text-[#0C0C0C] font-Switzer-Light font-thin lg:text-lg">
-        {selectedService.details}
-      </p>
-    </div>
-  </Link>
+      <div className="hidden lg:flex justify-between gap-20 w-full">
+        {/* LEFT: Image + details */}
+        <Link
+          to={`/services/${selectedService.slug}`}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="block group lg:w-1/2"
+        >
+          <div className="flex flex-col items-start ">
+            <img
+              src={selectedService.image}
+              alt={selectedService.title}
+              className="w-full h-auto lg:max-h-80 rounded-lg object-cover mb-5"
+            />
+            <p className="text-[#0C0C0C] font-Switzer-Light font-thin lg:text-lg">
+              {selectedService.details}
+            </p>
+          </div>
+        </Link>
 
-  {/* RIGHT: Selectable list */}
-  <div className="flex flex-col gap-7 lg:w-[600px]">
-    {services.map((service, index) => (
-      <button
-        key={service.id}
-        onClick={() => setSelectedIndex(index)}
-        /* ↓ added `group` so nested items can use `group-hover:` */
-        className="group text-left lg:text-[28px] font-semibold px-4 py-3 rounded-md transition-all duration-300"
-      >
-        <div className="leading-none" style={{ lineHeight: "0.25px" }}>
-          {/* --- Number --- */}
-          <span
-            className={`
-              block text-xl font-Switzer-Medium tracking-widest transition-all duration-300
-              ${
-                index === selectedIndex
-                  ? "text-[#0C0C0C]"
-                  : "text-[#0C0C0C]/50 group-hover:translate-x-0.5 group-hover:text-[#0C0C0C]"
-              }
-            `}
-          >
-            {formatIndex(index)}
-          </span>
-
-          {/* --- Title (linked when active) --- */}
-          {index === selectedIndex ? (
-            <Link
-              to={`/services/${service.slug}`}
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        {/* RIGHT: Selectable list */}
+        <div className="flex flex-col gap-7 lg:w-1/2 ">
+          {services.map((service, index) => (
+            <button
+              key={service.id}
+              onClick={() => setSelectedIndex(index)}
+              /* ↓ added `group` so nested items can use `group-hover:` */
+              className="group text-left lg:text-[28px] font-semibold px-4 py-3 rounded-md transition-all duration-300"
             >
-              <span
-                className={`
+              <div className="leading-none" style={{ lineHeight: "0.25px" }}>
+                {/* --- Number --- */}
+                <span
+                  className={`
+              block text-xl font-Switzer-Medium tracking-widest transition-all duration-300
+              ${index === selectedIndex
+                      ? "text-[#0C0C0C]"
+                      : "text-[#0C0C0C]/50 group-hover:translate-x-0.5 group-hover:text-[#0C0C0C]"
+                    }
+            `}
+                >
+                  {formatIndex(index)}
+                </span>
+
+                {/* --- Title (linked when active) --- */}
+                {index === selectedIndex ? (
+                  <Link
+                    to={`/services/${service.slug}`}
+                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                  >
+                    <span
+                      className={`
                   block lg:text-[28px] font-Switzer-Medium font-medium pl-10
                   transition-all duration-300
                   text-[#0C0C0C]
                 `}
-              >
-                {service.title}
-              </span>
-            </Link>
-          ) : (
-            <span
-              className={`
+                    >
+                      {service.title}
+                    </span>
+                  </Link>
+                ) : (
+                  <span
+                    className={`
                 block lg:text-[28px] font-Switzer-Medium font-medium pl-10
                 transition-all duration-300
                 text-[#0C0C0C]/50 group-hover:translate-x-1 group-hover:text-[#0C0C0C]
               `}
-            >
-              {service.title}
-            </span>
-          )}
+                  >
+                    {service.title}
+                  </span>
+                )}
+              </div>
+            </button>
+          ))}
         </div>
-      </button>
-    ))}
-  </div>
-</div>
+      </div>
 
       {/* MOBILE/TABLET: Only Right List + Dynamic Details */}
       <div className="lg:hidden ">

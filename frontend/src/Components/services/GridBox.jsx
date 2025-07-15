@@ -2,7 +2,7 @@ const GridBox = ({ section }) => {
     if (!section || !section.subSections) return null;
 
     return (
-        <div className="md:my-28 my-12">
+        <div className="md:my-28 my-12 font-Switzer-Light">
             {/* Heading */}
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-4 text-black md:text-start text-center leading-tight">
                 {section.heading}

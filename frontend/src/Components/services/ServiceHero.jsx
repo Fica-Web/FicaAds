@@ -23,11 +23,11 @@ const ServiceHero = ({ service }) => {
                                 className='w-full h-full rounded-xl object-cover'
                             />
                         </div>
-                        <div className='mt-6 animate-fade-up duration-1000'>
-                            <h2 className='font-Switzer-Medium uppercase text-black text-3xl md:text-4xl lg:text-5xl'>
+                        <div className='mt-6 lg:mt-9 animate-fade-up duration-1000'>
+                            <h2 className='font-Switzer-Medium uppercase text-black text-3xl md:text-4xl lg:text-5xl 3xl:text-6xl'>
                                 {service.subTitle}
                             </h2>
-                            <p className="lg:text-lg text-gray1 mx-auto mt-6">
+                            <p className="lg:text-lg text-gray1 mx-auto mt-5">
                                 {service.details}
                             </p>
                         </div>
