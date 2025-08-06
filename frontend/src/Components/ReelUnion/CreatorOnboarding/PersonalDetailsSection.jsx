@@ -1,7 +1,8 @@
-const PersonalDetailsSection = ({ formData, handleChange }) => {
+const PersonalDetailsSection = ({ formData, handleChange, errors }) => {
+    console.log('PersonalDetailsSection', formData, errors);
     return (
-        <section className="border-b border-gray-200 pb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">1. Personal Details</h2>
+        <section className="border-b border-gray pb-8">
+            <h2 className="text-2xl font-bold text-gray1 mb-4">1. Personal Details</h2>
             <div className="space-y-6">
                 {[
                     { label: 'Full Name', name: 'fullName', type: 'text' },
@@ -16,21 +17,29 @@ const PersonalDetailsSection = ({ formData, handleChange }) => {
                         <input
                             type={field.type}
                             name={field.name}
-                            required
                             value={formData[field.name]}
                             onChange={handleChange}
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 ${errors?.location
+                                    ? 'border-red-500 focus:ring-red-400'
+                                    : 'border-gray4 focus:ring-blue-500'
+                                }`}
                         />
+                        {errors?.[field.name] && (
+                            <p className="text-red-500 text-sm mt-1">{errors[field.name]}</p>
+                        )}
                     </div>
                 ))}
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Location</label>
                     <select
                         name="location"
-                        required
                         value={formData.location}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 ${errors?.location
+                                ? 'border-red-500 focus:ring-red-400'
+                                : 'border-gray4 focus:ring-blue-500'
+                            }`}
+
                     >
                         <option value="">Select a location</option>
                         <option>Dubai</option>
@@ -38,6 +47,9 @@ const PersonalDetailsSection = ({ formData, handleChange }) => {
                         <option>Calicut</option>
                         <option>Other</option>
                     </select>
+                    {errors?.location && (
+                        <p className="text-red-500 text-sm mt-1">{errors.location}</p>
+                    )}
                 </div>
             </div>
         </section>

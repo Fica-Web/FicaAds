@@ -29,6 +29,7 @@ const initialState = {
 const CreatorOnboardingForm = () => {
     const [formData, setFormData] = useState(initialState);
     const [showModal, setShowModal] = useState(false);
+    const [errors, setErrors] = useState({});
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -54,13 +55,36 @@ const CreatorOnboardingForm = () => {
         }
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Form Submitted:', formData);
-        setShowModal(true);
+    const closeModal = () => setShowModal(false);
+
+    const validate = () => {
+        const newErrors = {};
+
+        if (!formData.fullName.trim()) newErrors.fullName = 'Full Name is required.';
+        if (!formData.email.includes('@')) newErrors.email = 'Enter a valid email address.';
+        if (!formData.phoneNumber.trim()) newErrors.phoneNumber = 'Phone number is required.';
+        if (!formData.dob) newErrors.dob = 'Date of birth is required.';
+        if (!formData.location) newErrors.location = 'Please select your location.';
+        if (!formData.skills.length) newErrors.skills = 'Please select at least one skill.';
+        if (!formData.collaborationMode) newErrors.collaborationMode = 'Select a collaboration mode.';
+        if (!formData.motivation.trim()) newErrors.motivation = 'This field is required.';
+        if (!formData.consent) newErrors.consent = 'You must give your consent.';
+
+        return newErrors;
     };
 
-    const closeModal = () => setShowModal(false);
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const validationErrors = validate();
+        setErrors(validationErrors);
+
+        if (Object.keys(validationErrors).length === 0) {
+            console.log('Form Submitted:', formData);
+            setShowModal(true);
+            setFormData(initialState);
+        }
+    };
+
 
     return (
         <div className="bg-adminGray min-h-screen flex items-center justify-center p-4 font-sans">
@@ -75,12 +99,12 @@ const CreatorOnboardingForm = () => {
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-8">
-                    <PersonalDetailsSection formData={formData} handleChange={handleChange} />
-                    <OnlinePresenceSection formData={formData} handleChange={handleChange} />
-                    <SkillsSection formData={formData} handleChange={handleChange} />
-                    <CollaborationSection formData={formData} handleChange={handleChange} />
-                    <MotivationSection formData={formData} handleChange={handleChange} />
-                    <ConsentSection formData={formData} handleChange={handleChange} />
+                    <PersonalDetailsSection formData={formData} handleChange={handleChange} errors={errors} />
+                    <OnlinePresenceSection formData={formData} handleChange={handleChange} errors={errors} />
+                    <SkillsSection formData={formData} handleChange={handleChange} errors={errors} />
+                    <CollaborationSection formData={formData} handleChange={handleChange} errors={errors} />
+                    <MotivationSection formData={formData} handleChange={handleChange} errors={errors} />
+                    <ConsentSection formData={formData} handleChange={handleChange} errors={errors} />
 
                     <button
                         type="submit"
