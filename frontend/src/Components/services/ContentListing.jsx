@@ -4,7 +4,7 @@ const ContentListing = ({ section }) => {
     if (!section || !section.heading) return null; // Ensure section exists
 
     return (
-        <section className="w-11/12 md:w-3/4 mx-auto md:my-20 my-12 text-center md:p-8 transition-all duration-300">
+        <section className="w-11/12 md:w-3/4 mx-auto md:my-20 my-12 text-center md:p-8 transition-all duration-300 font-Switzer-Light">
             {/* Heading */}
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-4 text-black leading-tight ">
                 {section.heading}
