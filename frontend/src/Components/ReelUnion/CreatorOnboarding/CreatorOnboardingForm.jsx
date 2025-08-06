@@ -1,0 +1,99 @@
+import { useState } from 'react';
+import PersonalDetailsSection from './PersonalDetailsSection';
+import OnlinePresenceSection from './OnlinePresenceSection';
+import SkillsSection from './SkillsSection';
+import CollaborationSection from './CollaborationSection';
+import MotivationSection from './MotivationSection';
+import ConsentSection from './ConsentSection';
+import SuccessModal from './SuccessModal';
+
+const initialState = {
+    fullName: '',
+    dob: '',
+    phoneNumber: '',
+    email: '',
+    location: '',
+    instagramHandle: '',
+    otherProfiles: '',
+    portfolio: '',
+    otherSkills: '',
+    availability: '',
+    motivation: '',
+    anythingElse: '',
+    consent: false,
+    collaborationMode: '',
+    skills: [],
+    workMode: [],
+};
+
+const CreatorOnboardingForm = () => {
+    const [formData, setFormData] = useState(initialState);
+    const [showModal, setShowModal] = useState(false);
+
+    const handleChange = (e) => {
+        const { name, value, type, checked } = e.target;
+
+        if (type === 'checkbox' && name === 'skills') {
+            setFormData((prev) => ({
+                ...prev,
+                skills: checked
+                    ? [...prev.skills, value]
+                    : prev.skills.filter((item) => item !== value),
+            }));
+        } else if (type === 'checkbox' && name === 'workMode') {
+            setFormData((prev) => ({
+                ...prev,
+                workMode: checked
+                    ? [...prev.workMode, value]
+                    : prev.workMode.filter((item) => item !== value),
+            }));
+        } else if (type === 'checkbox') {
+            setFormData((prev) => ({ ...prev, [name]: checked }));
+        } else {
+            setFormData((prev) => ({ ...prev, [name]: value }));
+        }
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Form Submitted:', formData);
+        setShowModal(true);
+    };
+
+    const closeModal = () => setShowModal(false);
+
+    return (
+        <div className="bg-adminGray min-h-screen flex items-center justify-center p-4 font-sans">
+            <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl w-full max-w-3xl">
+                <h1 className="text-3xl md:text-4xl font-semibold text-center text-gray1 font-Switzer-Medium uppercase mb-2">
+                    The Reel Union – Creator Onboarding
+                </h1>
+                <p className="text-gray-600 mb-8">
+                    Welcome to The Reel Union—a creator-first ecosystem powered by HOF.
+                    Share your details so we can match you to projects, collaborators, and
+                    brands that fit your passion and skills.
+                </p>
+
+                <form onSubmit={handleSubmit} className="space-y-8">
+                    <PersonalDetailsSection formData={formData} handleChange={handleChange} />
+                    <OnlinePresenceSection formData={formData} handleChange={handleChange} />
+                    <SkillsSection formData={formData} handleChange={handleChange} />
+                    <CollaborationSection formData={formData} handleChange={handleChange} />
+                    <MotivationSection formData={formData} handleChange={handleChange} />
+                    <ConsentSection formData={formData} handleChange={handleChange} />
+
+                    <button
+                        type="submit"
+                        className="w-full md:w-auto px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300"
+                    >
+                        Submit
+                    </button>
+                </form>
+            </div>
+
+            {showModal && <SuccessModal onClose={closeModal} />}
+        </div>
+    );
+};
+
+export default CreatorOnboardingForm;

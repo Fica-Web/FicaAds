@@ -1,5 +1,5 @@
 import React from 'react';
-import CreatorOnboardingForm from '../Components/ReelUnion/CreatorOnboardingForm';
+import CreatorOnboardingForm from '../Components/ReelUnion/CreatorOnboarding/CreatorOnboardingForm';
 
 const ReelUnion = () => {
     return (
