@@ -78,28 +78,28 @@ const CreatorOnboardingForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // const validationErrors = validate();
-        // setErrors(validationErrors);
+        const validationErrors = validate();
+        setErrors(validationErrors);
 
-        // if (Object.keys(validationErrors).length === 0) {
+        if (Object.keys(validationErrors).length === 0) {
             try {
                 setLoading(true);
                 await sendReelUnionRequest(formData); // 🔁 Sending to your backend
                 setShowModal(true);
-                // setFormData(initialState);
+                setFormData(initialState);
             } catch (error) {
                 console.error("Form submission failed:", error);
                 alert("Something went wrong. Please try again.");
             } finally {
                 setLoading(false);
             }
-        // }
+        }
     };
 
     return (
         <div className="bg-adminGray min-h-screen flex items-center justify-center p-4 font-sans">
             <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl w-full max-w-3xl">
-                <h1 className="text-3xl md:text-4xl font-semibold text-center text-gray1 font-Switzer-Medium uppercase mb-2">
+                <h1 className="text-2xl lg:text-4xl font-semibold text-center text-gray1 font-Switzer-Medium uppercase mb-2">
                     The Reel Union – Creator Onboarding
                 </h1>
                 <p className="text-gray-600 mb-8">

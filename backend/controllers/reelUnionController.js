@@ -6,7 +6,7 @@ export const CreatorOnboardingForm = async (req, res) => {
         console.log('Sending data to Google Apps Script...', formData);
 
         const response = await axios.post(
-            'https://script.google.com/macros/s/AKfycbxAa73jaI55g8Sz05it8Y1R_8yTLZ9-div2I7R_AKeqIGS5a6w367QhyinS1e7H-Mc-/exec',
+            process.env.REEL_UNION_API_URL,
             formData,
             { headers: { 'Content-Type': 'application/json' } }
         );
