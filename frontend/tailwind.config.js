@@ -60,6 +60,21 @@ export default {
         'Singolare-Layers': ['Singolare-Layers','sans-serif'],
       },
 
+      fontSize: {
+        'tiny': '0.7rem',
+        'xs-plus': '0.8rem',
+        'sm-plus': '0.95rem',
+        '4.5xl': '3rem',
+        '7xl-plus': '5.5rem',
+      },
+
+      fontWeight: {
+        'extra-light': 200,
+        'semi-bold': 600,
+        'extra-bold': 800,
+        'black': 900,
+      },
+
       keyframes: {
         'fade-up': {
           '0%': { opacity: '0', transform: 'translateY(20px)' },

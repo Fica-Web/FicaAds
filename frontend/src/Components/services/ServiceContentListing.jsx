@@ -2,7 +2,7 @@ import React from 'react';
 import GridBox from './GridBox';
 import ListBox from './ListBox';
 import ProcessListing from './ProcessListing';
-import FourBoxes from './FourBoxes';
+import ScrollBox from './ScrollBox';
 import ContentListing from './ContentListing';
 
 const ServiceContentListing = ({ service }) => {
@@ -18,8 +18,8 @@ const ServiceContentListing = ({ service }) => {
                     return <ProcessListing key={index} section={section} />;
                 } else if (section.type === 'gridBox') {
                     return <GridBox key={index} section={section} />;
-                }else if (section.type === 'fourBox') {
-                    return <FourBoxes key={index} section={section} />;
+                }else if (section.type === 'scrollBox') {
+                    return <ScrollBox key={index} section={section} />;
                 } else if (section.type === 'content') {
                     return <ContentListing key={index} section={section} />;
                 } else {

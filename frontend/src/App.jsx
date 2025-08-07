@@ -19,6 +19,7 @@ import AdminTeamPage from './admin/pages/AdminTeamPage';
 import AdminCareerPage from './admin/pages/AdminCareerPage';
 import AdminLogin from './admin/pages/AdminLogin';
 import AdminAuth from './utils/auth/AdminAuth';
+import ReelUnion from './Pages/ReelUnion';
 
 const App = () => {
   return (
@@ -34,7 +35,7 @@ const App = () => {
         <Route path='careers' element={<CareersPage />} />
         <Route path='privacypolicy' element={<PrivacyPolicy />} />
         <Route path='contact' element={<ContactPage />} />
-        <Route path='services/:id' element={<ServiceDetailsPage />} />
+        <Route path='services/:slug' element={<ServiceDetailsPage />} />
       </Route>
 
       {/* Admin Authentication Route */}
@@ -51,6 +52,9 @@ const App = () => {
           <Route path='careers' element={<AdminCareerPage />} />
         </Route>
       </Route>
+
+      {/* Admin Authentication Route */}
+      <Route path='/reel-union' element={<ReelUnion />} />
     </Routes>
   );
 };

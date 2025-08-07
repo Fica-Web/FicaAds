@@ -20,7 +20,7 @@ const NewsCard = () => {
       } catch (error) {
         console.error("Error fetching blogs:", error);
       }
-    };
+    }; 
     fetchBlogs();
   }, []);
 

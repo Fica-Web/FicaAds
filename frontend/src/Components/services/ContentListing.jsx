@@ -4,15 +4,15 @@ const ContentListing = ({ section }) => {
     if (!section || !section.heading) return null; // Ensure section exists
 
     return (
-        <section className="w-11/12 md:w-3/4 mx-auto my-20 text-center p-8 transition-all duration-300">
+        <section className="w-11/12 md:w-3/4 mx-auto md:my-20 my-12 text-center md:p-8 transition-all duration-300 font-Switzer-Light">
             {/* Heading */}
-            <h2 className="text-3xl md:text-4xl font-extrabold text-brandGreen font-Switzer-Medium mb-4 uppercase">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-Switzer-Regular mb-4 text-black leading-tight ">
                 {section.heading}
             </h2>
 
             {/* Optional Description */}
             {section.description && (
-                <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-6">
+                <p className="lg:text-lg text-gray-700 max-w-4xl mx-auto mb-6">
                     {section.description}
                 </p>
             )}

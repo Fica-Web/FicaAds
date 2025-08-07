@@ -5,8 +5,8 @@ import ServiceHero from '../Components/services/ServiceHero';
 import ServiceContentListing from '../Components/services/ServiceContentListing';
 
 const ServiceDetailsPage = () => {
-    const { id } = useParams();
-    const service = services.find(service => service.id === id);
+    const { slug } = useParams();
+    const service = services.find(service => service.slug === slug);
 
     if (!service) {
         return <div className="w-full h-screen flex justify-center items-center">Service not found</div>;

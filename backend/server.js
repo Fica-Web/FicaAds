@@ -8,6 +8,7 @@ import adminRouter from './routers/adminRouter.js';
 import blogsRouter from './routers/blogsRouter.js';
 import teamRouter from './routers/teamRouter.js';
 import careerRouter from './routers/careerRouter.js';
+import reelUnionRouter from './routers/reelUnionRouter.js';
 
 dotenv.config();
 
@@ -36,6 +37,7 @@ app.use('/api/admin', adminRouter); // Routes for admin-specific functionalities
 app.use('/api/blogs', blogsRouter); // Routes for blogs-specific functionalities
 app.use('/api/team', teamRouter); 
 app.use('/api/careers', careerRouter); // Routes for completed works
+app.use('/api/reel-union', reelUnionRouter); // Routes for Reel Union onboarding
 
 app.get('/', (req, res) => {
     res.send('server is running');

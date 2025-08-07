@@ -7,9 +7,9 @@ const Services = () => {
             <h2 className='text-lg md:text-4xl lg:text-5xl lg:pt-5 uppercase text-center lg:text-left font-medium font-Switzer-Medium'>
                 SERVICE WE OFFER
             </h2>
-           <div className="container mx-auto mt-5 lg:mt-[40px]">
-      <SingleService/>
-    </div>
+            <div className="w-full mx-auto mt-5 lg:mt-[40px]">
+                <SingleService />
+            </div>
         </div>
     )
 }
