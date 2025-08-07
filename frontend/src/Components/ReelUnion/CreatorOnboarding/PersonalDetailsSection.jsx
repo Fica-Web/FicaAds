@@ -1,5 +1,4 @@
 const PersonalDetailsSection = ({ formData, handleChange, errors }) => {
-    console.log('PersonalDetailsSection', formData, errors);
     return (
         <section className="border-b border-gray pb-8">
             <h2 className="text-2xl font-bold text-gray1 mb-4">1. Personal Details</h2>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { sendReelUnionRequest } from '../../../utils/api/reelUnionApi'; // This should point to your backend API call
 import PersonalDetailsSection from './PersonalDetailsSection';
 import OnlinePresenceSection from './OnlinePresenceSection';
 import SkillsSection from './SkillsSection';
@@ -30,6 +31,7 @@ const CreatorOnboardingForm = () => {
     const [formData, setFormData] = useState(initialState);
     const [showModal, setShowModal] = useState(false);
     const [errors, setErrors] = useState({});
+    const [loading, setLoading] = useState(false);
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -73,18 +75,26 @@ const CreatorOnboardingForm = () => {
         return newErrors;
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const validationErrors = validate();
-        setErrors(validationErrors);
 
-        if (Object.keys(validationErrors).length === 0) {
-            console.log('Form Submitted:', formData);
-            setShowModal(true);
-            setFormData(initialState);
-        }
+        // const validationErrors = validate();
+        // setErrors(validationErrors);
+
+        // if (Object.keys(validationErrors).length === 0) {
+            try {
+                setLoading(true);
+                await sendReelUnionRequest(formData); // 🔁 Sending to your backend
+                setShowModal(true);
+                // setFormData(initialState);
+            } catch (error) {
+                console.error("Form submission failed:", error);
+                alert("Something went wrong. Please try again.");
+            } finally {
+                setLoading(false);
+            }
+        // }
     };
-
 
     return (
         <div className="bg-adminGray min-h-screen flex items-center justify-center p-4 font-sans">
@@ -109,8 +119,9 @@ const CreatorOnboardingForm = () => {
                     <button
                         type="submit"
                         className="w-full md:w-auto px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300"
+                        disabled={loading}
                     >
-                        Submit
+                        {loading ? "Submitting..." : "Submit"}
                     </button>
                 </form>
             </div>
