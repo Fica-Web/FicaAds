@@ -6,7 +6,6 @@ import SkillsSection from './SkillsSection';
 import CollaborationSection from './CollaborationSection';
 import MotivationSection from './MotivationSection';
 import ConsentSection from './ConsentSection';
-import SuccessModal from './SuccessModal';
 
 const initialState = {
     fullName: '',
@@ -29,7 +28,6 @@ const initialState = {
 
 const CreatorOnboardingForm = () => {
     const [formData, setFormData] = useState(initialState);
-    const [showModal, setShowModal] = useState(false);
     const [errors, setErrors] = useState({});
     const [loading, setLoading] = useState(false);
 
@@ -57,8 +55,6 @@ const CreatorOnboardingForm = () => {
         }
     };
 
-    const closeModal = () => setShowModal(false);
-
     const validate = () => {
         const newErrors = {};
 
@@ -85,7 +81,6 @@ const CreatorOnboardingForm = () => {
             try {
                 setLoading(true);
                 await sendReelUnionRequest(formData); // 🔁 Sending to your backend
-                setShowModal(true);
                 setFormData(initialState);
             } catch (error) {
                 console.error("Form submission failed:", error);
@@ -125,8 +120,6 @@ const CreatorOnboardingForm = () => {
                     </button>
                 </form>
             </div>
-
-            {showModal && <SuccessModal onClose={closeModal} />}
         </div>
     );
 };
