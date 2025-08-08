@@ -12,7 +12,6 @@ const OnlinePresenceSection = ({ formData, handleChange, errors }) => {
                     <input
                         type="text"
                         name="instagramHandle"
-                        required
                         value={formData.instagramHandle}
                         onChange={handleChange}
                         placeholder="@yourhandle"
@@ -48,7 +47,6 @@ const OnlinePresenceSection = ({ formData, handleChange, errors }) => {
                     <input
                         type="text"
                         name="portfolio"
-                        required
                         value={formData.portfolio}
                         onChange={handleChange}
                         placeholder="Google Drive or Website URL"
