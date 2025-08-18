@@ -1,4 +1,3 @@
-import React from 'react'
 import { LuUsers, LuCamera } from "react-icons/lu";
 import { CiPlay1 } from "react-icons/ci";
 import heroImg from '../../../assets/Images/reel-union/hero.jpeg';
