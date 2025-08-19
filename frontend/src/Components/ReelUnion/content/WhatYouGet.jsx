@@ -1,5 +1,4 @@
 import { LuVideo, LuTrendingUp, LuUser, LuCamera, LuShare2, LuAward, LuCheckCircle } from "react-icons/lu";
-import { FaCheckCircle } from "react-icons/fa";
 
 const contentArray = [
     {
