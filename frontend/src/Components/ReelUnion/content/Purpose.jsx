@@ -30,7 +30,7 @@ const Purpose = () => {
                 <h2 className='text-2xl lg:text-4xl font-bold font-Switzer-Medium'>
                     Our Purpose
                 </h2>
-                <p className='max-w-2xl text-neutral-800 text-base lg:text-lg'>
+                <p className='max-w-2xl text-neutral-700 text-base lg:text-lg'>
                     The Reel Union exists to create a thriving ecosystem where creativity meets opportunity, and where every creator can make a meaningful impact.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
