@@ -4,6 +4,7 @@ import CreatorOnboardingForm from '../Components/ReelUnion/CreatorOnboarding/Cre
 import ReelUnionHero from '../Components/ReelUnion/content/ReelUnionHero';
 import Purpose from '../Components/ReelUnion/content/Purpose';
 import HowItWorks from '../Components/ReelUnion/content/HowItWorks';
+import WhatYouGet from '../Components/ReelUnion/content/WhatYouGet';
 
 const ReelUnion = () => {
     return (
@@ -12,6 +13,7 @@ const ReelUnion = () => {
             <ReelUnionHero />
             <Purpose />
             <HowItWorks />
+            <WhatYouGet />
             <CreatorOnboardingForm />
         </div>
     )
