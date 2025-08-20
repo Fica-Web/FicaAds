@@ -4,7 +4,7 @@ import ReusableButton from "../reusable/ReusableButton";
 
 const Join = () => {
     return (
-        <div className='w-full bg-adminGray/50 py-12 lg:py-24 flex flex-col gap-5 items-center'>
+        <div className='w-full bg-adminGray/50 py-12 lg:py-24 flex flex-col gap-5 items-center px-3'>
             <h2 className='text-2xl lg:text-4xl font-bold font-Switzer-Medium'>
                 Ready to Make Real Impact?
             </h2>
