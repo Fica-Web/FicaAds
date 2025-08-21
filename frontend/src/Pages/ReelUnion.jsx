@@ -9,15 +9,36 @@ import Join from '../Components/ReelUnion/content/Join';
 
 const ReelUnion = () => {
     return (
-        <div className=''>
-            <ReelUnionNavbar />
-            <ReelUnionHero />
-            <Purpose />
-            <HowItWorks />
-            <WhatYouGet />
-            <WhoCanJoin />
-            <Join />
-            <CreatorOnboardingForm />
+        <div>
+            <ReelUnionNavbar /> 
+            
+            <section id="home">
+                <ReelUnionHero />
+            </section>
+
+            <section id="purpose">
+                <Purpose />
+            </section>
+
+            <section id="how-it-works">
+                <HowItWorks />
+            </section>
+
+            <section id="what-you-get">
+                <WhatYouGet />
+            </section>
+
+            <section id="who-can-join">
+                <WhoCanJoin />
+            </section>
+
+            <section id="join-us">
+                <Join />
+            </section>
+
+            <section id="apply">
+                <CreatorOnboardingForm />
+            </section>
         </div>
     )
 }

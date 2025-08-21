@@ -6,10 +6,10 @@ import logo from "../../../assets/Images/reel-union/reel-union-logo.png";
 
 // Define your nav links in one place
 const navOptions = [
-    { label: "Home", to: "/reelunion" },
-    { label: "Purpose", to: "/reelunion/creator-onboarding" },
-    { label: "How It Works", to: "/reelunion/about" },
-    { label: "Join Us", to: "/reelunion/about" },
+    { label: "Home", to: "#home" },
+    { label: "Purpose", to: "#purpose" },
+    { label: "How It Works", to: "#how-it-works" },
+    { label: "Join Us", to: "#join-us" },
 ];
 
 const ReelUnionNavbar = () => {
@@ -28,7 +28,9 @@ const ReelUnionNavbar = () => {
                     <ul className="flex space-x-5">
                         {navOptions.map((nav) => (
                             <li key={nav.label} className="hover:text-neutral-900">
-                                <Link to={nav.to}>{nav.label}</Link>
+                                <a href={nav.to} onClick={() => setMenuOpen(false)}>
+                                    {nav.label}
+                                </a>
                             </li>
                         ))}
                     </ul>
@@ -63,13 +65,13 @@ const ReelUnionNavbar = () => {
                         <ul className="flex flex-col items-start py-4 text-neutral-700 w-11/12 mx-auto">
                             {navOptions.map((nav) => (
                                 <li key={nav.label}>
-                                    <Link
-                                        to={nav.to}
+                                    <a
+                                        href={nav.to}
                                         onClick={() => setMenuOpen(false)} // Close menu on click
                                         className="py-2 block hover:text-neutral-900 w-full"
                                     >
                                         {nav.label}
-                                    </Link>
+                                    </a>
                                 </li>
                             ))}
                             <li className="w-full mt-2">
