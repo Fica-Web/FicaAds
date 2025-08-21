@@ -18,7 +18,7 @@ const CollaborationSection = ({ formData, handleChange, errors }) => {
                         name="collaborationMode"
                         value={formData.collaborationMode}
                         onChange={handleChange}
-                        className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 
+                        className={`w-full px-4 py-2 border border-neutral-300 placeholder:text-sm text-neutral-700 bg-neutral-50 rounded-lg focus:outline-none focus:ring-2 
                             ${errors.collaborationMode ? 'border-red-500' : 'border-gray4'}`}
                     >
                         <option value="">Select an option</option>
@@ -63,7 +63,7 @@ const CollaborationSection = ({ formData, handleChange, errors }) => {
                         value={formData.availability}
                         onChange={handleChange}
                         placeholder="Weekdays, Weekends, Part-time etc."
-                        className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 
+                        className={`w-full px-4 py-2 border border-neutral-300 placeholder:text-sm text-neutral-700 bg-neutral-50 rounded-lg focus:outline-none focus:ring-2 
                             ${errors.availability ? 'border-red-500' : 'border-gray4'}`}
                     />
                     {errors.availability && (

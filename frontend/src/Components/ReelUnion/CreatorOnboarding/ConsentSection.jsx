@@ -19,7 +19,7 @@ const ConsentSection = ({ formData, handleChange, errors }) => {
                             errors.consent ? 'border-red-500' : ''
                         }`}
                     />
-                    <span className="ml-2">
+                    <span className="ml-2 text-neutral-600">
                         I consent to The Reel Union using my submitted information for internal matching,
                         project assignment, and community building purposes. I understand that my
                         data will be handled confidentially.

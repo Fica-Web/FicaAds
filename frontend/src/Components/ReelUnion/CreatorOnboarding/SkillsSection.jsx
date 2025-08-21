@@ -2,9 +2,9 @@ import { LuBriefcase } from 'react-icons/lu';
 import { FormHeading } from "../reusable/FormHeading";
 
 const skillOptions = [
-    "Script Writing", "Video Editing", "Photography / Cinematography", "On-Camera Talent / Acting",
-    "Voice-over", "Reels / Shortform Content", "Graphic Design / Illustration", "Motion Graphics / Animation",
-    "Copywriting", "Content Strategy", "Production Assistance", "AI Video Tools", "BTS & Vlogging"
+    "Script Writing", "Video Editing", "Photography", "On-Camera Talent",
+    "Voice-over", "Reels ", "Graphic Design ", "Motion Graphics ",
+    "Copywriting", "Content Strategy", "AI Video Tools", "BTS & Vlogging", "Production Assistance",
 ];
 
 const SkillsSection = ({ formData, handleChange, errors }) => {
@@ -18,8 +18,8 @@ const SkillsSection = ({ formData, handleChange, errors }) => {
 
                 {/* Skills Checkbox List */}
                 <div>
-                    <label className="block text-sm font-medium text-gray1 mb-2">What are your current skills?</label>
-                    <div className="flex flex-wrap gap-4">
+                    <label className="block text-sm font-medium text-gray1 mb-2">Skills (Select all that apply) *</label>
+                    <div className="grid lg:grid-cols-3 grid-cols-2 lg:gap-3 gap-2">
                         {skillOptions.map((skill) => (
                             <label key={skill} className="inline-flex items-center">
                                 <input
@@ -28,9 +28,9 @@ const SkillsSection = ({ formData, handleChange, errors }) => {
                                     value={skill}
                                     checked={formData.skills.includes(skill)}
                                     onChange={handleChange}
-                                    className="form-checkbox h-4 w-4 text-blue-600"
+                                    className="form-checkbox h-3 w-3 text-blue-600 cursor-pointer"
                                 />
-                                <span className="ml-2 text-sm text-gray1">{skill}</span>
+                                <span className="ml-2 text-sm text-neutral-700">{skill}</span>
                             </label>
                         ))}
                     </div>
@@ -41,14 +41,14 @@ const SkillsSection = ({ formData, handleChange, errors }) => {
 
                 {/* Other Skills */}
                 <div>
-                    <label className="block text-sm font-medium text-gray1 mb-1">Other Skills (if any)</label>
+                    <label className="block text-sm font-medium text-neutral-700 mb-1">Other Skills (if any)</label>
                     <input
                         type="text"
                         name="otherSkills"
                         value={formData.otherSkills}
                         onChange={handleChange}
                         placeholder="List any other relevant skills"
-                        className="w-full px-4 py-2 border border-gray4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-2 border border-neutral-300 placeholder:text-sm text-neutral-700 bg-neutral-50 rounded-lg focus:outline-none focus:ring-2"
                     />
                     {errors.otherSkills && (
                         <p className="text-sm text-red-500 mt-1">{errors.otherSkills}</p>
