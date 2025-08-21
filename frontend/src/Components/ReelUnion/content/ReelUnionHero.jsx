@@ -23,7 +23,7 @@ const ReelUnionHero = () => {
                     Join The Reel Union - a collaborative creator network where passionate storytellers, filmmakers, and artists come together to create compelling content for brands and personal growth.
                 </p>
 
-                <div className='flex gap-3'>
+                <div className='flex lg:flex-row flex-col gap-3'>
                     <ReusableButton 
                         label='Join the Movement' 
                         className='bg-black text-white font-semibold text-sm px-6 py-2'
@@ -46,4 +46,4 @@ const ReelUnionHero = () => {
     )
 }
 
-export default ReelUnionHero
+export default ReelUnionHero;

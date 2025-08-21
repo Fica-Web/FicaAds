@@ -8,7 +8,7 @@ const ReusableButton = ({
 }) => {
     return (
         <div 
-            className={` ${className ? className : 'text-xs'} border border-neutral-300 px-3 py-1 rounded-md flex gap-2 items-center`}
+            className={` ${className ? className : 'text-xs'} border border-neutral-300 px-3 py-1 rounded-md flex gap-2 items-center justify-center`}
         >
             {Icon && <Icon />} 
             <button

@@ -30,7 +30,7 @@ const worksArray = [
 
 const HowItWorks = () => {
     return (
-        <div className='w-11/12 mx-auto text-center py-12 lg:py-24 flex flex-col justify-center items-center gap-6'>
+        <div className='w-11/12 mx-auto text-center py-12 lg:py-24 flex flex-col justify-center items-center lg:gap-6 gap-3'>
             <h2 className='text-2xl lg:text-4xl font-bold font-Switzer-Medium'>
                 How It Works
             </h2>
@@ -48,7 +48,7 @@ const HowItWorks = () => {
                     ))}
                 </div>
                 <div className='lg:w-5/12 w-full '>
-                    <img src={image} alt="" className='object-cover w-full max-h-[90vh] rounded-2xl' />
+                    <img src={image} alt="" className='object-cover w-full lg:max-h-[90vh] max-h-[60vh] rounded-2xl' />
                 </div>
             </div>
         </div>
@@ -59,18 +59,18 @@ const SingleWork = ({ item, index }) => {
     const Icon = item.icon;
     return (
         <div className='flex gap-5 w-full'>
-            <div className="h-fit py-3 px-4 rounded-full bg-black text-white font-bold">
+            <div className="h-fit lg:px-4 lg:py-3 px-2 py-1.5 rounded-full bg-black text-white font-bold lg:text-base text-sm">
                 0{index + 1}
             </div>
 
             <div className="flex flex-col gap-2 text-start">
-                <div className="flex items-center gap-2 font-semibold">
+                <div className="flex items-center gap-2 font-semibold lg:text-base text-sm">
                     <Icon />
                     <h3>
                         { item.title }
                     </h3>
                 </div>
-                <p className="text-neutral-600">
+                <p className="text-neutral-600 lg:text-base text-sm">
                     { item.description }
                 </p>
                 <div className="w-fit bg-adminGray px-2 py-1 rounded-md text-xs font-semibold">
