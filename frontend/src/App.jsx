@@ -20,6 +20,7 @@ import AdminCareerPage from './admin/pages/AdminCareerPage';
 import AdminLogin from './admin/pages/AdminLogin';
 import AdminAuth from './utils/auth/AdminAuth';
 import ReelUnion from './Pages/ReelUnion';
+import CreatorOnboardingForm from './Components/ReelUnion/CreatorOnboarding/CreatorOnboardingForm';
 
 const App = () => {
   return (
@@ -55,6 +56,7 @@ const App = () => {
 
       {/* Admin Authentication Route */}
       <Route path='/reel-union' element={<ReelUnion />} />
+      <Route path='/reel-union/onboarding' element={<CreatorOnboardingForm />} />
     </Routes>
   );
 };

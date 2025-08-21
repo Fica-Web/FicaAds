@@ -36,7 +36,7 @@ const ReelUnionNavbar = () => {
                     </ul>
 
                     <Link
-                        to={"/creator-onboarding"}
+                        to={"/reel-union/onboarding"}
                         className="bg-gray1 text-white px-4 py-1 rounded-md hover:scale-105 transition-transform duration-300"
                     >
                         Apply Now

@@ -10,11 +10,11 @@ import Join from '../Components/ReelUnion/content/Join';
 const ReelUnion = () => {
     return (
         <div>
-            <ReelUnionNavbar /> 
-            
             <section id="home">
-                <ReelUnionHero />
+                <ReelUnionNavbar />
             </section>
+            
+            <ReelUnionHero />
 
             <section id="purpose">
                 <Purpose />
@@ -34,10 +34,6 @@ const ReelUnion = () => {
 
             <section id="join-us">
                 <Join />
-            </section>
-
-            <section id="apply">
-                <CreatorOnboardingForm />
             </section>
         </div>
     )

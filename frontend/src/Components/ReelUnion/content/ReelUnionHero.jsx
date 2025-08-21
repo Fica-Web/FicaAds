@@ -27,6 +27,7 @@ const ReelUnionHero = () => {
                     <ReusableButton 
                         label='Join the Movement' 
                         className='bg-black text-white font-semibold text-sm px-6 py-2'
+                        to="/reel-union/onboarding"
                     />
                     <ReusableButton 
                         icon={CiPlay1} 

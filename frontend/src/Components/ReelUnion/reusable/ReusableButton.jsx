@@ -1,22 +1,34 @@
-import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 
 const ReusableButton = ({ 
-    icon: Icon,   // Pass the icon component
-    label,        // Pass button label
+    icon: Icon,   
+    label,        
     className = "", 
-    onClick 
+    onClick,       // for normal button click
+    to             // for navigation using react-router
 }) => {
+    // If "to" is provided, render Link
+    if (to) {
+        return (
+            <Link
+                to={to}
+                className={` ${className ? className : 'text-xs'} border border-neutral-300 px-3 py-1 rounded-md flex gap-2 items-center justify-center`}
+            >
+                {Icon && <Icon />} 
+                {label}
+            </Link>
+        );
+    }
+
+    // Otherwise render button
     return (
-        <div 
+        <button
+            onClick={onClick}
             className={` ${className ? className : 'text-xs'} border border-neutral-300 px-3 py-1 rounded-md flex gap-2 items-center justify-center`}
         >
             {Icon && <Icon />} 
-            <button
-                onClick={onClick}
-            >
-                {label}
-            </button>
-        </div>
+            {label}
+        </button>
     );
 };
 

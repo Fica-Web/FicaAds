@@ -14,6 +14,7 @@ const Join = () => {
             <div className="flex gap-3">
                 <ReusableButton
                     label='Apply to Join'
+                    to="/reel-union/onboarding"
                     className='bg-black hover:bg-black/70 text-white font-semibold text-sm px-6 py-2'
                 />
                 <ReusableButton
