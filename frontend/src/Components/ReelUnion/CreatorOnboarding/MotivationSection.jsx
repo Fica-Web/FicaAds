@@ -1,7 +1,13 @@
+import { LuHeart } from 'react-icons/lu';
+import { FormHeading } from "../reusable/FormHeading";
+
 const MotivationSection = ({ formData, handleChange, errors }) => {
     return (
-        <section className="border-b border-neutral-200 pb-8">
-            <h2 className="text-2xl font-bold text-neutral-800 mb-4">5. Motivation</h2>
+        <section className="border border-neutral-200 rounded-3xl lg:p-8 p-5 text-sm bg-white">
+            <FormHeading 
+                icon={LuHeart}
+                heading='Tell Us About Yourself'
+            />
             <div className="space-y-6">
                 {/* Motivation */}
                 <div>

@@ -1,7 +1,13 @@
+import { FiCheckCircle } from "react-icons/fi";
+import { FormHeading } from "../reusable/FormHeading";
+
 const ConsentSection = ({ formData, handleChange, errors }) => {
     return (
-        <section className="pb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">6. Consent</h2>
+        <section className="border border-neutral-200 rounded-3xl lg:p-8 p-5 text-sm bg-white">
+            <FormHeading 
+                icon={FiCheckCircle}
+                heading='Consent & Agreement'
+            />
             <div>
                 <label className="inline-flex items-start text-sm text-gray-700">
                     <input

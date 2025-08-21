@@ -1,7 +1,14 @@
+import { LuUser } from 'react-icons/lu';
+import { FormHeading } from "../reusable/FormHeading";
+
 const PersonalDetailsSection = ({ formData, handleChange, errors }) => {
     return (
-        <section className="border-b border-gray pb-8">
-            <h2 className="text-2xl font-bold text-gray1 mb-4">1. Personal Details</h2>
+        <section className="border border-neutral-200 rounded-3xl lg:p-8 p-5 text-sm bg-white">
+            <FormHeading 
+                icon={LuUser}
+                heading='Personal Information'
+            />
+
             <div className="space-y-6">
                 {[
                     { label: 'Full Name', name: 'fullName', type: 'text' },
