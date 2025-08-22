@@ -109,13 +109,15 @@ const CreatorOnboardingForm = () => {
                     <MotivationSection formData={formData} handleChange={handleChange} errors={errors} />
                     <ConsentSection formData={formData} handleChange={handleChange} errors={errors} />
 
-                    <button
-                        type="submit"
-                        className="w-full md:w-auto px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300"
-                        disabled={loading}
-                    >
-                        {loading ? "Submitting..." : "Submit"}
-                    </button>
+                    <div className='flex flex-col items-center justify-center gap-4'>
+                        <button
+                            type="submit"
+                            className="px-8 py-2 bg-black text-white font-semibold rounded-lg shadow-md hover:scale-105 transition duration-300 ease-in-out"
+                            disabled={loading}
+                        >
+                            {loading ? "Submitting..." : "Submit Application"}
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>

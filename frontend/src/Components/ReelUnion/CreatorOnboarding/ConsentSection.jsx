@@ -15,7 +15,7 @@ const ConsentSection = ({ formData, handleChange, errors }) => {
                         name="consent"
                         checked={formData.consent}
                         onChange={handleChange}
-                        className={`form-checkbox h-4 w-4 text-blue-600 mt-1 ${
+                        className={`form-checkbox h-4 w-4 text-blue-600 cursor-pointer mt-1 accent-gray1 ${
                             errors.consent ? 'border-red-500' : ''
                         }`}
                     />

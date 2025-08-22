@@ -28,7 +28,7 @@ const SkillsSection = ({ formData, handleChange, errors }) => {
                                     value={skill}
                                     checked={formData.skills.includes(skill)}
                                     onChange={handleChange}
-                                    className="form-checkbox h-3 w-3 text-blue-600 cursor-pointer"
+                                    className="form-checkbox h-3 w-3 accent-gray1 cursor-pointer"
                                 />
                                 <span className="ml-2 text-sm text-neutral-700">{skill}</span>
                             </label>

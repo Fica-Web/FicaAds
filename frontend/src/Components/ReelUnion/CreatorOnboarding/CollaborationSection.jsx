@@ -43,7 +43,7 @@ const CollaborationSection = ({ formData, handleChange, errors }) => {
                                     value={mode}
                                     checked={formData.workMode.includes(mode)}
                                     onChange={handleChange}
-                                    className="form-checkbox h-4 w-4 text-blue-600"
+                                    className="form-checkbox h-3 w-3 text-blue-600 accent-gray1 cursor-pointer"
                                 />
                                 <span className="ml-2 text-sm text-gray1">{mode}</span>
                             </label>
