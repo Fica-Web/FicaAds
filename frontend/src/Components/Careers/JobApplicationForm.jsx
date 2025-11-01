@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createJobApplicationApi } from "../../utils/api/jobApplicationApi";
 
 const JobApplicationForm = () => {
     const [form, setForm] = useState({
@@ -18,9 +19,11 @@ const JobApplicationForm = () => {
         setForm((prev) => ({ ...prev, resume: e.target.files[0] }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("Form submitted:", form);
+        const response = await createJobApplicationApi(form);
+        console.log("Response:", response);
     };
 
     return (
