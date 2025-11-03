@@ -18,10 +18,15 @@ const jobApplicationSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        resume: {
-            type: mongoose.Types.ObjectId,
-            ref: "File",
-        },
+        // resume: {
+        //     type: String,
+        //     // required: true,
+        // },
+        // resumeId: {
+        //     type: String,
+        //     unique: true,
+        //     required: true,
+        // },
     },
     { timestamps: true }
 );
