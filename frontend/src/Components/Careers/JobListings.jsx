@@ -109,7 +109,7 @@ const JobListings = () => {
 
               {/* Apply Form */}
               <div className="lg:w-1/2 w-full">
-                <JobApplicationForm  />
+                <JobApplicationForm position={selectedJob.title} />
               </div>
             </div>
           </div>

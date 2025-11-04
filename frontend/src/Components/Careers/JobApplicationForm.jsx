@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { createJobApplicationApi } from "../../utils/api/jobApplicationApi";
 
-const JobApplicationForm = () => {
+const JobApplicationForm = ({ position }) => {
     const [form, setForm] = useState({
         fullName: "",
         email: "",
         phone: "",
-        position: "",
+        position: position,
+        profileLink: "",
         resume: null,
     });
 
@@ -22,8 +23,7 @@ const JobApplicationForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("Form submitted:", form);
-        const response = await createJobApplicationApi(form);
-        console.log("Response:", response);
+        await createJobApplicationApi(form);
     };
 
     return (
@@ -76,23 +76,18 @@ const JobApplicationForm = () => {
                 />
             </div>
 
-            {/* Position */}
+            {/* Profile or Portfolio Link */}
             <div>
                 <label className="block text-sm font-medium text-slate-600 mb-1">
-                    Applying For
+                    Profile or Portfolio Link
                 </label>
-                <select
-                    name="position"
-                    value={form.position}
+                <input
+                    type="url"
+                    name="profileLink"
+                    value={form.profileLink}
                     onChange={handleChange}
-                    required
-                    className="w-full border border-gray4 rounded-lg p-2 bg-white focus:ring-2 focus:ring-black/30 outline-none"
-                >
-                    <option value="">Select position</option>
-                    <option value="designer">UI/UX Designer</option>
-                    <option value="developer">Frontend Developer</option>
-                    <option value="marketing">Digital Marketer</option>
-                </select>
+                    className="w-full border border-gray4 rounded-lg p-2 focus:ring-2 focus:ring-black/30 outline-none"
+                />
             </div>
 
             {/* Resume */}

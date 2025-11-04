@@ -5,6 +5,7 @@ export const createJobApplication = async (req, res) => {
     try {
         const formData = req.body;
 
+        console.log(formData);
         // ✅ Save to DB (optional)
         const jobApplication = await JobApplication.create({
             ...formData,
@@ -22,16 +23,17 @@ export const createJobApplication = async (req, res) => {
         // ✅ Email content
         const mailOptions = {
             from: `"Career Portal" <${process.env.FROM_EMAIL}>`,
-            to: "ajmalmuhd17@gmail.com", // HR email to receive applications
+            to: "shaithrap@gmail.com", // HR email to receive applications
             subject: `New Job Application: ${formData.fullName} - ${formData.position}`,
             html: `
-        <h2>New Job Application Received</h2>
-        <p><strong>Name:</strong> ${formData.fullName}</p>
-        <p><strong>Email:</strong> ${formData.email}</p>
-        <p><strong>Phone:</strong> ${formData.phone}</p>
-        <p><strong>Position:</strong> ${formData.position}</p>
-        <p>The candidate's resume is attached below.</p>
-      `,
+                <h2>New Job Application Received</h2>
+                <p><strong>Name:</strong> ${formData.fullName}</p>
+                <p><strong>Email:</strong> ${formData.email}</p>
+                <p><strong>Phone:</strong> ${formData.phone}</p>
+                <p><strong>Position:</strong> ${formData.position}</p>
+                <p><strong>Profile Link:</strong> ${formData.profileLink}</p>
+                <p>The candidate's resume is attached below.</p>
+            `,
             attachments: [
                 {
                     filename: req.file.originalname,

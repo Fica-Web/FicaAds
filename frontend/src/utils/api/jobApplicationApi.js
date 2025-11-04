@@ -9,6 +9,7 @@ export const createJobApplicationApi = async (formData) => {
     data.append("email", formData.email);
     data.append("phone", formData.phone);
     data.append("position", formData.position);
+    data.append("profileLink", formData.profileLink);
 
     // Append pdf file
     data.append("resume", formData.resume);

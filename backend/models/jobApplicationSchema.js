@@ -18,15 +18,9 @@ const jobApplicationSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        // resume: {
-        //     type: String,
-        //     // required: true,
-        // },
-        // resumeId: {
-        //     type: String,
-        //     unique: true,
-        //     required: true,
-        // },
+        profileLink: {
+            type: String,
+        },
     },
     { timestamps: true }
 );
