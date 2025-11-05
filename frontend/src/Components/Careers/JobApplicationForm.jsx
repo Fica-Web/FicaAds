@@ -11,6 +11,8 @@ const JobApplicationForm = ({ position }) => {
         resume: null,
     });
 
+    const [isLoading, setIsLoading] = useState(false);
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setForm((prev) => ({ ...prev, [name]: value }));
@@ -22,8 +24,15 @@ const JobApplicationForm = ({ position }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form submitted:", form);
-        await createJobApplicationApi(form);
+        setIsLoading(true);
+        try {
+            console.log("Form submitted:", form);
+            await createJobApplicationApi(form);
+        } catch (error) {
+            console.error("Error submitting application:", error);
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     return (
@@ -31,7 +40,6 @@ const JobApplicationForm = ({ position }) => {
             onSubmit={handleSubmit}
             className="max-w-lg mx-auto lg:p-6 space-y-4"
         >
-
             {/* Full Name */}
             <div>
                 <label className="block text-sm font-medium text-slate-600 mb-1">
@@ -108,9 +116,11 @@ const JobApplicationForm = ({ position }) => {
             {/* Submit */}
             <button
                 type="submit"
-                className='w-full bg-black/20 text-slate-800 font-medium text-sm md:text-base rounded-lg h-10 px-4 transition-transform transform hover:scale-105'
+                disabled={isLoading}
+                className={`w-full font-medium text-sm md:text-base rounded-lg h-10 px-4 transition-transform transform 
+                ${isLoading ? "bg-gray-400 cursor-not-allowed" : "bg-black/20 text-slate-800 hover:scale-105"}`}
             >
-                Apply Now 🚀
+                {isLoading ? "Submitting..." : "Apply Now 🚀"}
             </button>
         </form>
     );
