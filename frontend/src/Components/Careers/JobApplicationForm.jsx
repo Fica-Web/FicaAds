@@ -11,23 +11,81 @@ const JobApplicationForm = ({ position }) => {
         resume: null,
     });
 
+    const [errors, setErrors] = useState({});
     const [isLoading, setIsLoading] = useState(false);
 
+    // 🔹 Handle input change
     const handleChange = (e) => {
         const { name, value } = e.target;
         setForm((prev) => ({ ...prev, [name]: value }));
+        setErrors((prev) => ({ ...prev, [name]: "" })); // clear field error
     };
 
+    // 🔹 Handle file change
     const handleFileChange = (e) => {
-        setForm((prev) => ({ ...prev, resume: e.target.files[0] }));
+        const file = e.target.files[0];
+        setForm((prev) => ({ ...prev, resume: file }));
+        setErrors((prev) => ({ ...prev, resume: "" }));
     };
 
+    // 🔹 Validation logic
+    const validateForm = () => {
+        const newErrors = {};
+
+        if (!form.fullName.trim()) newErrors.fullName = "Full name is required.";
+        if (!form.email.trim()) {
+            newErrors.email = "Email is required.";
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+            newErrors.email = "Enter a valid email address.";
+        }
+
+        if (!form.phone.trim()) {
+            newErrors.phone = "Phone number is required.";
+        } else if (!/^[+]?[\d]{10,15}$/.test(form.phone)) {
+            newErrors.phone = "Enter a valid phone number (10–15 digits).";
+        }
+
+        if (form.profileLink.trim()) {
+            try {
+                new URL(form.profileLink); // throws if invalid
+            } catch {
+                newErrors.profileLink = "Enter a valid URL.";
+            }
+        }
+
+        if (!form.resume) {
+            newErrors.resume = "Please upload your resume.";
+        } else if (
+            !["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"].includes(
+                form.resume.type
+            )
+        ) {
+            newErrors.resume = "Only PDF or Word files are allowed.";
+        }
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
+
+    // 🔹 Submit handler
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if (!validateForm()) {
+            return;
+        }
+
         setIsLoading(true);
         try {
-            console.log("Form submitted:", form);
             await createJobApplicationApi(form);
+            setForm({
+                fullName: "",
+                email: "",
+                phone: "",
+                position: position,
+                profileLink: "",
+                resume: null,
+            });
         } catch (error) {
             console.error("Error submitting application:", error);
         } finally {
@@ -50,9 +108,11 @@ const JobApplicationForm = ({ position }) => {
                     name="fullName"
                     value={form.fullName}
                     onChange={handleChange}
-                    required
-                    className="w-full border border-gray4 rounded-lg p-2 focus:ring-2 focus:ring-black/30 outline-none"
+                    className={`w-full border rounded-lg p-2 focus:ring-2 focus:ring-black/30 outline-none ${
+                        errors.fullName ? "border-red-500" : "border-gray-300"
+                    }`}
                 />
+                {errors.fullName && <p className="text-red-500 text-xs mt-1">{errors.fullName}</p>}
             </div>
 
             {/* Email */}
@@ -65,9 +125,11 @@ const JobApplicationForm = ({ position }) => {
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    required
-                    className="w-full border border-gray4 rounded-lg p-2 focus:ring-2 focus:ring-black/30 outline-none"
+                    className={`w-full border rounded-lg p-2 focus:ring-2 focus:ring-black/30 outline-none ${
+                        errors.email ? "border-red-500" : "border-gray-300"
+                    }`}
                 />
+                {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
             </div>
 
             {/* Phone */}
@@ -80,22 +142,28 @@ const JobApplicationForm = ({ position }) => {
                     name="phone"
                     value={form.phone}
                     onChange={handleChange}
-                    className="w-full border border-gray4 rounded-lg p-2 focus:ring-2 focus:ring-black/30 outline-none"
+                    className={`w-full border rounded-lg p-2 focus:ring-2 focus:ring-black/30 outline-none ${
+                        errors.phone ? "border-red-500" : "border-gray-300"
+                    }`}
                 />
+                {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
             </div>
 
-            {/* Profile or Portfolio Link */}
+            {/* Profile or Portfolio Link (optional) */}
             <div>
                 <label className="block text-sm font-medium text-slate-600 mb-1">
-                    Profile or Portfolio Link
+                    Profile or Portfolio Link (optional)
                 </label>
                 <input
                     type="url"
                     name="profileLink"
                     value={form.profileLink}
                     onChange={handleChange}
-                    className="w-full border border-gray4 rounded-lg p-2 focus:ring-2 focus:ring-black/30 outline-none"
+                    className={`w-full border rounded-lg p-2 focus:ring-2 focus:ring-black/30 outline-none ${
+                        errors.profileLink ? "border-red-500" : "border-gray-300"
+                    }`}
                 />
+                {errors.profileLink && <p className="text-red-500 text-xs mt-1">{errors.profileLink}</p>}
             </div>
 
             {/* Resume */}
@@ -108,9 +176,11 @@ const JobApplicationForm = ({ position }) => {
                     name="resume"
                     accept=".pdf,.doc,.docx"
                     onChange={handleFileChange}
-                    required
-                    className="w-full text-sm"
+                    className={`w-full text-sm ${
+                        errors.resume ? "border-red-500" : "border-gray-300"
+                    }`}
                 />
+                {errors.resume && <p className="text-red-500 text-xs mt-1">{errors.resume}</p>}
             </div>
 
             {/* Submit */}
