@@ -1,7 +1,13 @@
+import { FiCheckCircle } from "react-icons/fi";
+import { FormHeading } from "../reusable/FormHeading";
+
 const ConsentSection = ({ formData, handleChange, errors }) => {
     return (
-        <section className="pb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">6. Consent</h2>
+        <section className="border border-neutral-200 rounded-3xl lg:p-8 p-5 text-sm bg-white">
+            <FormHeading 
+                icon={FiCheckCircle}
+                heading='Consent & Agreement'
+            />
             <div>
                 <label className="inline-flex items-start text-sm text-gray-700">
                     <input
@@ -9,11 +15,11 @@ const ConsentSection = ({ formData, handleChange, errors }) => {
                         name="consent"
                         checked={formData.consent}
                         onChange={handleChange}
-                        className={`form-checkbox h-4 w-4 text-blue-600 mt-1 ${
+                        className={`form-checkbox h-4 w-4 text-blue-600 cursor-pointer mt-1 accent-gray1 ${
                             errors.consent ? 'border-red-500' : ''
                         }`}
                     />
-                    <span className="ml-2">
+                    <span className="ml-2 text-neutral-600">
                         I consent to The Reel Union using my submitted information for internal matching,
                         project assignment, and community building purposes. I understand that my
                         data will be handled confidentially.

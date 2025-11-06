@@ -92,15 +92,13 @@ const CreatorOnboardingForm = () => {
     };
 
     return (
-        <div className="bg-adminGray min-h-screen flex items-center justify-center p-4 font-sans">
-            <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl w-full max-w-3xl">
-                <h1 className="text-2xl lg:text-4xl font-semibold text-center text-gray1 font-Switzer-Medium uppercase mb-2">
-                    The Reel Union – Creator Onboarding
+        <div className="bg-adminGray/60 min-h-screen flex items-center justify-center p-4 font-sans">
+            <div className="lg:p-8 rounded-2xl w-full max-w-4xl ">
+                <h1 className="text-2xl lg:text-4xl font-semibold text-center text-gray1 font-Switzer-Medium mb-2">
+                    Join The Reel Union
                 </h1>
-                <p className="text-gray-600 mb-8">
-                    Welcome to The Reel Union—a creator-first ecosystem powered by HOF.
-                    Share your details so we can match you to projects, collaborators, and
-                    brands that fit your passion and skills.
+                <p className="text-neutral-600 mb-8 text-center">
+                    Ready to make real impact? Fill out this application to become part of our creative community.
                 </p>
 
                 <form onSubmit={handleSubmit} className="space-y-8">
@@ -111,13 +109,15 @@ const CreatorOnboardingForm = () => {
                     <MotivationSection formData={formData} handleChange={handleChange} errors={errors} />
                     <ConsentSection formData={formData} handleChange={handleChange} errors={errors} />
 
-                    <button
-                        type="submit"
-                        className="w-full md:w-auto px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300"
-                        disabled={loading}
-                    >
-                        {loading ? "Submitting..." : "Submit"}
-                    </button>
+                    <div className='flex flex-col items-center justify-center gap-4'>
+                        <button
+                            type="submit"
+                            className="px-8 py-2 bg-black text-white font-semibold rounded-lg shadow-md hover:scale-105 transition duration-300 ease-in-out"
+                            disabled={loading}
+                        >
+                            {loading ? "Submitting..." : "Submit Application"}
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>

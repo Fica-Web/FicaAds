@@ -1,7 +1,13 @@
+import { LuClock } from 'react-icons/lu';
+import { FormHeading } from "../reusable/FormHeading";
+
 const CollaborationSection = ({ formData, handleChange, errors }) => {
     return (
-        <section className="border-b border-gray pb-8">
-            <h2 className="text-2xl font-bold text-gray1 mb-4">4. Collaboration Preferences</h2>
+        <section className="border border-neutral-200 rounded-3xl lg:p-8 p-5 text-sm bg-white">
+            <FormHeading 
+                icon={LuClock}
+                heading='Availability & Work Preferences'
+            />
             <div className="space-y-6">
                 {/* Collaboration Mode */}
                 <div>
@@ -12,7 +18,7 @@ const CollaborationSection = ({ formData, handleChange, errors }) => {
                         name="collaborationMode"
                         value={formData.collaborationMode}
                         onChange={handleChange}
-                        className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 
+                        className={`w-full px-4 py-2 border border-neutral-300 placeholder:text-sm text-neutral-700 bg-neutral-50 rounded-lg focus:outline-none focus:ring-2 
                             ${errors.collaborationMode ? 'border-red-500' : 'border-gray4'}`}
                     >
                         <option value="">Select an option</option>
@@ -37,7 +43,7 @@ const CollaborationSection = ({ formData, handleChange, errors }) => {
                                     value={mode}
                                     checked={formData.workMode.includes(mode)}
                                     onChange={handleChange}
-                                    className="form-checkbox h-4 w-4 text-blue-600"
+                                    className="form-checkbox h-3 w-3 text-blue-600 accent-gray1 cursor-pointer"
                                 />
                                 <span className="ml-2 text-sm text-gray1">{mode}</span>
                             </label>
@@ -57,7 +63,7 @@ const CollaborationSection = ({ formData, handleChange, errors }) => {
                         value={formData.availability}
                         onChange={handleChange}
                         placeholder="Weekdays, Weekends, Part-time etc."
-                        className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 
+                        className={`w-full px-4 py-2 border border-neutral-300 placeholder:text-sm text-neutral-700 bg-neutral-50 rounded-lg focus:outline-none focus:ring-2 
                             ${errors.availability ? 'border-red-500' : 'border-gray4'}`}
                     />
                     {errors.availability && (

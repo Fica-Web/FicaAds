@@ -1,19 +1,25 @@
+import { LuHeart } from 'react-icons/lu';
+import { FormHeading } from "../reusable/FormHeading";
+
 const MotivationSection = ({ formData, handleChange, errors }) => {
     return (
-        <section className="border-b border-neutral-200 pb-8">
-            <h2 className="text-2xl font-bold text-neutral-800 mb-4">5. Motivation</h2>
+        <section className="border border-neutral-200 rounded-3xl lg:p-8 p-5 text-sm bg-white">
+            <FormHeading 
+                icon={LuHeart}
+                heading='Tell Us About Yourself'
+            />
             <div className="space-y-6">
                 {/* Motivation */}
                 <div>
                     <label className="block text-sm font-medium text-neutral-700 mb-1">
-                        Why do you want to join The Reel Union?
+                        Why do you want to join The Reel Union? *
                     </label>
                     <textarea
                         name="motivation"
                         value={formData.motivation}
                         onChange={handleChange}
                         placeholder="Tell us what drives you!"
-                        className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 
+                        className={`w-full px-4 py-2 border border-neutral-300 placeholder:text-sm text-neutral-700 bg-neutral-50 rounded-lg focus:outline-none focus:ring-2 
                             ${errors.motivation ? 'border-red-500' : 'border-neutral-300'}`}
                         rows="4"
                     />
@@ -32,7 +38,7 @@ const MotivationSection = ({ formData, handleChange, errors }) => {
                         value={formData.anythingElse}
                         onChange={handleChange}
                         placeholder="Optional"
-                        className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 
+                        className={`w-full px-4 py-2 border border-neutral-300 placeholder:text-sm text-neutral-700 bg-neutral-50 rounded-lg focus:outline-none focus:ring-2 
                             ${errors.anythingElse ? 'border-red-500' : 'border-neutral-300'}`}
                         rows="3"
                     />

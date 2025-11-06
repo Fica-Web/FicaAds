@@ -11,8 +11,14 @@ const AdminLayout = () => {
     };
     
     return (
-        <div className="flex h-screen bg-adminWhite">
+        <div className="flex h-screen bg-gradient-to-br from-adminGray to-adminWhite">
             <AdminSidebar isOpen={isSidebarOpen} />
+            {isSidebarOpen && (
+                <div
+                    className="fixed inset-0 bg-black/30 lg:hidden z-40"
+                    onClick={() => setIsSidebarOpen(false)}
+                />
+            )}
             <div className="flex-1 flex flex-col overflow-hidden">
                 <AdminNavbar onToggleSidebar={handleToggleSidebar} isOpen={isSidebarOpen} />
                 <div className="flex-1 p-6 bg-adminGray overflow-y-auto lg:rounded-tl-3xl">
