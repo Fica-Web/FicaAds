@@ -10,6 +10,7 @@ import BlogDetails from './Components/News/BlogDetails';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import ContactPage from './Pages/ContactPage';
 import CareersPage from './Pages/CareersPage';
+import LinkTreePage from './pages/LinkTreePage';
 import ServiceDetailsPage from './Pages/ServiceDetailsPage';
 import AdminLayout from './layout/AdminLayout';
 import AdminDashboard from './admin/pages/AdminDashboard';
@@ -41,6 +42,7 @@ const App = () => {
 
       {/* Admin Authentication Route */}
       <Route path='/admin/login' element={<AdminLogin />} />
+      <Route path='/linktree' element={<LinkTreePage />} />
 
       {/* Protected Admin Routes */}
       <Route path='/admin' element={<AdminAuth />}>
