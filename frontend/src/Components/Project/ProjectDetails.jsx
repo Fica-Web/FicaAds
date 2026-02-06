@@ -9,6 +9,7 @@ const ProjectDetails = () => {
     }, []);
 
     const { id } = useParams();  // Extracting the project ID from the route
+    const projects = useSelector((state) => state.projects.projects)
     const selectedProject = useSelector((state) => state.projects.selectedProject);  // Access the selected project from Redux
 
     if (!selectedProject) return <p>No project found.</p>;

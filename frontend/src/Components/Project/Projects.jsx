@@ -225,11 +225,11 @@ const Projects = ({ showFullContent = true, limit = null, showbutton = true }) =
         year: "2023",
         category: "Digital",
         title: "Car",
-        name: "Bentley",
+        name: "Bentley & Macclaren",
         description:
           "We are a premium car brand dedicated to delivering vehicles that combine luxury, performance, and cutting-edge technology. Our identity is built on the core values of craftsmanship, innovation, and driving excellence.",
         description2:
-          "Using premium materials and cutting-edge techniques, John Jacobs creates eyewear that is lightweight, resilient, and tailored for long-lasting wear. The brand prioritizes comfort with ergonomic designs that ensure a perfect fit for every face shape. Additionally, John Jacobs consistently innovates to introduce fresh, trend-forward collections that meet the evolving needs of style-conscious individuals.",
+          "Using premium materials and advanced engineering techniques, Bentley & Macclaren crafts vehicles that are powerful, refined, and built for exceptional longevity. Every model is designed with driver comfort in mind, featuring meticulously engineered interiors and intuitive ergonomics that enhance every journey. Constant innovation and bold design ensure each collection sets new standards, appealing to those who seek cutting-edge performance without compromising luxury.",
         feedback:
           "Each car is engineered with precision using the latest technologies and materials to ensure superior performance, comfort, and durability. We focus on creating vehicles that offer an unparalleled driving experience, with attention to every detail. Constantly innovating, we strive to redefine automotive excellence, meeting the needs of those who demand the best in luxury and performance.",
         founder: "Bentley",
