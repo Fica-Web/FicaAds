@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from "../../assets/Images/about2.jpg";
-import img2 from "../../assets/Images/experimentation.jpg";
-import img3 from "../../assets/Images/Event2.webp";
+import img1 from "../../assets/Images/About/about2.jpg";
+import img2 from "../../assets/Images/About/experimentation.jpg";
+import img3 from "../../assets/Images/About/Event2.webp";
 
 const AboutHero = () => {
     const products = [

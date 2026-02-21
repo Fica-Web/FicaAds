@@ -1,5 +1,5 @@
 import React from 'react'
-import conn from "../../assets/Images/contact-page.webp"
+import conn from "../../assets/Images/Careers/contact-page.webp"
 import Behaind from '../Home/Behaind'
 
 const ContactHero = () => {
@@ -43,19 +43,19 @@ const ContactHero = () => {
                         <textarea
                             className="h-28 rounded-lg bg-gray1 placeholder:xl:text-lg placeholder:pl-4"
                             placeholder="Message"
-                            >
+                        >
                         </textarea>
                         <button className='bg-gray1 text-white rounded-lg h-10 font-Switzer-Regular xl:h-10 placeholder:xl:text-lg placeholder:pl-4'>Send Message</button>
                     </div>
 
                 </div>
                 <div className='lg:h-130 xl:h-144 lg:mt-56'>
-                <Behaind />
+                    <Behaind />
                 </div>
 
-            
 
-               
+
+
             </div>
         </div>
     )

@@ -11,23 +11,23 @@ import Services from '../Components/Home/Services';
 import RelatedVideos from '../Components/Home/RelatedVideos';
 import BlogListing from './BlogListing';
 import FAQ from '../Components/Home/FAQ';
-import client1 from '../assets/Images/clients-01.png';
-import client2 from '../assets/Images/clients-02.png';
-import client3 from '../assets/Images/clients-03.png';
-import client4 from '../assets/Images/clients-04.png';
-import client5 from '../assets/Images/clients-05.png';
-import client6 from '../assets/Images/clients-06.png';
-import client7 from '../assets/Images/clients-07.png';
-import client8 from '../assets/Images/clients-08.png';
-import client9 from '../assets/Images/clients-09.png';
-import client10 from '../assets/Images/clients-10.png';
-import client11 from '../assets/Images/clients-11.png';
-import client12 from '../assets/Images/clients-12.png';
-import client13 from '../assets/Images/clients-13.png';
-import client14 from '../assets/Images/clients-14.png';
-import client15 from '../assets/Images/clients-15.png';
-import client16 from '../assets/Images/clients-16.png';
-import client17 from '../assets/Images/clients-17.png';
+import client1 from '../assets/Images/Clients/clients-01.png';
+import client2 from '../assets/Images/Clients/clients-02.png';
+import client3 from '../assets/Images/Clients/clients-03.png';
+import client4 from '../assets/Images/Clients/clients-04.png';
+import client5 from '../assets/Images/Clients/clients-05.png';
+import client6 from '../assets/Images/Clients/clients-06.png';
+import client7 from '../assets/Images/Clients/clients-07.png';
+import client8 from '../assets/Images/Clients/clients-08.png';
+import client9 from '../assets/Images/Clients/clients-09.png';
+import client10 from '../assets/Images/Clients/clients-10.png';
+import client11 from '../assets/Images/Clients/clients-11.png';
+import client12 from '../assets/Images/Clients/clients-12.png';
+import client13 from '../assets/Images/Clients/clients-13.png';
+import client14 from '../assets/Images/Clients/clients-14.png';
+import client15 from '../assets/Images/Clients/clients-15.png';
+import client16 from '../assets/Images/Clients/clients-16.png';
+import client17 from '../assets/Images/Clients/clients-17.png';
 
 const HomePage = () => {
   const schemaData = {
@@ -56,7 +56,7 @@ const HomePage = () => {
       <Projects showFullContent={false} limit={3} showbutton={true} />
       <CreateiveJourney />
 
-     
+
 
       <Services />
 
@@ -114,7 +114,7 @@ const HomePage = () => {
 
       {/* <RelatedVideos /> */}
       {/* <BlogListing /> */}
-       <HomeNews />
+      <HomeNews />
       <FAQ />
       {/* <HomeHiring /> */}
     </div>

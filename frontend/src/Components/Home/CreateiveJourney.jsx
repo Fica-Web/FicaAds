@@ -1,6 +1,6 @@
 import React from 'react'
 
-import creative from "../../assets/Images/Creative1.webp"
+import creative from "../../assets/Images/Home/Creative1.webp"
 import { Link } from 'react-router-dom'
 
 const CreateiveJourney = () => {
@@ -16,8 +16,8 @@ const CreateiveJourney = () => {
                         <h1 className='font-Switzer-Medium uppercase  text-2xl md:text-3xl text-[#0C0C0C]'>A Creative journey</h1>
                         <h3 className='font-Switzer-Medium text-[#0C0C0C] mt-4 text-sm xl:text-lg'>A dynamic space where imagination knows no bounds and experimentation is celebrated</h3>
                         <button className='font-Switzer-Medium backdrop-blur-md text-[#FFFFFF] bg-[#0C0C0C] mt-4 p-2 rounded-lg  px-5 text-sm '>
-                                <Link to='/about'>About Us</Link>
-                            </button>
+                            <Link to='/about'>About Us</Link>
+                        </button>
                     </div>
                 </div>
 

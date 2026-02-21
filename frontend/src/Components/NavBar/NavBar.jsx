@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoMdArrowDropdown } from "react-icons/io";
-import logo from "../../assets/Images/fica.png";
+import logo from "../../assets/Images/Logos/fica.png";
 
 const NavBar = () => {
   const location = useLocation();
@@ -66,8 +66,8 @@ const NavBar = () => {
                       to={item.link}
                       onClick={() => setOpen(false)}
                       className={`py-2 px-4 rounded-md duration-300 ${isActive
-                          ? "bg-gray-800 text-white"
-                          : "bg-black text-white hover:bg-gray-300"
+                        ? "bg-gray-800 text-white"
+                        : "bg-black text-white hover:bg-gray-300"
                         }`}
                     >
                       {item.name}

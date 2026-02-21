@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import img1 from '../../assets/Images/aboutbanner.jpg';
+import img1 from '../../assets/Images/About/aboutbanner.jpg';
 
 
 const AboutBanner = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import logo from '../assets/Images/fica.png';
+import logo from '../assets/Images/Logos/fica.png';
 
 import Instagram from '../Components/LinkTree/Instagram';
 import Website from '../Components/LinkTree/Website';

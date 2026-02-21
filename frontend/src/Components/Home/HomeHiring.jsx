@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from "../../assets/Images/home5.webp"
+import img1 from "../../assets/Images/Home/home5.webp"
 import { Link } from 'react-router-dom'
 
 

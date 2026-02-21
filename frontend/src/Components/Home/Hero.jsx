@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import banner1 from "../../assets/Images/Banner1.webp";
-// import banner2 from "../../assets/Images/Banner2.webp";
-import banner3 from "../../assets/Images/Cover-image.webp";
-import sampleVideo from "../../assets/Images/PURPLE ANIMATION.mp4";
+import banner1 from "../../assets/Images/Banners/Banner1.webp";
+// import banner2 from "../../assets/Images/Banners/Banner2.webp";
+import banner3 from "../../assets/Images/Banners/Cover-image.webp";
+import sampleVideo from "../../assets/Videos/PURPLE ANIMATION.mp4";
 // import NavBar from '../NavBar/NavBar';
 
 const Hero = () => {
@@ -43,7 +43,7 @@ const Hero = () => {
                             />
                         )}
 
-                       {/* <div className="absolute top-0 left-0 w-full z-20 text-white">
+                        {/* <div className="absolute top-0 left-0 w-full z-20 text-white">
                             <NavBar />
                         </div>*/}
 

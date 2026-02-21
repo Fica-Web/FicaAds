@@ -1,10 +1,10 @@
 import React from 'react'
-import employee from "../../assets/Images/Internship.webp"
+import employee from "../../assets/Images/Careers/Internship.webp"
 import { Link } from 'react-router-dom'
 
 const Internship = () => {
-  return (
-    <div className='mt-20'>
+    return (
+        <div className='mt-20'>
             <div className=' w-11/12  mx-auto space-y-4 md:space-y-0 md:flex md:space-x-4 lg:space-x-20'>
                 <div className='h-119 xl:h-160 lg:w-1/2 '>
                     <img src={employee} alt='' className='w-full h-full object-cover rounded-xl' />
@@ -15,8 +15,8 @@ const Internship = () => {
                         <h1 className='font-Switzer-Medium uppercase  text-2xl md:text-3xl '>Student Opportunities</h1>
                         <h3 className='font-Switzer-Light text-gray3 mt-4 text-sm xl:text-lg'>"Join our internship program to gain hands-on experience, work on real projects, and build a strong foundation for your career."</h3>
                         <button className='font-Switzer-Medium bg-black/20 mt-4 rounded-lg h-8 px-4 text-sm '>
-                                <Link to="/contact">Apply Now</Link>
-                            </button>
+                            <Link to="/contact">Apply Now</Link>
+                        </button>
                     </div>
                 </div>
 
@@ -24,7 +24,7 @@ const Internship = () => {
             </div>
 
         </div>
-  )
+    )
 }
 
 export default Internship

@@ -1,10 +1,10 @@
 import React from 'react'
-import news1 from "../../assets/Images/Interactive-ad.webp";
+import news1 from "../../assets/Images/Home/Interactive-ad.webp";
 
 const NewsHero = () => {
   return (
     <div className='mt-10 lg:mt-32'>
-        <div className='bg-black space-y-6 lg:flex xl:h-144'>
+      <div className='bg-black space-y-6 lg:flex xl:h-144'>
         <div className='w-11/12 space-y-2 mx-auto pt-10 xl:space-y-4 lg:w-1/2 lg:pt-10  xl:w-1/3 xl:pt-32'>
           <h1 className='font-Switzer-Medium text-3xl xl:text-4xl text-white'>The Future of Interactive Advertising</h1>
           <p className='text-sm md:text-base xl:text-base text-white'>Unlock the power of collaboration as we explore the transformative potential of working together. In this article,

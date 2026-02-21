@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from "../../assets/Images/FicaLogo.png"
+import logo from "../../assets/Images/Logos/FicaLogo.png"
 
 const Footer = () => {
   return (

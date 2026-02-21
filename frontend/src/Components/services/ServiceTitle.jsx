@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import image from "../../assets/Images/aboutbanner.jpg";
+import image from "../../assets/Images/About/aboutbanner.jpg";
 
 const ServiceTitle = ({ service }) => {
     const grayDivRef = useRef(null);

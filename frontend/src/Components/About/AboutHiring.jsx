@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from "../../assets/Images/join-our-team.webp"
+import img1 from "../../assets/Images/Careers/join-our-team.webp"
 import { Link } from 'react-router-dom'
 
 const AboutHiring = () => {
@@ -13,7 +13,7 @@ const AboutHiring = () => {
                         <button className='backdrop-blur-md bg-black/20 font-Switzer-Medium text-xs mt-4 rounded-xl h-8 md:h-10 p-2 px-4'><Link to={'/careers'}>Open Positions</Link></button>
                     </div>
                     <img src={img1} alt='about' className='w-full h-full object-cover ' />
-                    
+
                 </div>
             </div>
         </div>

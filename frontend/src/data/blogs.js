@@ -1,9 +1,9 @@
-import blog1 from '../assets/Images/blog-1.png';
-import blog2 from '../assets/Images/blog-2.png';
-import blog3 from '../assets/Images/blog-3.png';
-import blog4 from '../assets/Images/blog-4.png';
-import blog5 from '../assets/Images/blog-5.png';
-import blog6 from '../assets/Images/blog-6.png';
+import blog1 from '../assets/Images/Blogs/blog-1.png';
+import blog2 from '../assets/Images/Blogs/blog-2.png';
+import blog3 from '../assets/Images/Blogs/blog-3.png';
+import blog4 from '../assets/Images/Blogs/blog-4.png';
+import blog5 from '../assets/Images/Blogs/blog-5.png';
+import blog6 from '../assets/Images/Blogs/blog-6.png';
 
 const blogs = [
     {
@@ -242,77 +242,111 @@ const blogs = [
             {
                 heading: "1. Define Your Brand’s Core Identity",
                 subSections: [
-                    { subHeading: "Mission and Values", subDescription: [
-                        "Define what your business stands for. What problems are you solving? What values do you want to convey to your audience?"
-                    ]},
-                    { subHeading: "Target Audience", subDescription: [
-                        "Understand who your ideal customers are. What are their demographics, pain points, and aspirations?"
-                    ]},
-                    { subHeading: "Unique Value Proposition (UVP)", subDescription: [
-                        "What makes you different from your competitors? Your UVP is what will set you apart in a crowded market."
-                    ]}
+                    {
+                        subHeading: "Mission and Values", subDescription: [
+                            "Define what your business stands for. What problems are you solving? What values do you want to convey to your audience?"
+                        ]
+                    },
+                    {
+                        subHeading: "Target Audience", subDescription: [
+                            "Understand who your ideal customers are. What are their demographics, pain points, and aspirations?"
+                        ]
+                    },
+                    {
+                        subHeading: "Unique Value Proposition (UVP)", subDescription: [
+                            "What makes you different from your competitors? Your UVP is what will set you apart in a crowded market."
+                        ]
+                    }
                 ]
             },
             {
                 heading: "2. Create a Consistent Visual Identity",
                 subSections: [
-                    { subHeading: "Logo", subDescription: [
-                        "Design a logo that represents your brand’s personality and resonates with your target audience."
-                    ]},
-                    { subHeading: "Color Palette", subDescription: [
-                        "Choose a color palette that aligns with the emotions you want your brand to evoke."
-                    ]},
-                    { subHeading: "Typography and Imagery", subDescription: [
-                        "Select fonts and imagery that reflect your brand’s tone and values."
-                    ]}
+                    {
+                        subHeading: "Logo", subDescription: [
+                            "Design a logo that represents your brand’s personality and resonates with your target audience."
+                        ]
+                    },
+                    {
+                        subHeading: "Color Palette", subDescription: [
+                            "Choose a color palette that aligns with the emotions you want your brand to evoke."
+                        ]
+                    },
+                    {
+                        subHeading: "Typography and Imagery", subDescription: [
+                            "Select fonts and imagery that reflect your brand’s tone and values."
+                        ]
+                    }
                 ]
             },
             {
                 heading: "3. Build Brand Awareness Online",
                 subSections: [
-                    { subHeading: "Social Media Presence", subDescription: [
-                        "Social media is a powerful tool for building brand awareness. Choose the right platforms and post consistently."
-                    ]},
-                    { subHeading: "Content Marketing", subDescription: [
-                        "Create valuable, relevant content that speaks to your audience’s needs."
-                    ]},
-                    { subHeading: "Paid Advertising", subDescription: [
-                        "Invest in paid advertising on platforms like Google Ads, Facebook, or Instagram to boost visibility."
-                    ]},
-                    { subHeading: "SEO and Local Optimization", subDescription: [
-                        "Optimize your website for search engines so that potential customers can find you when searching for relevant terms."
-                    ]}
+                    {
+                        subHeading: "Social Media Presence", subDescription: [
+                            "Social media is a powerful tool for building brand awareness. Choose the right platforms and post consistently."
+                        ]
+                    },
+                    {
+                        subHeading: "Content Marketing", subDescription: [
+                            "Create valuable, relevant content that speaks to your audience’s needs."
+                        ]
+                    },
+                    {
+                        subHeading: "Paid Advertising", subDescription: [
+                            "Invest in paid advertising on platforms like Google Ads, Facebook, or Instagram to boost visibility."
+                        ]
+                    },
+                    {
+                        subHeading: "SEO and Local Optimization", subDescription: [
+                            "Optimize your website for search engines so that potential customers can find you when searching for relevant terms."
+                        ]
+                    }
                 ]
             },
             {
                 heading: "4. Conserve Your Audience’s Attention with Consistent Engagement",
                 subSections: [
-                    { subHeading: "Email Marketing", subDescription: [
-                        "Build an email list and send newsletters, offers, and updates."
-                    ]},
-                    { subHeading: "Community Building", subDescription: [
-                        "Engage with your audience on social media, online forums, and blogs."
-                    ]},
-                    { subHeading: "Customer-Centric Content", subDescription: [
-                        "Share content that resonates with your audience’s interests and needs."
-                    ]}
+                    {
+                        subHeading: "Email Marketing", subDescription: [
+                            "Build an email list and send newsletters, offers, and updates."
+                        ]
+                    },
+                    {
+                        subHeading: "Community Building", subDescription: [
+                            "Engage with your audience on social media, online forums, and blogs."
+                        ]
+                    },
+                    {
+                        subHeading: "Customer-Centric Content", subDescription: [
+                            "Share content that resonates with your audience’s interests and needs."
+                        ]
+                    }
                 ]
             },
             {
                 heading: "5. Convert Interest into Action",
                 subSections: [
-                    { subHeading: "Clear Calls to Action (CTAs)", subDescription: [
-                        "Ensure your CTAs are clear and compelling."
-                    ]},
-                    { subHeading: "Landing Pages That Convert", subDescription: [
-                        "Optimize landing pages to guide visitors toward taking action."
-                    ]},
-                    { subHeading: "Create Urgency with Limited Offers", subDescription: [
-                        "Encourage immediate action by offering limited-time discounts, exclusive access, or special promotions."
-                    ]},
-                    { subHeading: "Optimize the User Experience (UX)", subDescription: [
-                        "Ensure a seamless user experience on your website and social media."
-                    ]}
+                    {
+                        subHeading: "Clear Calls to Action (CTAs)", subDescription: [
+                            "Ensure your CTAs are clear and compelling."
+                        ]
+                    },
+                    {
+                        subHeading: "Landing Pages That Convert", subDescription: [
+                            "Optimize landing pages to guide visitors toward taking action."
+                        ]
+                    },
+                    {
+                        subHeading: "Create Urgency with Limited Offers", subDescription: [
+                            "Encourage immediate action by offering limited-time discounts, exclusive access, or special promotions."
+                        ]
+                    },
+                    {
+                        subHeading: "Optimize the User Experience (UX)", subDescription: [
+                            "Ensure a seamless user experience on your website and social media."
+                        ]
+                    }
                 ]
             }
         ],
@@ -330,71 +364,101 @@ const blogs = [
             {
                 heading: "AI and Automation: Making Marketing Smarter",
                 subSections: [
-                    { subHeading: "Personalized Recommendations", subDescription: [
-                        "AI can analyze customer behavior and preferences to suggest products or content that are most likely to interest them."
-                    ]},
-                    { subHeading: "Automated Content Creation", subDescription: [
-                        "AI tools can assist in creating ads, blog posts, and even social media updates."
-                    ]},
-                    { subHeading: "Predictive Analytics", subDescription: [
-                        "AI helps predict customer behavior by analyzing past actions, allowing businesses to create more effective marketing campaigns."
-                    ]}
+                    {
+                        subHeading: "Personalized Recommendations", subDescription: [
+                            "AI can analyze customer behavior and preferences to suggest products or content that are most likely to interest them."
+                        ]
+                    },
+                    {
+                        subHeading: "Automated Content Creation", subDescription: [
+                            "AI tools can assist in creating ads, blog posts, and even social media updates."
+                        ]
+                    },
+                    {
+                        subHeading: "Predictive Analytics", subDescription: [
+                            "AI helps predict customer behavior by analyzing past actions, allowing businesses to create more effective marketing campaigns."
+                        ]
+                    }
                 ]
             },
             {
                 heading: "Voice Search: Optimizing for the Future",
                 subSections: [
-                    { subHeading: "Natural Language Optimization", subDescription: [
-                        "People speak to voice assistants in a more conversational tone. Optimizing content for such queries is essential."
-                    ]},
-                    { subHeading: "Focus on Local Search", subDescription: [
-                        "A large percentage of voice searches are location-based, so optimizing for local SEO is crucial."
-                    ]},
-                    { subHeading: "Mobile-Friendly Websites", subDescription: [
-                        "Since voice searches are often done on mobile, ensuring a smooth mobile experience is necessary."
-                    ]}
+                    {
+                        subHeading: "Natural Language Optimization", subDescription: [
+                            "People speak to voice assistants in a more conversational tone. Optimizing content for such queries is essential."
+                        ]
+                    },
+                    {
+                        subHeading: "Focus on Local Search", subDescription: [
+                            "A large percentage of voice searches are location-based, so optimizing for local SEO is crucial."
+                        ]
+                    },
+                    {
+                        subHeading: "Mobile-Friendly Websites", subDescription: [
+                            "Since voice searches are often done on mobile, ensuring a smooth mobile experience is necessary."
+                        ]
+                    }
                 ]
             },
             {
                 heading: "Video Marketing: The Heart of Engagement",
                 subSections: [
-                    { subHeading: "Short-Form Videos", subDescription: [
-                        "Platforms like TikTok and Instagram Reels thrive on short, engaging videos."
-                    ]},
-                    { subHeading: "Live Streaming", subDescription: [
-                        "Customers engage with brands through live Q&As, product launches, and behind-the-scenes videos."
-                    ]},
-                    { subHeading: "Interactive Videos", subDescription: [
-                        "Videos that allow users to interact, shop directly, or engage in other ways will rise in popularity."
-                    ]}
+                    {
+                        subHeading: "Short-Form Videos", subDescription: [
+                            "Platforms like TikTok and Instagram Reels thrive on short, engaging videos."
+                        ]
+                    },
+                    {
+                        subHeading: "Live Streaming", subDescription: [
+                            "Customers engage with brands through live Q&As, product launches, and behind-the-scenes videos."
+                        ]
+                    },
+                    {
+                        subHeading: "Interactive Videos", subDescription: [
+                            "Videos that allow users to interact, shop directly, or engage in other ways will rise in popularity."
+                        ]
+                    }
                 ]
             },
             {
                 heading: "AR & VR: Creating Immersive Brand Experiences",
                 subSections: [
-                    { subHeading: "AR for Shopping", subDescription: [
-                        "Customers can virtually try on products or see how furniture fits in their space."
-                    ]},
-                    { subHeading: "VR Experiences", subDescription: [
-                        "Brands can offer 360-degree product views or virtual events."
-                    ]},
-                    { subHeading: "Interactive Ads", subDescription: [
-                        "AR-powered ads will let users engage directly with products in a new way."
-                    ]}
+                    {
+                        subHeading: "AR for Shopping", subDescription: [
+                            "Customers can virtually try on products or see how furniture fits in their space."
+                        ]
+                    },
+                    {
+                        subHeading: "VR Experiences", subDescription: [
+                            "Brands can offer 360-degree product views or virtual events."
+                        ]
+                    },
+                    {
+                        subHeading: "Interactive Ads", subDescription: [
+                            "AR-powered ads will let users engage directly with products in a new way."
+                        ]
+                    }
                 ]
             },
             {
                 heading: "Sustainability: Meeting the Demands of Conscious Consumers",
                 subSections: [
-                    { subHeading: "Eco-Friendly Messaging", subDescription: [
-                        "Highlighting sustainability efforts will help brands connect with conscious consumers."
-                    ]},
-                    { subHeading: "Transparency", subDescription: [
-                        "Consumers expect brands to be open about their environmental and ethical practices."
-                    ]},
-                    { subHeading: "Social Responsibility", subDescription: [
-                        "Brands that contribute to social causes often earn customer loyalty."
-                    ]}
+                    {
+                        subHeading: "Eco-Friendly Messaging", subDescription: [
+                            "Highlighting sustainability efforts will help brands connect with conscious consumers."
+                        ]
+                    },
+                    {
+                        subHeading: "Transparency", subDescription: [
+                            "Consumers expect brands to be open about their environmental and ethical practices."
+                        ]
+                    },
+                    {
+                        subHeading: "Social Responsibility", subDescription: [
+                            "Brands that contribute to social causes often earn customer loyalty."
+                        ]
+                    }
                 ]
             }
         ],

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import whoWeAre2 from '../../assets/Images/who-we-are.jpg';
+import whoWeAre2 from '../../assets/Images/About/who-we-are.jpg';
 
 const WhoWeAre = () => {
     const [showMore, setShowMore] = useState(false);
